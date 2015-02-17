@@ -10,7 +10,7 @@ module Accela
     end
 
     def classify(name)
-      name.to_s.classify
+      name.to_s.pluralize.classify
     end
 
     def pluralize(name)

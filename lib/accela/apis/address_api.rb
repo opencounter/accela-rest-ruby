@@ -19,7 +19,7 @@ module Accela
     def search_addresses(input)
       raw = input.is_a?(Hash) ? input : input.raw
       payload = AddressTranslator.ruby_to_json([raw])
-      addresses  = Accela::V4::SearchAddresses.result(payload.first)
+      addresses  = Accela::V4::SearchAddresses.result(payload.first) || []
       returned_addresses = [] #AddressTranslator.json_to_ruby([addresses]).first
       addresses.each do |i|
         #returned_addresses.push(AddressTranslator.json_to_ruby([i]))

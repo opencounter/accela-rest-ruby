@@ -1,6 +1,9 @@
 module Accela
   class RecordAPI < APIGroup
-    as_class_method :get_records, :get_all_records, :create_record
+    as_class_method :get_records, :get_all_records, :create_record,
+      :get_all_contacts_for_record, :create_record_fees,
+      :update_record_custom_forms, :update_record_custom_tables,
+      :create_partial_record, :update_record
 
     def create_record(input)
       raw = input.is_a?(Hash) ? input : input.raw
@@ -61,5 +64,36 @@ module Accela
                       *args)
     end
 
+    def create_record_fees(record_id, input)
+      raw = input.is_a?(Hash) ? input : input.raw
+      payload = FeeTranslator.ruby_to_json([raw])
+      fee_hash  = Accela::V4::CreateRecordFees.result(record_id, payload.first)
+      input_hash = FeeTranslator.json_to_ruby([fee_hash]).first
+      Fee.create(input_hash)
+    end
+
+    def update_record_custom_forms(id, input)
+      Accela::V4::UpdateRecordCustomForms.result(id, input)
+    end
+
+    def update_record_custom_tables(id, input)
+      Accela::V4::UpdateRecordCustomTables.result(id, input)
+    end
+
+    def create_partial_record(input)
+      raw = input.is_a?(Hash) ? input : input.raw
+      payload = RecordTranslator.ruby_to_json([raw])
+      record_hash  = Accela::V4::CreatePartialRecord.result(payload.first)
+      input_hash = RecordTranslator.json_to_ruby([record_hash]).first
+      Record.create(input_hash)
+    end
+
+    def update_record(id, input)
+      raw = input.is_a?(Hash) ? input : input.raw
+      payload = RecordTranslator.ruby_to_json([raw])
+      record_hash  = Accela::V4::UpdateRecord.result(id, payload.first)
+      input_hash = RecordTranslator.json_to_ruby([record_hash]).first
+      Record.create(input_hash)
+    end
   end
 end

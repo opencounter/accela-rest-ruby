@@ -11,22 +11,27 @@ module Accela
         new.call(*args)
       end
 
-      def get(uri, auth_type, query={})
-        handle(API.connection.get(expand_uri(uri), auth_type, query))
+      def get(uri, auth_type, query={}, headers={})
+        handle(API.connection.get(expand_uri(uri),
+                                  auth_type,
+                                  query,
+                                  headers))
       end
 
-      def post(uri, auth_type, query={}, payload={})
+      def post(uri, auth_type, query={}, payload={}, headers={})
         handle(API.connection.post(expand_uri(uri),
                                    auth_type,
                                    query,
-                                   payload))
+                                   payload,
+                                   headers))
       end
 
-      def put(uri, auth_type, query={}, payload={})
+      def put(uri, auth_type, query={}, payload={}, headers={})
         handle(API.connection.put(expand_uri(uri),
                                   auth_type,
                                   query,
-                                  payload))
+                                  payload,
+                                  headers))
       end
 
       private

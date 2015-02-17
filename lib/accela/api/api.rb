@@ -10,24 +10,24 @@ module Accela
       config.token = auth.login(username, password, scope)
     end
 
-    def get(path, auth_type, query={})
+    def get(path, auth_type, query={}, headers={})
       uri = config.base_uri + path
-      headers = headers(auth_type)
+      headers = headers(auth_type).merge(headers)
       escaped_query = escape_query_values(query)
       HTTParty.get(uri, headers: headers , query: escaped_query)
     end
 
-    def put(path, auth_type, query={}, body={})
+    def put(path, auth_type, query={}, body={}, headers={})
       uri = config.base_uri + path
-      headers = headers(auth_type)
+      headers = headers(auth_type).merge(headers)
       json_body = JSON.generate(body)
       escaped_query = escape_query_values(query)
       HTTParty.put(uri, headers: headers, query: escaped_query, body: json_body)
     end
 
-    def post(path, auth_type, query={}, body={})
+    def post(path, auth_type, query={}, body={}, headers={})
       uri = config.base_uri + path
-      headers = headers(auth_type)
+      headers = headers(auth_type).merge(headers)
       json_body = JSON.generate(body)
       escaped_query = escape_query_values(query)
       HTTParty.post(uri, headers: headers, query: escaped_query, body: json_body)
