@@ -3,7 +3,11 @@ module Accela
     attr_reader :response
 
     def self.handle(response)
-      new(response).handle
+      if response['status'] == 500 && response['result'].is_a?(Array)
+        new(response).handle_data_validation_error
+      else
+        new(response).handle
+      end
     end
 
     def initialize(response)
@@ -15,6 +19,10 @@ module Accela
         exception = error ? error.last : UnexpectedError
         raise exception, message
       end
+    end
+
+    def handle_data_validation_error
+      raise DataValidationError, response['result'][0]['message']
     end
 
     private
