@@ -3,7 +3,11 @@ module Accela
     attr_reader :response
 
     def self.handle(response)
-      new(response).handle
+      begin
+        new(response).handle
+      rescue KeyError
+        new(response).handle_unexpected_error
+      end
     end
 
     def initialize(response)
@@ -15,6 +19,10 @@ module Accela
         exception = error ? error.last : UnexpectedError
         raise exception, message
       end
+    end
+
+    def handle_unexpected_error
+      raise UnexpectedError, response['result'][0]['message']
     end
 
     private
