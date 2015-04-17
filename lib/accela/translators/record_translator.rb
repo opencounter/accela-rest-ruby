@@ -34,6 +34,7 @@ module Accela
         [:estimated_due_date, :estimatedDueDate, :dateTime],
         [:estimated_production_unit, :estimatedProductionUnit, :double],
         [:estimated_total_job_cost, :estimatedTotalJobCost, :double],
+        [:renewal_info, :renewalInfo, :RenewalInfo],
         [:first_issued_date, :firstIssuedDate, :dateTime],
         [:housing_units, :housingUnits, :integer],
         [:id, :id, :string],
