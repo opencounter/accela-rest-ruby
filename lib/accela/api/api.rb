@@ -28,7 +28,11 @@ module Accela
     def post(path, auth_type, query={}, body={}, headers={})
       uri = config.base_uri + path
       headers = headers(auth_type).merge(headers)
-      json_body = JSON.generate(body)
+      if body != {}
+        json_body = JSON.generate(body)
+      else
+        json_body = ''
+      end
       escaped_query = escape_query_values(query)
       HTTParty.post(uri, headers: headers, query: escaped_query, body: json_body)
     end
