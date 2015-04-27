@@ -5,7 +5,7 @@ module Accela
     def self.handle(response)
       begin
         new(response).handle
-      rescue KeyError
+      rescue
         new(response).handle_unexpected_error
       end
     end
@@ -22,7 +22,13 @@ module Accela
     end
 
     def handle_unexpected_error
-      raise UnexpectedError, response['result'][0]['message']
+      begin
+        # handle the alternate error response format, e.g. when ASI field not found
+        raise UnexpectedError, response['result'][0]['message']
+      rescue
+        # handle third error response format. This should always succeed.
+        raise UnexpectedError, response.inspect
+      end
     end
 
     private
@@ -32,8 +38,7 @@ module Accela
     end
 
     def message
-      message = [get(:message),
-                 get(:more)].compact.map(&:to_s).join("\nAdditionally: ")
+      [get(:message), get(:more)].compact.map(&:to_s).join("\nAdditionally: ")
     end
 
     def error
