@@ -44,6 +44,8 @@ module Accela
         if is_success?(response)
           response.parsed_response
         else
+          puts response.request.inspect
+          puts response.headers.inspect
           ErrorHandler.handle(response)
         end
       end
