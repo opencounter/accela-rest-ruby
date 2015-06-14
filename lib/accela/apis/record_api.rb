@@ -1,10 +1,11 @@
 module Accela
   class RecordAPI < APIGroup
     as_class_method :get_records, :get_all_records, :create_record,
-      :get_all_contacts_for_record, :create_record_fees, :create_record_contacts, 
-      :update_record_custom_forms, :update_record_custom_tables,
-      :create_partial_record, :update_record, :update_record_contact, 
-      :finalize_record, :create_record_addresses, :update_record_address
+      :get_all_contacts_for_record, :create_record_fees,
+      :create_record_contacts, :update_record_custom_forms,
+      :update_record_custom_tables, :create_partial_record, :update_record,
+      :update_record_contact, :finalize_record, :create_record_addresses,
+      :update_record_address
 
     def create_record(input)
       raw = input.is_a?(Hash) ? input : input.raw
@@ -103,41 +104,32 @@ module Accela
       Accela::V4::UpdateRecordCustomTables.result(id, input)
     end
 
-    #Contacts
-    # => Create
     def create_record_contacts(record_id, input)
-      raw = input.is_a?(Hash) ? input : input.raw
-      payload = ContactTranslator.ruby_to_json([raw])
-      contacts_hash  = Accela::V4::CreateRecordContacts.result(record_id, payload )
-      #input_hash = ContactTranslator.json_to_ruby([contacts_hash]).first
-      #Contact.create(input_hash)
+      raw = input.map { |contact| contact.is_a?(Hash) ? contact : contact.raw }
+      payload = ContactTranslator.ruby_to_json(raw)
+      Accela::V4::CreateRecordContacts.result(record_id, payload)
     end
 
-    # => Update
     def update_record_contact(record_id, id, input)
       raw = input.is_a?(Hash) ? input : input.raw
       payload = ContactTranslator.ruby_to_json([raw])
-      contacts_hash  = Accela::V4::UpdateRecordContact.result(record_id, id, payload.first )
-      input_hash = ContactTranslator.json_to_ruby([contacts_hash]).first
-      Contact.create(input_hash)
-    end
-    #Addresses
-    # => Create
-    def create_record_addresses(record_id, input)
-      raw = input.is_a?(Hash) ? input : input.raw
-      payload = AddressTranslator.ruby_to_json([raw])
-      contacts_hash  = Accela::V4::CreateRecordAddresses.result(record_id, payload )
-      #input_hash = ContactTranslator.json_to_ruby([contacts_hash]).first
-      #Contact.create(input_hash)
+      Accela::V4::UpdateRecordContact.result(record_id, id, payload.first)
     end
 
-    # => Update
+    def create_record_addresses(record_id, input)
+      raw = input.map { |address| address.is_a?(Hash) ? address : address.raw }
+      payload = AddressTranslator.ruby_to_json(raw)
+      Accela::V4::CreateRecordAddresses.result(record_id, payload)
+    end
+
     def update_record_address(record_id, id, input)
       raw = input.is_a?(Hash) ? input : input.raw
       payload = AddressTranslator.ruby_to_json([raw])
-      contacts_hash  = Accela::V4::UpdateRecordAddress.result(record_id, id, payload.first )
-      input_hash = AddressTranslator.json_to_ruby([contacts_hash]).first
-      Address.create(input_hash)
+      Accela::V4::UpdateRecordAddress.result(record_id, id, payload.first)
+    end
+
+    def get_record_custom_tables(id)
+      Accela::V4::GetRecordCustomTables.result(id)
     end
   end
 end
