@@ -5,7 +5,7 @@ module Accela
       :create_record_contacts, :update_record_custom_forms,
       :update_record_custom_tables, :create_partial_record, :update_record,
       :update_record_contact, :finalize_record, :create_record_addresses,
-      :update_record_address
+      :update_record_address, :get_record_custom_tables
 
     def create_record(input)
       raw = input.is_a?(Hash) ? input : input.raw
