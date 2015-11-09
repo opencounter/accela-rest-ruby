@@ -5,7 +5,7 @@ module Accela
       :create_record_contacts, :update_record_custom_forms,
       :update_record_custom_tables, :create_partial_record, :update_record,
       :update_record_contact, :finalize_record, :create_record_addresses,
-      :update_record_address, :get_record_custom_tables
+      :update_record_address, :get_record_custom_tables, :get_record
 
     def create_record(input)
       raw = input.is_a?(Hash) ? input : input.raw
@@ -130,6 +130,18 @@ module Accela
 
     def get_record_custom_tables(id)
       Accela::V4::GetRecordCustomTables.result(id)
+    end
+
+    def get_record(id)
+      payload = {
+        id: id
+      }
+      params = { expand: "addresses,contacts,customForms,customTables" }
+      Array(search_records(params, payload)).first
+    end
+
+    def search_records(params, payload)
+      Accela::V4::SearchRecords.result(params, payload)
     end
   end
 end
