@@ -1,6 +1,6 @@
 require "date"
 
-require "httparty"
+require "httmultiparty"
 require "active_support/core_ext/string/inflections"
 
 require "accela/inflector"

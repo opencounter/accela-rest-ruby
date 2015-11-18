@@ -12,6 +12,6 @@ Gem::Specification.new do |s|
   s.files          = Dir.glob ['README.md', 'LICENSE', 'lib/**/*.{rb}', 'spec/**/*', '*.gemspec']
   s.homepage       = 'https://developer.accela.com/'
   s.license        = 'MIT'
-  s.add_dependency   'httparty', '~> 0.13'
+  s.add_dependency   'httmultiparty', '~> 0.3.16'
   s.add_dependency   'activesupport', '~> 4.2.1'
 end

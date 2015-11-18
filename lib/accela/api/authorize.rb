@@ -13,7 +13,7 @@ module Accela
         "scope" => scope
       })
 
-      response = HTTParty.post("https://apis.accela.com/oauth2/token",
+      response = HTTMultiParty.post("https://apis.accela.com/oauth2/token",
                                headers: headers,
                                body: complete_body)
       if response.code == 200

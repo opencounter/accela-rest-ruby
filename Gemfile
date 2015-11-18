@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'httparty'
+gem 'httmultiparty'
 gem 'activesupport'
 
 gem 'rake'
