@@ -6,7 +6,7 @@ module Accela
       :update_record_custom_tables, :create_partial_record, :update_record,
       :update_record_contact, :finalize_record, :create_record_addresses,
       :update_record_address, :get_record_custom_tables, :get_record,
-      :search_records, :get_records_of_type
+      :search_records, :get_records_of_type, :create_record_documents
 
     def create_record(input)
       raw = input.is_a?(Hash) ? input : input.raw
@@ -152,6 +152,21 @@ module Accela
 
     def search_records(params, payload)
       Accela::V4::SearchRecords.result(params, payload)
+    end
+
+    def create_record_documents(record_id:, file:, filename:, content_type:, description: "")
+      payload = {
+        uploadedFile: file,
+        fileInfo: [
+          {
+            "serviceProviderCode" => Configuration.agency,
+            "fileName" => "#{filename}.#{content_type.split('/').last}",
+            "type" => content_type,
+            "description" => description
+          }
+        ]
+      }
+      Accela::V4::CreateRecordDocuments.result(record_id, payload)
     end
   end
 end
