@@ -6,8 +6,8 @@ module Accela
       new
     end
 
-    def login(username, password, scope)
-      config.token = auth.login(username, password, scope)
+    def login(username, password, scope, additional = {})
+      config.token = auth.login(username, password, scope, additional)
     end
 
     def get(path, auth_type, query={}, headers={})

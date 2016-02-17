@@ -6,12 +6,12 @@ module Accela
       @config = config
     end
 
-    def login(username, password, scope)
+    def login(username, password, scope, additional = {})
       complete_body = body.merge({
         "username" => username,
         "password" => password,
         "scope" => scope
-      })
+      }.merge(additional))
 
       response = HTTMultiParty.post("https://apis.accela.com/oauth2/token",
                                headers: headers,
@@ -27,14 +27,14 @@ module Accela
     private
 
     def headers
-      headers = {
+      {
         "Content-Type" => "application/x-www-form-urlencoded",
         "x-accela-appid" => config.app_id
       }
     end
 
     def body
-      body =  {
+      {
         "grant_type" => "password",
         "agency_name" => config.agency,
         "environment" => config.environment,
