@@ -15,7 +15,8 @@ module Accela
 
       response = HTTMultiParty.post("https://apis.accela.com/oauth2/token",
                                headers: headers,
-                               body: complete_body)
+                               body: complete_body,
+                               logger: nil)
       if response.code == 200
         Token.new(response.parsed_response)
       else
