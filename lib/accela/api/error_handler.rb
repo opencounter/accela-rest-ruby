@@ -25,7 +25,7 @@ module Accela
       begin
         # handle the alternate error response format, e.g. when ASI field not found
         raise UnexpectedError, response['result'][0]['message']
-      rescue
+      rescue => e
         # handle third error response format. This should always succeed.
         raise UnexpectedError, response.inspect
       end
@@ -34,7 +34,7 @@ module Accela
     private
 
     def get(attribute)
-      response.parsed_response[attribute.to_s]
+      JSON.load(response.body)[attribute.to_s]
     end
 
     def message
@@ -44,7 +44,7 @@ module Accela
     def error
       error_mapping.select {|code, type, _|
         code == response.code &&
-          response.parsed_response.fetch("code").to_sym
+          JSON.load(response.body).fetch("code").to_sym
       }.first
     end
 

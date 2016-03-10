@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.files          = Dir.glob ['README.md', 'LICENSE', 'lib/**/*.{rb}', 'spec/**/*', '*.gemspec']
   s.has_rdoc       = false
 
-  s.add_runtime_dependency   'httmultiparty', '~> 0.3.16'
+  s.add_runtime_dependency   'faraday', '~> 0.9'
   s.add_runtime_dependency   'activesupport', '~> 4.2.1'
 
   s.add_development_dependency 'rake', "~> 10.3.2"

@@ -6,35 +6,42 @@ module Accela
       new
     end
 
+    def conn(auth_type, headers)
+      Faraday.new(url: config.base_uri) do |c|
+        c.headers = headers(auth_type).merge(headers)
+        c.adapter :net_http
+        c.response :set_encoding
+      end
+    end
+
     def login(username, password, scope, additional = {})
       config.token = auth.login(username, password, scope, additional)
     end
 
     def get(path, auth_type, query={}, headers={})
-      uri = config.base_uri + path
-      headers = headers(auth_type).merge(headers)
-      escaped_query = escape_query_values(query)
-      HTTMultiParty.get(uri, headers: headers , query: escaped_query, logger: nil)
+      conn(auth_type, headers).get(path) do |req|
+        req.params = escape_query_values(query)
+      end
     end
 
     def put(path, auth_type, query={}, body={}, headers={})
-      uri = config.base_uri + path
-      headers = headers(auth_type).merge(headers)
-      json_body = JSON.generate(body)
-      escaped_query = escape_query_values(query)
-      HTTMultiParty.put(uri, headers: headers, query: escaped_query, body: json_body, logger: nil)
+      conn(auth_type, headers).put(path) do |req|
+        req.params = escape_query_values(query)
+        req.body = JSON.generate(body)
+      end
     end
 
     def post(path, auth_type, query={}, body={}, headers={})
-      uri = config.base_uri + path
-      headers = headers(auth_type).merge(headers)
-      if body != {}
-        json_body = JSON.generate(body)
-      else
+      if body == {}
         json_body = ''
+      else
+        json_body = JSON.generate(body)
       end
-      escaped_query = escape_query_values(query)
-      HTTMultiParty.post(uri, headers: headers, query: escaped_query, body: json_body, logger: nil)
+
+      conn(auth_type, headers).post(path) do |req|
+        req.params = escape_query_values(query)
+        req.body = json_body
+      end
     end
 
     private
