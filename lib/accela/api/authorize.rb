@@ -12,16 +12,17 @@ module Accela
         "password" => password,
         "scope" => scope
       }.merge(additional))
+      connection = Faraday.new("https://apis.accela.com")
+      response = connection.post("/oauth2/token") do |req|
+        req.headers = headers
+        req.body = complete_body
+      end
 
-      response = HTTMultiParty.post("https://apis.accela.com/oauth2/token",
-                               headers: headers,
-                               body: complete_body,
-                               logger: nil)
-      if response.code == 200
-        Token.new(response.parsed_response)
+      if response.success?
+        Token.new JSON.load(response.body)
       else
         #binding.pry
-        raise AuthorizationError.new(response.parsed_response["error_description"])
+        raise AuthorizationError.new(JSON.load(response.body)["error_description"])
       end
     end
 

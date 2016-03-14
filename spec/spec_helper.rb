@@ -3,7 +3,6 @@ unless defined?(SPEC_HELPER_LOADED)
 
   require "rubygems"
   require "bundler/setup"
-  require "httparty"
   require "pry"
 
   require_relative "../lib/accela"

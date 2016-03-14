@@ -41,17 +41,18 @@ module Accela
       end
 
       def handle(response)
-        if is_success?(response)
-          response.parsed_response
-        else
+        if !is_success?(response)
           ErrorHandler.handle(response)
+        elsif response.headers["content-type"] =~ /json/
+          JSON.load response.body
+        else
+          response.body
         end
       end
 
       def is_success?(response)
-        response.code >= 200 && response.code < 300
+        response.success?
       end
-
     end
   end
 end

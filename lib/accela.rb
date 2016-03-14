@@ -1,6 +1,8 @@
 require "date"
 
-require "httmultiparty"
+require "json"
+require "faraday"
+require "faraday/set_encoding"
 require "active_support/core_ext/string/inflections"
 
 require "accela/inflector"
