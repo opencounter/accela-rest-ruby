@@ -6,7 +6,8 @@ module Accela
       :update_record_custom_tables, :create_partial_record, :update_record,
       :update_record_contact, :finalize_record, :create_record_addresses,
       :update_record_address, :get_record_custom_tables, :get_record,
-      :search_records, :get_records_of_type, :create_record_documents
+      :search_records, :get_records_of_type, :create_record_documents,
+      :update_record_contact_custom_forms, :update_record_contact_custom_tables
 
     def create_record(input)
       raw = input.is_a?(Hash) ? input : input.raw
@@ -109,6 +110,14 @@ module Accela
       raw = input.map { |contact| contact.is_a?(Hash) ? contact : contact.raw }
       payload = ContactTranslator.ruby_to_json(raw)
       Accela::V4::CreateRecordContacts.result(record_id, payload)
+    end
+
+    def update_record_contact_custom_forms(record_id, contact_id, forms)
+      Accela::V4::UpdateRecordContactCustomForms.result(record_id, contact_id, forms)
+    end
+
+    def update_record_contact_custom_tables(record_id, contact_id, tables)
+      Accela::V4::UpdateRecordContactCustomTables.result(record_id, contact_id, tables)
     end
 
     def update_record_contact(record_id, id, input)
