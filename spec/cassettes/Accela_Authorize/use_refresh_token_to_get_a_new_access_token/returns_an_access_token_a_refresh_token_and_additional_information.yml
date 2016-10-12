@@ -1,0 +1,105 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://apis.accela.com/oauth2/token
+    body:
+      encoding: UTF-8
+      string: agency_name=islandton&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&environment=TEST&grant_type=password&password=accela&scope=records+addresses&username=mdeveloper
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      X-Accela-Appid:
+      - '635395466279594650'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache, max-age=0
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '935'
+      Content-Type:
+      - application/json
+      Server:
+      - Microsoft-IIS/8.5
+      - Microsoft-IIS/8.5
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Accela-Traceid:
+      - 161012093543737-2b889b11
+      Set-Cookie:
+      - ASP.NET_SessionId=h3rhaijlcobubmjjrkgsgfb0; path=/; HttpOnly
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      - ASP.NET
+      Date:
+      - Wed, 12 Oct 2016 09:35:44 GMT
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"0J2r02Q6vBGGgJTOG8olotmPKthFqbnEOUjm-y3pYYjY0THrCa2c5q0RI6IQFhpqZ9dQJUvvOh7OxUHKf-So46ydUF9knE1p9OD2pWLPfbpPXj8Sy6WGTALOnhqO5r4s08QnvEY6WemZL_iawDZsB3PS5sysnIyWTDA7GYlu_VA5kS1pZcWQuVC54brhLRtsHtzE9pLtKifG1EQAJ3kQamVc6gAnfXbSNTtXTQQwBib9kb6PPeANRLp3KSlp1C4J6zISIDfYB52jU59_34c0hTzJez9l9FFwVF8t59ZE4TaMZ8jPe3Gvv32SSZJ4To4kAbrkYVlZu8O5SFBV4TuI-67ijB6XXBEGx_LHSHDMuwRoOOQzsoBzF16l51_n_Iz8wcOi121tbWgzd76Z2PRcJVAusnW4Wuu36aqxBEezzGqpnzYztLB4Gt9vUwtwdfDC0","token_type":"bearer","expires_in":86400,"refresh_token":"9YBf!IAAAAAZKwGhE3-rRBraZ4AzkvsZeq2X8nh4l391ymIqZFuhN4QAAAAEFh-F4Ol0p1sO1hk3wJuIJEjFBxQMl88lgr7tGNQ7G-AlP4JiG9HqycvTa_gaxqsveORLxzdgjJTKvA-0KF6JSqCbw-g6jotl2gVfP77_wuTeMEHaJZpMte30FY0LYOyuTDXSaxyLfvgM0bHn544pnA4EDHn7byeETJs5TvraP4wFsbxg7ch6HiPl0wYdR3qXwXxra1iY3wkj2wwYKF-UX4SC5DrlKz5iblB_nmJBhSRX6lZCiOVjyRjCa2g1zxJx8_ry5LTKv5gjwuTJv0184fDLwGjCu95jvB-8PGEXLBA","scope":"addresses
+        get_civicid_profile records"}'
+    http_version: 
+  recorded_at: Wed, 12 Oct 2016 09:35:44 GMT
+- request:
+    method: post
+    uri: https://apis.accela.com/oauth2/token
+    body:
+      encoding: UTF-8
+      string: client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&grant_type=refresh_token&refresh_token=9YBf%21IAAAAAZKwGhE3-rRBraZ4AzkvsZeq2X8nh4l391ymIqZFuhN4QAAAAEFh-F4Ol0p1sO1hk3wJuIJEjFBxQMl88lgr7tGNQ7G-AlP4JiG9HqycvTa_gaxqsveORLxzdgjJTKvA-0KF6JSqCbw-g6jotl2gVfP77_wuTeMEHaJZpMte30FY0LYOyuTDXSaxyLfvgM0bHn544pnA4EDHn7byeETJs5TvraP4wFsbxg7ch6HiPl0wYdR3qXwXxra1iY3wkj2wwYKF-UX4SC5DrlKz5iblB_nmJBhSRX6lZCiOVjyRjCa2g1zxJx8_ry5LTKv5gjwuTJv0184fDLwGjCu95jvB-8PGEXLBA
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache, max-age=0
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '935'
+      Content-Type:
+      - application/json
+      Server:
+      - Microsoft-IIS/8.5
+      - Microsoft-IIS/8.5
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Accela-Traceid:
+      - 161012093545009-b54cae4d
+      Set-Cookie:
+      - ASP.NET_SessionId=jhb1uh3lt0jg5n0xppq3mneh; path=/; HttpOnly
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      - ASP.NET
+      Date:
+      - Wed, 12 Oct 2016 09:35:44 GMT
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"0J2r02Q6vBGGgJTOG8oloq6s69rvzdDND6mMJ9wzK83qyc7YZnhnNRxOXqXGIoPTkQNHZLNITxsxN7B4MQ7k4Pv63L-RT2Gjy1WvfI7V-qktpe4NfdyrueUkUh7PbUDH0Q7vL1R8o3JcOXcCEHiZ3A9BjhqawFLZnIij-erWUsxXg-oIFTLJ3IQ5VZ11H0ArAJgIqsllVttxVCaaGRIi39PiDqjnpihFXuT40e2zJbxEMueBrCo5ZPTiySSoiR5Aog30MLLrtt4OLEW4mHxHbjJ-keTljPBRvbAEmYqdpVD1vRb0_2NElbIRLXDIfFvmVWPC36y3BTDjTi6nKJSfRQdTrUKjaaAqa2ZY5FQ1xblKDxyxVnvXBpCBIGmJ2y00Hg9HZH68d_KXI8Ci8ZVlDQj0YF-OUT_R3XSLvxtcvsCzWXpjT3Lux0QEv_-raBu_0","token_type":"bearer","expires_in":86400,"refresh_token":"9YBf!IAAAALcjbmImhYAumovfCI2pV8dGbkxWXyZ10KUb4pJuC5Dp4QAAAAHsQcA_hy5_3xKZku-dnv3Mh7ujc_Hp32Ti5x7Y8eweWBkoMfhLQ5jqmDHpNC84IoBwy_UpSDEmyNNKwxh8hukxD8PtOkp9MyjV1rI6IpLkVPWCzENMHEP061R_nNiE6r7XwcfYQEtbYKDq5znNkuIMLEEORxDHpjLw0mtrYiCJZ5fpe7OuaexVjYoSooreqjT2hCIAy1mpyWVsUjh8EQ-eMBgX_g3qOxHIscXqnCsPnB4SNNs7N75CzIEspsLz6JO2rmah2k-m7lyGepM_3_U1Pde8RiWk7Ukf3eKIBKIIlA","scope":"addresses
+        get_civicid_profile records"}'
+    http_version: 
+  recorded_at: Wed, 12 Oct 2016 09:35:45 GMT
+recorded_with: VCR 2.9.3

@@ -18,6 +18,10 @@ module Accela
       config.token = auth.login(username, password, scope, additional)
     end
 
+    def refresh(refresh_token)
+      config.token = auth.refresh(refresh_token)
+    end
+
     def get(path, auth_type, query={}, headers={})
       conn(auth_type, headers).get(path) do |req|
         req.params = escape_query_values(query)

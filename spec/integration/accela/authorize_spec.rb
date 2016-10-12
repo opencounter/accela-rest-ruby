@@ -37,4 +37,18 @@ describe Accela::Authorize, :vcr do
       expect {token}.to raise_error Accela::AuthorizationError
     end
   end
+
+  describe "use refresh token to get a new access token" do
+    let(:new_token) { auth.refresh(token.refresh_token) }
+
+    it "returns an access token, a refresh token and additional information" do
+      expect(new_token.access_token).to_not eq(token.access_token)
+
+      expect(new_token.access_token).to be_truthy
+      expect(new_token.token_type).to be_truthy
+      expect(new_token.expires_in).to be_truthy
+      expect(new_token.refresh_token).to be_truthy
+      expect(new_token.scope).to be_truthy
+    end
+  end
 end

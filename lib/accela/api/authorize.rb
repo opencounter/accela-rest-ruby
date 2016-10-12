@@ -21,6 +21,25 @@ module Accela
       if response.success?
         Token.new JSON.load(response.body)
       else
+        raise AuthorizationError.new(JSON.load(response.body)["error_description"])
+      end
+    end
+
+    def refresh(refresh_token)
+      body = {
+        "client_id" => config.app_id,
+        "client_secret" => config.app_secret,
+        "grant_type" => "refresh_token",
+        "refresh_token" => refresh_token
+      }
+      response = Faraday.new("https://apis.accela.com").post("/oauth2/token") do |req|
+        req.headers = { "Content-Type" => "application/x-www-form-urlencoded" }
+        req.body = body
+      end
+
+      if response.success?
+        Token.new JSON.load(response.body)
+      else
         #binding.pry
         raise AuthorizationError.new(JSON.load(response.body)["error_description"])
       end
