@@ -1,0 +1,169 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://apis.accela.com/oauth2/token
+    body:
+      encoding: UTF-8
+      string: agency_name=islandton&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&environment=TEST&grant_type=password&password=accela&scope=records&username=mdeveloper
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      X-Accela-Appid:
+      - '635395466279594650'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache, max-age=0
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '882'
+      Content-Type:
+      - application/json
+      Server:
+      - Microsoft-IIS/8.5
+      - Microsoft-IIS/8.5
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Accela-Traceid:
+      - 161013122822192-e975fbfb
+      Set-Cookie:
+      - ASP.NET_SessionId=rhogbq1zuplavwburu2fepek; path=/; HttpOnly
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      - ASP.NET
+      Date:
+      - Thu, 13 Oct 2016 12:28:22 GMT
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"8BrMnrRz5O6oMG79Mu1zmHRWKxBRZfCADJtU0LaayHQdOXJ-z70sTOy3lz523X4MjXt1ipMrSB1qXPAnS1oX0P2wNlfHX3CJvonnFkLGhBJKn_DCciBD6hvwZ-w0FwFbJxgQcY1R9qxm4PHz0LjjYeCeiZWi06q-bVITVtEujZLf8vvLQLLQjPUvEZI_sQWTpB3_nlRaFiJDWI9XPUQrR9g8y97JwLhf1oWOR7EAWUhz85bcjbkX7iCCaXq9cJXH4h1OukUi7yKdSdXDcluMLakJ-Ot--JGxXVzwU15GEZNa_SLNAV68eQpI92EHXs-9t_zrHLicj9Qg4iBNFetCK2XeM9YI3qd5VcjByteF8vpZHmYiF9Huf-LDHmxiwvaOPwahS3eMqROUUPKE87ZyvKCaQnE88qQW501MDQsQA8g1","token_type":"bearer","expires_in":86400,"refresh_token":"9YBf!IAAAAIc_oW6A3hCh_LhVYWQj8dipaNtKB7mHbbDQ7Ft8ysRo0QAAAAFVS4xlMLJl2J1PadGg5Mu9WYFRjAI0yHWB5VdSX43HZTkGxHX7lA78J3vTV8Z0qaRzeijPwAwddc-eUWrMRrS87COa5FQjh5St-WoaB79xxZPwUd2ygYzOwkZz-ib-70POrztB764IAZc5xNsxV4kH_MwszuiIjPJ7ciQtduwOqb38Xgt8S6l2kE2AOxJBWFNoaTda-I7wa_WAZb0qPFZhixZ7RdOdGuUq9OIkhd67GybEsGo3EYA8DIHy09WDcsWlBnjb3KhWBez4R7VQVo8A","scope":"get_civicid_profile
+        records"}'
+    http_version: 
+  recorded_at: Thu, 13 Oct 2016 12:28:22 GMT
+- request:
+    method: post
+    uri: https://apis.accela.com/v4/records
+    body:
+      encoding: UTF-8
+      string: '{"addresses":[],"parcels":[],"owners":[],"contacts":[{"type":{"text":"Applicant","value":"Applicant"}}],"type":{"id":"Building-Commercial-Addition-NA"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Accela-Appid:
+      - '635395466279594650'
+      Authorization:
+      - 8BrMnrRz5O6oMG79Mu1zmHRWKxBRZfCADJtU0LaayHQdOXJ-z70sTOy3lz523X4MjXt1ipMrSB1qXPAnS1oX0P2wNlfHX3CJvonnFkLGhBJKn_DCciBD6hvwZ-w0FwFbJxgQcY1R9qxm4PHz0LjjYeCeiZWi06q-bVITVtEujZLf8vvLQLLQjPUvEZI_sQWTpB3_nlRaFiJDWI9XPUQrR9g8y97JwLhf1oWOR7EAWUhz85bcjbkX7iCCaXq9cJXH4h1OukUi7yKdSdXDcluMLakJ-Ot--JGxXVzwU15GEZNa_SLNAV68eQpI92EHXs-9t_zrHLicj9Qg4iBNFetCK2XeM9YI3qd5VcjByteF8vpZHmYiF9Huf-LDHmxiwvaOPwahS3eMqROUUPKE87ZyvKCaQnE88qQW501MDQsQA8g1
+      X-Accela-Agency:
+      - islandton
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '734'
+      Content-Type:
+      - application/json
+      Expires:
+      - "-1"
+      Server:
+      - Apache-Coyote/1.1
+      - Microsoft-IIS/7.5
+      - Microsoft-IIS/8.5
+      X-Accela-Resp-Gateway-Version:
+      - 3.2.1
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      - ASP.NET
+      X-Accela-Traceid:
+      - 161013122825632-f0962357
+      Date:
+      - Thu, 13 Oct 2016 12:28:27 GMT
+    body:
+      encoding: UTF-8
+      string: '{"result":{"initiatedProduct":"AV360","id":"ISLANDTON-16CAP-00000-001SF","type":{"module":"Building","value":"Building/Commercial/Addition/NA","type":"Commercial","text":"Commercial
+        Addition","group":"Building","category":"NA","alias":"Commercial Addition","subType":"Addition","id":"Building-Commercial-Addition-NA"},"module":"Building","serviceProviderCode":"ISLANDTON","recordClass":"COMPLETE","createdBy":"MDEVELOPER","customId":"BLD16-00207","trackingId":288810146,"jobValue":0.0,"statusDate":"2016-10-13
+        05:28:26","value":"16CAP-00000-001SF","totalFee":0.0,"totalPay":0.0,"balance":20.0,"booking":false,"infraction":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"publicOwned":false},"status":200}'
+    http_version: 
+  recorded_at: Thu, 13 Oct 2016 12:28:27 GMT
+- request:
+    method: get
+    uri: https://apis.accela.com/v4/records/ISLANDTON-16CAP-00000-001SF/contacts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Accela-Appid:
+      - '635395466279594650'
+      Authorization:
+      - 8BrMnrRz5O6oMG79Mu1zmHRWKxBRZfCADJtU0LaayHQdOXJ-z70sTOy3lz523X4MjXt1ipMrSB1qXPAnS1oX0P2wNlfHX3CJvonnFkLGhBJKn_DCciBD6hvwZ-w0FwFbJxgQcY1R9qxm4PHz0LjjYeCeiZWi06q-bVITVtEujZLf8vvLQLLQjPUvEZI_sQWTpB3_nlRaFiJDWI9XPUQrR9g8y97JwLhf1oWOR7EAWUhz85bcjbkX7iCCaXq9cJXH4h1OukUi7yKdSdXDcluMLakJ-Ot--JGxXVzwU15GEZNa_SLNAV68eQpI92EHXs-9t_zrHLicj9Qg4iBNFetCK2XeM9YI3qd5VcjByteF8vpZHmYiF9Huf-LDHmxiwvaOPwahS3eMqROUUPKE87ZyvKCaQnE88qQW501MDQsQA8g1
+      X-Accela-Agency:
+      - islandton
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '318'
+      Content-Type:
+      - application/json
+      Expires:
+      - "-1"
+      Server:
+      - Apache-Coyote/1.1
+      - Microsoft-IIS/7.5
+      - Microsoft-IIS/8.5
+      X-Accela-Resp-Gateway-Version:
+      - 3.2.1
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      - ASP.NET
+      X-Accela-Traceid:
+      - 161013122828030-c716dfad
+      Date:
+      - Thu, 13 Oct 2016 12:28:28 GMT
+    body:
+      encoding: UTF-8
+      string: '{"result":[{"startDate":"2016-10-13 05:28:26","id":"64333658","isPrimary":"Y","recordId":{"id":"ISLANDTON-16CAP-00000-001SF","serviceProviderCode":"ISLANDTON","trackingId":0,"value":"16CAP-00000-001SF"},"status":{"value":"A","text":"Active"},"type":{"value":"Applicant","text":"Applicant"},"address":{}}],"status":200}'
+    http_version: 
+  recorded_at: Thu, 13 Oct 2016 12:28:28 GMT
+recorded_with: VCR 2.9.3

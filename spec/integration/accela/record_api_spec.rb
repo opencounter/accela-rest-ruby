@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + "/../spec_helper")
 
-describe Accela::RecordAPI, :vcr do
+describe Accela::RecordAPI, vcr: { record: :new_episodes } do
 
   before(:each) do
     api = Accela::API.connection
@@ -45,6 +45,7 @@ describe Accela::RecordAPI, :vcr do
       record = Accela::RecordAPI.create_record(input_record)
       expect(record.id).not_to eq nil
     end
+
   end
 
   describe "#get_all_addresses_for_record" do
@@ -76,6 +77,32 @@ describe Accela::RecordAPI, :vcr do
       record = Accela::RecordAPI.get_records("ISLANDTON-14CAP-00000-000CR").first
       owner = Accela::RecordAPI.new(record).get_all_owners_for_record.first
       expect(owner.full_name).to eq "UTROSKE ROBERT EARL & DIANA LEE"
+    end
+  end
+end
+
+describe Accela::RecordAPI, vcr: { record: :new_episodes } do
+  describe "passing in configuration as an object" do
+    let(:config) do
+      Accela::Configuration.new(app_id: "635395466279594650",
+                                app_secret: "3b1e4026d95e4478a0f8dd1f7a1b7028",
+                                agency: "islandton",
+                                environment: "TEST").tap do |c|
+                                  c.token = Accela::Authorize.new(c).login("mdeveloper", "accela", "records")
+                                end
+    end
+
+    it "works with requests that don't require passing a model" do
+      input_record = Accela::Record.new type: {id: "Building-Commercial-Addition-NA" }
+      record = Accela::RecordAPI.new(config).create_record(input_record)
+      expect(record.id).not_to eq nil
+    end
+
+    it "works with requests that require a model object" do
+      input_record = Accela::Record.new type: {id: "Building-Commercial-Addition-NA" }, contacts: [{ type: { text: "Applicant", value: "Applicant" } }]
+      record = Accela::RecordAPI.new(config).create_record(input_record)
+      contacts = Accela::RecordAPI.new(record, config).get_all_contacts_for_record
+      expect(contacts.first.id).to_not eq nil
     end
   end
 end

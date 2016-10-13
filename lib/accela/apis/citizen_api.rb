@@ -3,11 +3,11 @@ module Accela
     as_class_method :register, :get_profile
 
     def register(payload)
-      Accela::V4::RegisterCitizen.result(payload)
+      Accela::V4::RegisterCitizen.new(config).result(payload)
     end
 
     def get_profile
-      Accela::V4::GetCitizenAccessUserProfile.result
+      Accela::V4::GetCitizenAccessUserProfile.new(config).result
     end
   end
 end

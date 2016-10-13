@@ -1,25 +1,32 @@
 module Accela
   module V4
     class Base
-
       def self.result(*args)
+        new(Configuration).result(*args)
+      end
+
+      def self.call(*args)
+        new(Configuration).call(*args)
+      end
+
+      def initialize(config)
+        @config = config
+      end
+
+      def result(*args)
         payload = call(*args)
         payload["result"]
       end
 
-      def self.call(*args)
-        new.call(*args)
-      end
-
       def get(uri, auth_type, query={}, headers={})
-        handle(API.connection.get(expand_uri(uri),
+        handle(API.new(config).get(expand_uri(uri),
                                   auth_type,
                                   query,
                                   headers))
       end
 
       def post(uri, auth_type, query={}, payload={}, headers={})
-        handle(API.connection.post(expand_uri(uri),
+        handle(API.new(config).post(expand_uri(uri),
                                    auth_type,
                                    query,
                                    payload,
@@ -27,7 +34,7 @@ module Accela
       end
 
       def put(uri, auth_type, query={}, payload={}, headers={})
-        handle(API.connection.put(expand_uri(uri),
+        handle(API.new(config).put(expand_uri(uri),
                                   auth_type,
                                   query,
                                   payload,
@@ -35,6 +42,8 @@ module Accela
       end
 
       private
+
+      attr_reader :config
 
       def expand_uri(uri)
         "/v4/#{uri}"
