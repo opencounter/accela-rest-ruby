@@ -22,14 +22,9 @@ module Accela
 
     attr_reader_safe :app_id, :app_secret, :agency, :environment
 
-    TokenFromEnv = Struct.new(:access_token)
     def self.token
-      if access_token = ENV['ACCELA_ACCESS_TOKEN']
-        TokenFromEnv.new(access_token)
-      else
-        raise InvalidTokenError.new("You do not have a token.") unless @token
-        @token
-      end
+      raise InvalidTokenError.new("You do not have a token.") unless @token
+      @token
     end
 
     def self.base_uri
