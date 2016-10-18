@@ -12,7 +12,7 @@ module Accela
     def create_record(input)
       raw = input.is_a?(Hash) ? input : input.raw
       payload = RecordTranslator.ruby_to_json([raw])
-      record_hash  = Accela::V4::CreateRecord.result(payload.first)
+      record_hash  = Accela::V4::CreateRecord.new(config).result(payload.first)
       input_hash = RecordTranslator.json_to_ruby([record_hash]).first
       Record.create(input_hash)
     end
@@ -20,7 +20,7 @@ module Accela
     def create_partial_record(input)
       raw = input.is_a?(Hash) ? input : input.raw
       payload = RecordTranslator.ruby_to_json([raw])
-      record_hash  = Accela::V4::CreatePartialRecord.result(payload.first)
+      record_hash  = Accela::V4::CreatePartialRecord.new(config).result(payload.first)
       input_hash = RecordTranslator.json_to_ruby([record_hash]).first
       Record.create(input_hash)
     end
@@ -28,13 +28,13 @@ module Accela
     def update_record(id, input)
       raw = input.is_a?(Hash) ? input : input.raw
       payload = RecordTranslator.ruby_to_json([raw])
-      record_hash  = Accela::V4::UpdateRecord.result(id, payload.first)
+      record_hash  = Accela::V4::UpdateRecord.new(config).result(id, payload.first)
       input_hash = RecordTranslator.json_to_ruby([record_hash]).first
       Record.create(input_hash)
     end
 
     def finalize_record(record_id)
-      record_hash  = Accela::V4::FinalizeRecord.result(record_id)
+      record_hash  = Accela::V4::FinalizeRecord.new(config).result(record_id)
       input_hash = RecordTranslator.json_to_ruby([record_hash]).first
       Record.create(input_hash)      
     end
@@ -93,53 +93,53 @@ module Accela
     def create_record_fees(record_id, input)
       raw = input.is_a?(Hash) ? input : input.raw
       payload = FeeTranslator.ruby_to_json([raw])
-      fee_hash  = Accela::V4::CreateRecordFees.result(record_id, payload.first)
+      fee_hash  = Accela::V4::CreateRecordFees.new(config).result(record_id, payload.first)
       input_hash = FeeTranslator.json_to_ruby([fee_hash]).first
       Fee.create(input_hash)
     end
 
     def update_record_custom_forms(id, input)
-      Accela::V4::UpdateRecordCustomForms.result(id, input)
+      Accela::V4::UpdateRecordCustomForms.new(config).result(id, input)
     end
 
     def update_record_custom_tables(id, input)
-      Accela::V4::UpdateRecordCustomTables.result(id, input)
+      Accela::V4::UpdateRecordCustomTables.new(config).result(id, input)
     end
 
     def create_record_contacts(record_id, input)
       raw = input.map { |contact| contact.is_a?(Hash) ? contact : contact.raw }
       payload = ContactTranslator.ruby_to_json(raw)
-      Accela::V4::CreateRecordContacts.result(record_id, payload)
+      Accela::V4::CreateRecordContacts.new(config).result(record_id, payload)
     end
 
     def update_record_contact_custom_forms(record_id, contact_id, forms)
-      Accela::V4::UpdateRecordContactCustomForms.result(record_id, contact_id, forms)
+      Accela::V4::UpdateRecordContactCustomForms.new(config).result(record_id, contact_id, forms)
     end
 
     def update_record_contact_custom_tables(record_id, contact_id, tables)
-      Accela::V4::UpdateRecordContactCustomTables.result(record_id, contact_id, tables)
+      Accela::V4::UpdateRecordContactCustomTables.new(config).result(record_id, contact_id, tables)
     end
 
     def update_record_contact(record_id, id, input)
       raw = input.is_a?(Hash) ? input : input.raw
       payload = ContactTranslator.ruby_to_json([raw])
-      Accela::V4::UpdateRecordContact.result(record_id, id, payload.first)
+      Accela::V4::UpdateRecordContact.new(config).result(record_id, id, payload.first)
     end
 
     def create_record_addresses(record_id, input)
       raw = input.map { |address| address.is_a?(Hash) ? address : address.raw }
       payload = AddressTranslator.ruby_to_json(raw)
-      Accela::V4::CreateRecordAddresses.result(record_id, payload)
+      Accela::V4::CreateRecordAddresses.new(config).result(record_id, payload)
     end
 
     def update_record_address(record_id, id, input)
       raw = input.is_a?(Hash) ? input : input.raw
       payload = AddressTranslator.ruby_to_json([raw])
-      Accela::V4::UpdateRecordAddress.result(record_id, id, payload.first)
+      Accela::V4::UpdateRecordAddress.new(config).result(record_id, id, payload.first)
     end
 
     def get_record_custom_tables(id)
-      Accela::V4::GetRecordCustomTables.result(id)
+      Accela::V4::GetRecordCustomTables.new(config).result(id)
     end
 
     def get_record(id)
@@ -160,7 +160,7 @@ module Accela
     end
 
     def search_records(params, payload)
-      Accela::V4::SearchRecords.result(params, payload)
+      Accela::V4::SearchRecords.new(config).result(params, payload)
     end
 
     def create_record_documents(record_id:, file:, filename:, content_type:, description: "")
@@ -175,7 +175,7 @@ module Accela
           }
         ]
       }
-      Accela::V4::CreateRecordDocuments.result(record_id, payload)
+      Accela::V4::CreateRecordDocuments.new(config).result(record_id, payload)
     end
   end
 end

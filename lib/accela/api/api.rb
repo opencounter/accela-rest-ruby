@@ -3,7 +3,11 @@ module Accela
     include Escaper
 
     def self.connection
-      new
+      new(Configuration)
+    end
+
+    def initialize(config)
+      @config = config
     end
 
     def conn(auth_type, headers)
@@ -50,6 +54,8 @@ module Accela
 
     private
 
+    attr_reader :config
+
     def escape_query_values(q)
       q.inject({}) {|r, (key, val)|
         r[key] = escape(val)
@@ -89,10 +95,5 @@ module Accela
     def auth
       Authorize.new(config)
     end
-
-    def config
-      Configuration
-    end
-
   end
 end

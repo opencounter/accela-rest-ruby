@@ -7,7 +7,7 @@ module Accela
       attr_writer :app_id, :app_secret, :agency, :environment, :token
     end
 
-    attr_reader :app_id, :app_secret, :agency, :environment, :token
+    attr_accessor :app_id, :app_secret, :agency, :environment, :token
 
     def self.attr_reader_safe(*attrs)
       eclass = (class << self; self; end)
@@ -22,22 +22,21 @@ module Accela
 
     attr_reader_safe :app_id, :app_secret, :agency, :environment
 
-    TokenFromEnv = Struct.new(:access_token)
     def self.token
-      if access_token = ENV['ACCELA_ACCESS_TOKEN']
-        TokenFromEnv.new(access_token)
-      else
-        raise InvalidTokenError.new("You do not have a token.") unless @token
-        @token
-      end
+      raise InvalidTokenError.new("You do not have a token.") unless @token
+      @token
     end
 
     def self.base_uri
       BASE_URI
     end
 
+    def base_uri
+      BASE_URI
+    end
+
     def initialize(conf={})
-      %i[app_id app_secret agency environment].each do |attr|
+      %i[app_id app_secret agency environment token].each do |attr|
         instance_variable_set :"@#{attr}", conf[attr]
       end
     end

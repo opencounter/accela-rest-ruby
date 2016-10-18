@@ -8,7 +8,7 @@ module Accela
       end
       query = { module: module_name}
       payload = { parameters: fields }
-      Accela::V4::CreateReport.call(id, query, payload)
+      Accela::V4::CreateReport.new(config).call(id, query, payload)
     end
   end
 end

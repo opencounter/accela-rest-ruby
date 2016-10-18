@@ -5,14 +5,14 @@ module Accela
     def create_payment(input)
       raw = input.is_a?(Hash) ? input : input.raw
       payload = PaymentTranslator.ruby_to_json([raw])
-      payment_response_hash  = Accela::V4::CreatePayment.result(payload.first)
+      payment_response_hash  = Accela::V4::CreatePayment.new(config).result(payload.first)
       #input_hash = PaymentTranslator.json_to_ruby([payment_hash]).first
       #Payment.create(input_hash)      
     end
 
     # https://developer.accela.com/docs/api_reference/V4.post.payments.initialize.html
     def initialize_payment(record_id, merchant_account_id)
-      Accela::V4::InitializePayment.call(
+      Accela::V4::InitializePayment.new(config).call(
         "entityIds" => [record_id],
         "entityType" => "Record",
         "paymentMethod" => "Credit Card",
