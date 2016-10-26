@@ -5,6 +5,8 @@ module Accela
     def self.handle(response)
       begin
         new(response).handle
+      rescue AccelaError
+        raise
       rescue
         new(response).handle_unexpected_error
       end
@@ -15,7 +17,7 @@ module Accela
     end
 
     def handle
-      if response.code >= 400
+      if response.status >= 400
         exception = error ? error.last : UnexpectedError
         raise exception, message
       end
@@ -25,7 +27,7 @@ module Accela
       begin
         # handle the alternate error response format, e.g. when ASI field not found
         raise UnexpectedError, response['result'][0]['message']
-      rescue => e
+      rescue
         # handle third error response format. This should always succeed.
         raise UnexpectedError, response.inspect
       end
@@ -43,7 +45,7 @@ module Accela
 
     def error
       error_mapping.select {|code, type, _|
-        code == response.code &&
+        code == response.status &&
           JSON.load(response.body).fetch("code").to_sym
       }.first
     end
