@@ -3,6 +3,7 @@ require "date"
 require "json"
 require "faraday"
 require "faraday/set_encoding"
+require "faraday/detailed_logger"
 require "active_support/core_ext/string/inflections"
 
 require "accela/inflector"

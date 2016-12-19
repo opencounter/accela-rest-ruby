@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.has_rdoc       = false
 
   s.add_runtime_dependency   'faraday', '~> 0.9'
+  s.add_runtime_dependency   'faraday-detailed_logger', '>= 1.0.0'
   s.add_runtime_dependency   'activesupport', '~> 4.2.1'
 
   s.add_development_dependency 'rake', "~> 10.3.2"

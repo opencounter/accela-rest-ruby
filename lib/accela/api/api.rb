@@ -2,6 +2,8 @@ module Accela
   class API
     include Escaper
 
+    LOGGER = Logger.new(STDOUT).tap { |logger| logger.level = Logger::INFO }
+
     def self.connection
       new(Configuration)
     end
@@ -13,8 +15,9 @@ module Accela
     def conn(auth_type, headers)
       Faraday.new(url: config.base_uri) do |c|
         c.headers = headers(auth_type).merge(headers)
-        c.adapter :net_http
+        c.response :detailed_logger, LOGGER
         c.response :set_encoding
+        c.adapter :net_http
       end
     end
 
