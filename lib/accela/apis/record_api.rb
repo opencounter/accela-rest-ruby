@@ -165,6 +165,7 @@ module Accela
 
     def create_record_documents(record_id:, file:, filename:, content_type:, description: "")
       filename = "#{filename}.#{content_type.split('/').last}"
+      agency = config.agency == "CHARLOTTE_EC" ? "CHARLOTTE" : config.agency
       payload = {
         uploadedFile: Faraday::UploadIO.new(file, content_type, filename),
         fileInfo: <<-JSON.strip_heredoc
