@@ -2,6 +2,8 @@ module Accela
   class API
     include Escaper
 
+    LOGGER = Logger.new(STDOUT).tap { |logger| logger.level = Logger::INFO }
+
     def self.connection
       new(Configuration)
     end
@@ -10,11 +12,14 @@ module Accela
       @config = config
     end
 
-    def conn(auth_type, headers)
+    def conn(auth_type, headers, request_params_encoding = :json)
       Faraday.new(url: config.base_uri) do |c|
+        c.request :multipart
+        c.request request_params_encoding
         c.headers = headers(auth_type).merge(headers)
-        c.adapter :net_http
+        c.response :detailed_logger, LOGGER
         c.response :set_encoding
+        c.adapter :net_http
       end
     end
 
@@ -40,13 +45,16 @@ module Accela
     end
 
     def post(path, auth_type, query={}, body={}, headers={})
-      if body == {}
+      if headers['Content-Type'] == 'multipart/form-data'
+        json_body = body
+      elsif body == {}
         json_body = ''
       else
         json_body = JSON.generate(body)
       end
 
-      conn(auth_type, headers).post(path) do |req|
+      encoding = headers['Content-Type'] == 'multipart/form-data' ? :url_encoded : :json
+      conn(auth_type, headers, encoding).post(path) do |req|
         req.params = escape_query_values(query)
         req.body = json_body
       end
