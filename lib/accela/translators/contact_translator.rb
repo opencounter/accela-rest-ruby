@@ -11,7 +11,7 @@ module Accela
         [:business_name, :businessName, :string],
         [:comment, :comment, :string],
         [:deceased_date, :deceasedDate, :dateTime],
-        [:driver_license_state, :driverLicenseNumber, :string],
+        [:driver_license_number, :driverLicenseNumber, :string],
         [:driver_license_state, :driverLicenseState, :DriverLicenseState],
         [:email, :email, :string],
         [:end_date, :endDate, :dateTime],
