@@ -7,15 +7,21 @@ module Accela
     end
 
     def login(username, password, scope, additional = {})
-      complete_body = body.merge({
+      headers = { "x-accela-appid" => config.app_id }
+      body = {
+        "grant_type" => "password",
+        "agency_name" => config.agency,
+        "environment" => config.environment,
+        "client_id" => config.app_id,
+        "client_secret" => config.app_secret,
         "username" => username,
         "password" => password,
         "scope" => scope
-      }.merge(additional))
-      connection = Faraday.new("https://apis.accela.com")
-      response = connection.post("/oauth2/token") do |req|
+      }.merge(additional)
+
+      response = conn.post("/oauth2/token") do |req|
         req.headers = headers
-        req.body = complete_body
+        req.body = body
       end
 
       if response.success?
@@ -33,8 +39,7 @@ module Accela
         "grant_type" => "refresh_token",
         "refresh_token" => refresh_token
       }
-      response = Faraday.new("https://apis.accela.com").post("/oauth2/token") do |req|
-        req.headers = { "Content-Type" => "application/x-www-form-urlencoded" }
+      response = conn.post("/oauth2/token") do |req|
         req.body = body
       end
 
@@ -48,22 +53,15 @@ module Accela
 
     private
 
-    def headers
-      {
-        "Content-Type" => "application/x-www-form-urlencoded",
-        "x-accela-appid" => config.app_id
-      }
-    end
-
     def body
-      {
-        "grant_type" => "password",
-        "agency_name" => config.agency,
-        "environment" => config.environment,
-        "client_id" => config.app_id,
-        "client_secret" => config.app_secret
-      }
     end
 
+    def conn
+      Faraday.new("https://apis.accela.com") do |c|
+        c.request :url_encoded
+        c.response :detailed_logger, Accela::API::LOGGER
+        c.adapter :net_http
+      end
+    end
   end
 end

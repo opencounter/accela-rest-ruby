@@ -12,4 +12,5 @@ unless defined?(SPEC_HELPER_LOADED)
   Accela::Configuration.agency = "islandton"
   Accela::Configuration.environment = "TEST"
 
+  Accela::API::LOGGER.level = Logger::FATAL
 end
