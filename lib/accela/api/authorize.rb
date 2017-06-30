@@ -29,6 +29,7 @@ module Accela
       body = {
         "client_id" => config.app_id,
         "client_secret" => config.app_secret,
+        "environment" => config.environment,
         "grant_type" => "refresh_token",
         "refresh_token" => refresh_token
       }
