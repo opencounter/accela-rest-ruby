@@ -51,10 +51,29 @@ module Accela
       end
     end
 
-    private
+    def exchange_accela_code_for_token(code, redirect_uri)
+      headers = { "x-accela-appid" => config.app_id }
+      body = {
+        "grant_type" => "authorization_code",
+        "client_id" => config.app_id,
+        "client_secret" => config.app_secret,
+        "redirect_uri" => redirect_uri,
+        "code" => code,
+      }
 
-    def body
+      response = conn.post("/oauth2/token") do |req|
+        req.headers = headers
+        req.body = body
+      end
+
+      if response.success?
+        Token.new JSON.load(response.body)
+      else
+        raise AuthorizationError.new(JSON.load(response.body)["error_description"])
+      end
     end
+
+    private
 
     def conn
       Faraday.new("https://apis.accela.com") do |c|
