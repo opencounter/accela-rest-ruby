@@ -73,6 +73,19 @@ module Accela
       end
     end
 
+    def validate(token)
+      headers = { "Authorization" => token }
+      response = conn.get("/oauth2/tokeninfo") do |req|
+        req.headers = headers
+      end
+
+      if response.success?
+        JSON.load(response.body)
+      else
+        raise AuthorizationError.new(JSON.load(response.body)["error_description"])
+      end
+    end
+
     private
 
     def conn
