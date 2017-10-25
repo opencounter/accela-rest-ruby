@@ -49,6 +49,8 @@ module Accela
         json_body = body
       elsif body == {}
         json_body = ''
+      elsif body == :empty_object
+        json_body = '{}'
       else
         json_body = JSON.generate(body)
       end

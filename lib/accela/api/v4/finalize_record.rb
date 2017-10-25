@@ -3,7 +3,7 @@ module Accela
     class FinalizeRecord < Base
 
       def call(record_id)
-        post("records/#{record_id}/finalize", :access_token, {} )
+        post("records/#{record_id}/finalize", :access_token, {}, :empty_object)
       end
 
     end

@@ -1,0 +1,220 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://apis.accela.com/oauth2/token
+    body:
+      encoding: UTF-8
+      string: agency_name=ISLANDTON&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&environment=SUPP&grant_type=password&password=accela&scope=records+settings&username=mdeveloper
+    headers:
+      X-Accela-Appid:
+      - '635395466279594650'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache, max-age=0
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '912'
+      Content-Type:
+      - application/json
+      Server:
+      - Microsoft-IIS/10.0
+      - Microsoft-IIS/10.0
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Accela-Traceid:
+      - 171025180821620-ade1af66
+      Arr-Disable-Session-Affinity:
+      - 'true'
+      - 'true'
+      Set-Cookie:
+      - ASP.NET_SessionId=w3y4flxpvexk3gimrzzthohj; path=/; HttpOnly
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      - ASP.NET
+      Date:
+      - Wed, 25 Oct 2017 18:08:21 GMT
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"oNfheN33k9gArZpAZdwR2_0_CUYwbjNbkXFed2lCDAJJzaIF47IMM7wSyxa11Hg3QTdOU5yghuljICFCY4z38Pc7C8WyL8QSTUyvoN1jipTzSJQpFdFlHPi4YlhfRjDun347flsfOZsL_GsQFfrrR4tmgi5LMQasX2IwOLz0s_hu-OhFRGDV5agTY9_Zg_uLlCZcdmmP-NBHB5-Nes5uURpkxje92IvSHgYfQL7M5li81LQyKj3Pbhcfg10meFxxh0V498usmKfOx8WmFMGvLlA5TiuvI1tEuzENnb9siWyiaoejHMsA6NZ-Y5vPe6tLYgLSv3qje-LDmHvsDYZHcXjhEnRNrNrKZI2wDsStOGBw5AOEt2FWJWiIF2VNIwkk3tkBvchLk2BkRL73v1jrWKMccXiPmyPepiEQwAK4Yhjpl6vTXaY9j2zQXNeKP2qe0","token_type":"bearer","expires_in":86400,"refresh_token":"0SCJ!IAAAAG8HxrLGiXyh7oifcTB06VGVitCXOaB6g2yzPQBSxzEB0QAAAAFSJduprM4EuyAzzvWr8QqtT8ezf97rhdfKSCOQm4_EgPimMPyZNaI6SKIkagyhxzHFWN9JZ9byWQKkl8PJa8EjHhOtx_sd50JAFaFaInV_zGbl0tTjlXASei-nCS-kEbLUtGuCozdtr9pCu1i8i9W44TLXNsIkcj0IrXwfurS9TZJkZGuMNqccOcB97QMvusxeouiFxZAfBlh52udooRpxeFp3iu_tUMZYXjwrvsPgMFjL9JrKt1FZp7hcPGcHfMPANvHnqkRxXFhLkMer6rsC","scope":"get_civicid_profile
+        records settings"}'
+    http_version: 
+  recorded_at: Wed, 25 Oct 2017 18:08:21 GMT
+- request:
+    method: post
+    uri: https://apis.accela.com/v4/records/initialize
+    body:
+      encoding: UTF-8
+      string: '{"actualProductionUnit":123.43,"type":{"id":"Building-Commercial-Addition-NA"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Accela-Appid:
+      - '635395466279594650'
+      Authorization:
+      - oNfheN33k9gArZpAZdwR2_0_CUYwbjNbkXFed2lCDAJJzaIF47IMM7wSyxa11Hg3QTdOU5yghuljICFCY4z38Pc7C8WyL8QSTUyvoN1jipTzSJQpFdFlHPi4YlhfRjDun347flsfOZsL_GsQFfrrR4tmgi5LMQasX2IwOLz0s_hu-OhFRGDV5agTY9_Zg_uLlCZcdmmP-NBHB5-Nes5uURpkxje92IvSHgYfQL7M5li81LQyKj3Pbhcfg10meFxxh0V498usmKfOx8WmFMGvLlA5TiuvI1tEuzENnb9siWyiaoejHMsA6NZ-Y5vPe6tLYgLSv3qje-LDmHvsDYZHcXjhEnRNrNrKZI2wDsStOGBw5AOEt2FWJWiIF2VNIwkk3tkBvchLk2BkRL73v1jrWKMccXiPmyPepiEQwAK4Yhjpl6vTXaY9j2zQXNeKP2qe0
+      X-Accela-Agency:
+      - ISLANDTON
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '3798'
+      Content-Type:
+      - application/json
+      Expires:
+      - "-1"
+      Server:
+      - Apache-Coyote/1.1
+      - Microsoft-IIS/10.0
+      - Microsoft-IIS/7.5
+      X-Accela-Resp-Gateway-Version:
+      - 3.2.1
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      - ASP.NET
+      X-Accela-Traceid:
+      - 171025180821782-c5fdcece
+      Arr-Disable-Session-Affinity:
+      - 'true'
+      Date:
+      - Wed, 25 Oct 2017 18:08:22 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"message":"EMSE Script Framework Versions<BR>EVENT TRIGGERED: ApplicationSubmitBefore<BR>SCRIPT
+        EXECUTED: ApplicationSubmitBefore<BR>INCLUDE VERSION: 2<BR>SCRIPT VERSION
+        : 9<BR>GLOBAL VERSION : 3.22<BR>lookup(EMSE_VARIABLE_BRANCH_PREFIX,ApplicationSubmitBefore)
+        = ASB<BR>Executing: PreExecuteForBeforeEvents, Elapsed Time: 0.031 Seconds<BR>Finished:
+        PreExecuteForBeforeEvents, Elapsed Time: 0.031 Seconds<BR>Executing: ApplicationSubmitBefore,
+        Elapsed Time: 0.031 Seconds<BR>MDEVELOPER : ApplicationSubmitBefore : #01
+        : Criteria : true <BR>MDEVELOPER : ApplicationSubmitBefore : #01 : Action
+        :  showDebug = 3; showMessage=false; branch(\"EMSE:GlobalFlags\");<BR>Executing:
+        EMSE:GlobalFlags, Elapsed Time: 0.031 Seconds<BR>Finished: EMSE:GlobalFlags,
+        Elapsed Time: 0.031 Seconds<BR>MDEVELOPER : ApplicationSubmitBefore : #02
+        : Criteria : true <BR>MDEVELOPER : ApplicationSubmitBefore : #02 : Action
+        :  branch(\"ASB:\" + appTypeArray[0] + \"/*/*/*\");<BR>Executing: ASB:Building/*/*/*,
+        Elapsed Time: 0.031 Seconds<BR>MDEVELOPER : ASB:Building/*/*/* : #01 : Criteria
+        : {DPW Review Reqd} == \"CHECKED\" <BR>MDEVELOPER : ASB:Building/*/*/* : #02
+        : Criteria : {DPW Review Reqd} == \"CHECKED\" <BR>MDEVELOPER : ASB:Building/*/*/*
+        : #03 : Criteria : true <BR>MDEVELOPER : ASB:Building/*/*/* : #03 : Action
+        :  editAppSpecific(\"Submitter\",''Raj Koul JI'',capId);<BR>WARNING: Submitter
+        was not updated.<BR>MDEVELOPER : ASB:Building/*/*/* : #04 : Criteria : true
+        <BR>MDEVELOPER : ASB:Building/*/*/* : #04 : Action :  comment (\"DPW Fees
+        Checked...1\");<BR>DPW Fees Checked...1<BR>Finished: ASB:Building/*/*/*, Elapsed
+        Time: 0.156 Seconds<BR>MDEVELOPER : ApplicationSubmitBefore : #03 : Criteria
+        : true <BR>MDEVELOPER : ApplicationSubmitBefore : #03 : Action :  branch(\"ASB:\"
+        + appTypeArray[0] + \"/\" + appTypeArray[1] + \"/*/*\");<BR>Executing: ASB:Building/Commercial/*/*,
+        Elapsed Time: 0.156 Seconds<BR>Finished: ASB:Building/Commercial/*/*, Elapsed
+        Time: 0.156 Seconds<BR>MDEVELOPER : ApplicationSubmitBefore : #04 : Criteria
+        : true <BR>MDEVELOPER : ApplicationSubmitBefore : #04 : Action :  branch(\"ASB:\"
+        + appTypeArray[0] + \"/\" + appTypeArray[1] + \"/\" + appTypeArray[2] + \"/*\");<BR>Executing:
+        ASB:Building/Commercial/Addition/*, Elapsed Time: 0.156 Seconds<BR>Finished:
+        ASB:Building/Commercial/Addition/*, Elapsed Time: 0.156 Seconds<BR>MDEVELOPER
+        : ApplicationSubmitBefore : #05 : Criteria : true <BR>MDEVELOPER : ApplicationSubmitBefore
+        : #05 : Action :  branch(\"ASB:\" + appTypeArray[0] + \"/\" + appTypeArray[1]
+        + \"/*/\" + appTypeArray[3]);<BR>Executing: ASB:Building/Commercial/*/NA,
+        Elapsed Time: 0.172 Seconds<BR>Finished: ASB:Building/Commercial/*/NA, Elapsed
+        Time: 0.172 Seconds<BR>MDEVELOPER : ApplicationSubmitBefore : #06 : Criteria
+        : true <BR>MDEVELOPER : ApplicationSubmitBefore : #06 : Action :  branch(\"ASB:\"
+        + appTypeString);<BR>Executing: ASB:Building/Commercial/Addition/NA, Elapsed
+        Time: 0.172 Seconds<BR>Finished: ASB:Building/Commercial/Addition/NA, Elapsed
+        Time: 0.172 Seconds<BR>Finished: ApplicationSubmitBefore, Elapsed Time: 0.172
+        Seconds<BR>","result":{"id":"ISLANDTON-17EST-00000-00085","type":{"module":"Building","value":"Building/Commercial/Addition/NA","type":"Commercial","category":"NA","text":"Commercial
+        Addition","subType":"Addition","group":"Building","alias":"Commercial Addition","id":"Building-Commercial-Addition-NA"},"serviceProviderCode":"ISLANDTON","initiatedProduct":"AV360","statusDate":"2017-10-25
+        11:08:22","actualProductionUnit":123.43,"createdBy":"MDEVELOPER","trackingId":251196024,"customId":"17EST-000042","jobValue":0.0,"value":"17EST-00000-00085","totalFee":0.0,"totalPay":0.0,"balance":0.0,"booking":false,"infraction":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"publicOwned":false},"status":200}'
+    http_version: 
+  recorded_at: Wed, 25 Oct 2017 18:08:22 GMT
+- request:
+    method: post
+    uri: https://apis.accela.com/v4/records/ISLANDTON-17EST-00000-00085/finalize
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Accela-Appid:
+      - '635395466279594650'
+      Authorization:
+      - oNfheN33k9gArZpAZdwR2_0_CUYwbjNbkXFed2lCDAJJzaIF47IMM7wSyxa11Hg3QTdOU5yghuljICFCY4z38Pc7C8WyL8QSTUyvoN1jipTzSJQpFdFlHPi4YlhfRjDun347flsfOZsL_GsQFfrrR4tmgi5LMQasX2IwOLz0s_hu-OhFRGDV5agTY9_Zg_uLlCZcdmmP-NBHB5-Nes5uURpkxje92IvSHgYfQL7M5li81LQyKj3Pbhcfg10meFxxh0V498usmKfOx8WmFMGvLlA5TiuvI1tEuzENnb9siWyiaoejHMsA6NZ-Y5vPe6tLYgLSv3qje-LDmHvsDYZHcXjhEnRNrNrKZI2wDsStOGBw5AOEt2FWJWiIF2VNIwkk3tkBvchLk2BkRL73v1jrWKMccXiPmyPepiEQwAK4Yhjpl6vTXaY9j2zQXNeKP2qe0
+      X-Accela-Agency:
+      - ISLANDTON
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '734'
+      Content-Type:
+      - application/json
+      Expires:
+      - "-1"
+      Server:
+      - Apache-Coyote/1.1
+      - Microsoft-IIS/10.0
+      - Microsoft-IIS/7.5
+      X-Accela-Resp-Gateway-Version:
+      - 3.2.1
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      - ASP.NET
+      X-Accela-Traceid:
+      - 171025180823687-153a239f
+      Arr-Disable-Session-Affinity:
+      - 'true'
+      Date:
+      - Wed, 25 Oct 2017 18:08:25 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"result":{"id":"ISLANDTON-17CAP-00000-001JI","type":{"module":"Building","value":"Building/Commercial/Addition/NA","type":"Commercial","category":"NA","text":"Commercial
+        Addition","subType":"Addition","group":"Building","alias":"Commercial Addition","id":"Building-Commercial-Addition-NA"},"module":"Building","recordClass":"COMPLETE","serviceProviderCode":"ISLANDTON","initiatedProduct":"AV360","statusDate":"2017-10-25
+        11:08:23","createdBy":"MDEVELOPER","trackingId":291712888,"customId":"BLD17-00906","jobValue":0.0,"value":"17CAP-00000-001JI","totalFee":0.0,"totalPay":0.0,"balance":20.0,"booking":false,"infraction":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"publicOwned":false},"status":200}'
+    http_version: 
+  recorded_at: Wed, 25 Oct 2017 18:08:26 GMT
+recorded_with: VCR 2.9.3
