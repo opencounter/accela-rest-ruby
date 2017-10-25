@@ -34,7 +34,7 @@ module Accela
     end
 
     def finalize_record(record_id, payload = :empty_object)
-      record_hash  = Accela::V4::FinalizeRecord.new(config, payload).result(record_id)
+      record_hash  = Accela::V4::FinalizeRecord.new(config).result(record_id, payload)
       input_hash = RecordTranslator.json_to_ruby([record_hash]).first
       Record.create(input_hash)      
     end

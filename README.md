@@ -2,6 +2,8 @@
 
 This gem provides access to the HTTP Accela API. The project's primary goal is to emulate the ActiveRecord API as far as it makes sense against the Accela API.
 
+**Versioning is not semantic** but instead reflects the supported version of Accela's Construct API.
+
 ## Models
 
 Creating a new instance:
