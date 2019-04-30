@@ -3,7 +3,7 @@ module Accela
     class RegisterCitizen < Base
 
       def call(payload)
-        post("citizenaccess/register", :access_token, {}, payload)
+        post("citizenaccess/citizens", :access_token, {}, payload)
       end
 
     end
