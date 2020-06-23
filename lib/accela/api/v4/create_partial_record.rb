@@ -3,7 +3,7 @@ module Accela
     class CreatePartialRecord < Base
 
       def call(payload)
-        post("records/initialize", :access_token, {}, payload)
+        post("records/initialize", :access_token, { isFeeEstimate: "true" }, payload)
       end
 
     end
