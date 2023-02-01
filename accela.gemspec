@@ -16,14 +16,14 @@ Gem::Specification.new do |s|
   s.files          = Dir.glob ['README.md', 'LICENSE', 'lib/**/*.{rb}', 'spec/**/*', '*.gemspec']
   s.has_rdoc       = false
 
-  s.add_runtime_dependency   'faraday', '~> 0.9'
+  s.add_runtime_dependency   'faraday', '>= 0.9'
   s.add_runtime_dependency   'faraday_middleware'
   s.add_runtime_dependency   'faraday-detailed_logger', '>= 1.0.0'
   s.add_runtime_dependency   'activesupport'
 
   s.add_development_dependency 'rake', "~> 10.3.2"
   s.add_development_dependency 'rspec', "~> 3.1.0"
-  s.add_development_dependency 'pry', "~> 0.10.1"
+  s.add_development_dependency 'pry'
   s.add_development_dependency 'vcr', "~> 2.9.2"
-  s.add_development_dependency 'webmock', "~> 1.18.0"
+  s.add_development_dependency 'webmock', "~> 3.18.0"
 end

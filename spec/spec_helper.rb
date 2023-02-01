@@ -4,6 +4,7 @@ unless defined?(SPEC_HELPER_LOADED)
   require "rubygems"
   require "bundler/setup"
   require "pry"
+  require "webmock"
 
   require_relative "../lib/accela"
 
@@ -13,4 +14,6 @@ unless defined?(SPEC_HELPER_LOADED)
   Accela::Configuration.environment = "SUPP"
 
   Accela::API::LOGGER.level = Logger::FATAL
+
+  WebMock.enable!
 end
