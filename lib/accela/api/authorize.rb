@@ -75,7 +75,9 @@ module Accela
 
     def validate(token)
       headers = { "Authorization" => token }
-      response = conn.get("/oauth2/tokeninfo") do |req|
+      host = "https://auth.accela.com"
+
+      response = conn(host: host).get("/oauth2/tokeninfo") do |req|
         req.headers = headers
       end
 
@@ -88,8 +90,8 @@ module Accela
 
     private
 
-    def conn
-      Faraday.new("https://apis.accela.com") do |c|
+    def conn(host: "https://apis.accela.com")
+      Faraday.new(host) do |c|
         c.request :url_encoded
         c.response :detailed_logger, Accela::API::LOGGER
         c.adapter :net_http
