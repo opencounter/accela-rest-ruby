@@ -2,3 +2,11 @@
 .env
 
 /bin
+
+# Devenv
+.devenv*
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
