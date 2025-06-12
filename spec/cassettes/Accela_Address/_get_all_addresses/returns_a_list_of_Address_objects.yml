@@ -5,43 +5,49 @@ http_interactions:
     uri: https://apis.accela.com/oauth2/token
     body:
       encoding: UTF-8
-      string: grant_type=password&agency_name=islandton&environment=TEST&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&username=developer&password=accela&scope=addresses
+      string: agency_name=nullisland&client_id=638853549908464776&client_secret=4588a663f51143e69432e2734143e44b&environment=TEST&grant_type=password&password=accela&scope=addresses&username=developer
     headers:
+      X-Accela-Appid:
+      - '638853549908464776'
       Content-Type:
       - application/x-www-form-urlencoded
-      X-Accela-Appid:
-      - '635395466279594650'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '886'
+      Date:
+      - Thu, 12 Jun 2025 20:34:20 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - TiPMix=92.23888321788188; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
+        Max-Age=3600; Secure
+      Vary:
+      - Accept-Encoding
       X-Accela-Traceid:
-      - 140916194842685-c02abbdc
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 16 Sep 2014 19:48:43 GMT
+      - 250612203420271-8342762b
+      X-Azure-Ref:
+      - 20250612T203420Z-156d548487bq7dv5hC1BOS912c00000000u00000000068xq
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"access_token":"tgMx9IgkpNEGbyH8NczpGE1fh0V1N_EfDuqePaPWRYcQmkSqT4EzENnM7kvJ0MsmvAdc9xdW4-aWwSm5CmbLzvXi5pV6InZ1SL6Huco4HQLjKpIWGmcxKwUhCak3FAbZsKMaJbDqnOybOdgbFoapWYsIhi6iuKsU1C6tgNzYPHixvTUSUwWi1Sp-0Nzay4mN6iDwwJUk5tlPNMKK6_bOxtfTZk1Ww7KsmafOOWWe5UsbKuYlUSst47VM7iCuzc8pD7QU2Lpvq7FqyCtuTrAGUIe0bC_EKRRXFAlQHBxQx9IAnSkmID8rh-hUbOQcq6-ZB_rWH04iAycS_NoSOEfnJpjmwHsznnAhAit9oi0XE1YjQ7dQGO2wqc5pdx3GC_Ab2-WePd2HzzA5ybmK5qUZJacCFCwb7C64ygkbYAoiW-k1","token_type":"bearer","expires_in":"86400","refresh_token":"rALM!IAAAADiD4Vf3BpMCv2iM2Lpf6hsWxBVgQnWHXMwZAp6kdq4N0QAAAAGWME_N1f-T7OKKVcMnwxX9VFknWfXttRczbCX4oDpnkHxpNZ9HhUHglgNVOBZWYTBqlOn5YjKw0U-rpmMPQSdjFwPoTj5DLm0LMAMlgqdbP2FWU0HVoQuxVItRfouy7JitQ156EEdlp3t6zmfIf5CJoUB10eQY-1U0ZScsUttQ-MNiWso9PqKHTI5tL4ZTXU_XYXorVbPwRQtInGORoczMqDdMGqWxwDjVYSxU9k2JYxPTTpTiIvPFbqRogBJCaIolkAaWvPn-TS7LuflcDA7f","scope":"addresses
-        get_civicid_profile"}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:48:44 GMT
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"access_token\": \"AisMLrUTDT8JtWeaaoLzZdSJ8r3Dj2jq04hlarK0Rh3yz8bvVT4ZUCmEEIGVIWuLfIaOCUzIIXB77sn0FlvstZEZxKsUO3CIjqanFLpcnVFpCi5XG5VC1Y5fRb4HK8HA67Tw6B9dXcaWzxF_lA3MymnqrITt7ZYbnn96mFQZvYZG4NF5zg2JryA0PkOW2oDaXU1bPY_3ar5Z9j88JV2T7_RTHCI7J1kHfpWeIBPSf04ZCJ1tYLOCWEKCpxRU_kTkqW8hbJcmvYQ_epVU63Vfl0yr57i9HQ4TVvaushemCmBS8QBXcc_EtZ32pDWMQ4IOZRGaCLKT6v_6IIj7YcnEGPrToGKl6j5LwKFuzUufC9KqFYiZNtjqa3fJxrG_71nS3v4b4tcaIzmgCmd6msg9sUsARutJ8Zf-nMM8ZYLIpWbYYFUzqUb0XJUI2IpcEJI6Vwlm9Kw09AlLDwLikBWaSEK_5eM7LJE4GuxiDxxzcWGmZDq8koDqrXjksKVLwY6mHJz4MrFIDfIS5_rn4aAzfNA_rk6F3JC-3OeP8ET8kg866l9kHToRLodmlfQGf8pQ9QOhzncn57ZV8MfZfetqj_Ri7eD_3DGaAWV2_AXl3oipfo38b6r3vmLVQ4vnFfU70\",\r\n
+        \ \"token_type\": \"bearer\",\r\n  \"expires_in\": 900,\r\n  \"refresh_token\":
+        \"dzFR9z9pe3A4PBh6oR7L7ttWRGHWM-LoR1FJ-in6DVlLfaVboWGWP9QJ7fvLTRXA4mg5BvBtJ1i5pqXzsJuf1hwT5kWxfE9nNmCumNlsG9xoU-Xm4kg7YOckl0Gr9weCBZwy5avqBRhaWlwi98vj2UcEjHK-LZyueCcrmamaET6b6Hy8AUh6TxaExQyX-liypJM9aCDKGGMGCT3uiy06T0PJC4OkQrenekD-LRj8KUgjLA2CbeZt8FeEAbPfohTJ8wJ4YZUrdH4Lmy04M_lWoGh1ltwoClIs5mjk7VFqM3bgqVzThB4__xqRXhdF5U9YKb1QoTNOKagRcLVWwe-9h6B71wB11y0gb1J6vif29iJZrJYUW0EkXptTvdx3DYe2tsA_S2zSAm4Ytwy45_c4UimAiw8-VgOkcqTSGp8AC-MDHlKJj29FyCzzEAnpjKGGufXS7XMtNnKL6jx4hwnXkZnxsx1_-MVxB8nvzhu3PYhTo7OfkShdRwnzDgQx0sLc2JZDrYGWrqcqcXXmEdkXRQoYqnZiy2tvJeoH244rwUckHteTxzHAk3P9CSCy4-ZXGNtpPhPTp5F4nKVqKfaPZi6VMFDnuI0oRaDgmWRDRH6REvo7z6OdiMmWSLr0Nc9D0\",\r\n
+        \ \"scope\": \"addresses\"\r\n}"
+  recorded_at: Thu, 12 Jun 2025 20:34:20 GMT
 - request:
     method: get
     uri: https://apis.accela.com/v4/addresses?country=US
@@ -54,71 +60,69 @@ http_interactions:
       Accept:
       - application/json
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       X-Accela-Environment:
       - TEST
       X-Accela-Agency:
-      - islandton
+      - nullisland
+      User-Agent:
+      - Faraday v2.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '7664'
+      Date:
+      - Thu, 12 Jun 2025 20:34:21 GMT
       Content-Type:
       - application/json
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
-      - Microsoft-IIS/7.5
-      - unknow
-      X-Accela-Resp-Gateway-Version:
-      - 3.1.0.1
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      X-Accela-Traceid:
-      - 140916194844027-53b6651a
-      Date:
-      - Tue, 16 Sep 2014 19:48:44 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612203420782-05a37c7f
+      X-Azure-Ref:
+      - 20250612T203420Z-156d548487b6htt6hC1BOSaw6w00000003e0000000008aah
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"result":[{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":1249,"streetName":"LINDBERG","id":2,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":901,"streetName":"LINDBERG","id":3,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":891,"streetName":"LINDBERG","id":4,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":895,"streetName":"LINDBERG","id":5,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":980,"streetName":"LINDBERG","id":6,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":920,"streetName":"LINDBERG","id":7,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetName":"NONE","id":8,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":1000,"streetName":"CAULFIELD","id":9,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":871,"streetName":"LINDBERG","id":11,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":979,"streetName":"LINDBERG","id":12,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":879,"streetName":"LINDBERG","id":14,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":850,"streetName":"LINDBERG","id":15,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":649,"streetName":"LINDBERG","id":16,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":932,"streetName":"CAULFIELD","id":17,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":938,"streetName":"CAULFIELD","id":18,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":940,"streetName":"CAULFIELD","id":19,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":946,"streetName":"CAULFIELD","id":20,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":1075,"streetName":"LAKEVILLE","id":21,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"HWY","text":"HWY"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":1077,"streetName":"LAKEVILLE","id":22,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"HWY","text":"HWY"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":901,"streetName":"LAKEVILLE","id":23,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"ST","text":"ST"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetName":"PAYRAN","id":24,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"ST","text":"ST"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":890,"streetName":"LAKEVILLE","id":25,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"HWY","text":"HWY"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":857,"streetName":"LAKEVILLE","id":26,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"HWY","text":"HWY"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":815,"streetName":"LAKEVILLE","id":27,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"HWY","text":"HWY"},"status":{"value":"A","text":"Active"}},{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":888,"streetName":"LAKEVILLE","id":28,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"HWY","text":"HWY"},"status":{"value":"A","text":"Active"}}],"status":200,"page":{"offset":0,"limit":25,"hasmore":true}}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:48:44 GMT
-recorded_with: VCR 2.9.2
+      encoding: ASCII-8BIT
+      string: '{"result":[{"sourceNumber":260,"id":1,"isPrimary":"N","streetName":"IZABEL","streetStart":230,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"streetSuffix":{"value":"ST","text":"ST"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":2,"isPrimary":"N","streetName":"HUNTINGTON","streetStart":505,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"E","text":"E"},"streetSuffix":{"value":"DR","text":"DR"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":3,"isPrimary":"Y","streetName":"GRANT","streetStart":506,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":4,"isPrimary":"N","streetName":"SKY
+        VIEW","streetStart":551,"city":"SUNRISE","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"streetSuffix":{"value":"ST","text":"ST"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":6,"isPrimary":"N","streetName":"SKY
+        VIEW","streetStart":1000,"city":"SUNRISE","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"streetSuffix":{"value":"ST","text":"ST"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":7,"isPrimary":"N","streetName":"HILLCREST","streetStart":1002,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"streetSuffix":{"value":"DR","text":"DR"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":8,"isPrimary":"N","streetName":"APPALACHIAN","streetStart":1005,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"E","text":"E"},"streetSuffix":{"value":"RD","text":"RD"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":9,"isPrimary":"N","streetName":"HILLCREST","streetStart":1006,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"streetSuffix":{"value":"DR","text":"DR"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":10,"isPrimary":"N","streetName":"HILLCREST","streetStart":1007,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"streetSuffix":{"value":"DR","text":"DR"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":11,"isPrimary":"N","streetName":"PARK","streetStart":1010,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"E","text":"E"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":12,"isPrimary":"N","streetName":"PARK","streetStart":1011,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"E","text":"E"},"streetSuffix":{"value":"WAY","text":"WAY"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":13,"isPrimary":"N","streetName":"HILLCREST","streetStart":1011,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"streetSuffix":{"value":"DR","text":"DR"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":14,"isPrimary":"N","streetName":"HILLCREST","streetStart":1015,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"streetSuffix":{"value":"DR","text":"DR"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":15,"isPrimary":"N","streetName":"HILLCREST","streetStart":1018,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"streetSuffix":{"value":"DR","text":"DR"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":16,"isPrimary":"N","streetName":"HILLCREST","streetStart":1023,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"streetSuffix":{"value":"DR","text":"DR"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":17,"isPrimary":"N","streetName":"HILLCREST","streetStart":1024,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"streetSuffix":{"value":"DR","text":"DR"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":18,"isPrimary":"N","streetName":"APPALACHIAN","streetStart":1025,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"E","text":"E"},"streetSuffix":{"value":"RD","text":"RD"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":19,"isPrimary":"N","streetName":"HILLCREST","streetStart":1027,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"streetSuffix":{"value":"DR","text":"DR"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":20,"isPrimary":"N","streetName":"HILLCREST","streetStart":1028,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"streetSuffix":{"value":"DR","text":"DR"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":21,"isPrimary":"N","streetName":"HILLCREST","streetStart":1032,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"N","text":"N"},"streetSuffix":{"value":"DR","text":"DR"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":22,"isPrimary":"N","streetName":"APPALACHIAN","streetStart":1035,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"E","text":"E"},"streetSuffix":{"value":"RD","text":"RD"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":23,"isPrimary":"N","streetName":"APPALACHIAN","streetStart":1045,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"E","text":"E"},"streetSuffix":{"value":"RD","text":"RD"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":24,"isPrimary":"N","streetName":"LINDA
+        VISTA","streetStart":1124,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"E","text":"E"},"streetSuffix":{"value":"DR","text":"DR"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":25,"isPrimary":"Y","streetName":"LINDA
+        VISTA","streetStart":1130,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"E","text":"E"},"status":{"value":"A","text":"Active"}},{"sourceNumber":260,"id":26,"isPrimary":"N","streetName":"APPALACHIAN","streetStart":1155,"city":"SUNRISE","postalCode":"86004","auditStatus":"A","syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"E","text":"E"},"streetSuffix":{"value":"RD","text":"RD"},"status":{"value":"A","text":"Active"}}],"status":200,"page":{"offset":0,"limit":25,"hasmore":true}}'
+  recorded_at: Thu, 12 Jun 2025 20:34:21 GMT
+recorded_with: VCR 6.3.1

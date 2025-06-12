@@ -5,43 +5,49 @@ http_interactions:
     uri: https://apis.accela.com/oauth2/token
     body:
       encoding: UTF-8
-      string: grant_type=password&agency_name=islandton&environment=TEST&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&username=developer&password=accela&scope=owners
+      string: agency_name=nullisland&client_id=638853549908464776&client_secret=4588a663f51143e69432e2734143e44b&environment=TEST&grant_type=password&password=accela&scope=owners&username=developer
     headers:
+      X-Accela-Appid:
+      - '638853549908464776'
       Content-Type:
       - application/x-www-form-urlencoded
-      X-Accela-Appid:
-      - '635395466279594650'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '883'
+      Date:
+      - Thu, 12 Jun 2025 20:35:20 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - TiPMix=21.825160714666335; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
+        Max-Age=3600; Secure
+      Vary:
+      - Accept-Encoding
       X-Accela-Traceid:
-      - 140916194857185-7b08a0a7
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 16 Sep 2014 19:48:58 GMT
+      - 250612203520693-ef586a00
+      X-Azure-Ref:
+      - 20250612T203520Z-175bcdf5b46tmrhwhC1MNZ6pew00000002xg000000004tq2
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"access_token":"tgMx9IgkpNEGbyH8NczpGDJW9v_rx92CUioJQ6peZhS4yecP4-xRlNYqm8tt4hZzkSbG7o0e0Kgn72Ip6Bb2x9WlziwP1_3gs96OOdAakmx12YzLP6k-Ik1wmc4u_Ax7vUsT5Iy7duIsH34j5-DSUFZvAEmDjGXDQyTUPtF9PXT-pgOLgVCib5fpfWaCQrjUWqUpm6Kb8Q57QNsEXoWb2bVX-Jx5hHX620MI0Aqz01A5iq7gaQan7GcNsh3B8j-I6c_qOpMABc0DPNWroA6H8zcNpD_PgbiKkhCX8curW7h5jDo6ex0Kl_pS5t_uOzUb0BchEWR_ff1Nq_ElzdvAtyWM0JJw1BhkWRXdZN0g-MfyF_ZEaHWpEN_DYNE9dVAD8yUvAuyBOmxZWlpRVeK_G12KrT49x1nD_WHejtqRYoc1","token_type":"bearer","expires_in":"86400","refresh_token":"rALM!IAAAAClBf0RvP0NteXti9anB0Psyj7Ootacj07lobbX4_9Q90QAAAAHi86XqwWpV778gogE1P4o4yaR6m4G7tT4NTphy-cgSKPv8z_j7S2NO7aggGBPLgF85v5mmozg6qEm3DeGhlIPL374r3xhNDKWfTl6BCpRxWfmc12ZCHAxA-3UsRNJLADByl6mKkhjVaTmjG_DNZ9Lzo47iFQYcVoZh3ZwCb9wxWXgs-OQ8uDjm1ITGQy0cl1XLK07OXrOejwQgbLed9CjBfzsxadHK7HrBzMX1q0PMW9vqjEt55fjfmgR5d_BoP3vAh2n5WYwSR5J0GMKZy2WY","scope":"get_civicid_profile
-        owners"}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:48:58 GMT
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"access_token\": \"AisMLrUTDT8JtWeaaoLzZR4q4XFGnuHeSw-7t-jJbMDrzQn0y5eeaTnmt4Vl5KBNfGK5XywkGCLfhZcV6zGpPA2aliLgifp4N4vG778_77JE7C5ZDAjMEY4an1wjN-8xei4wuLWd8BkVkkkE2Lu4_KC5AyWj9O97FdUrFKI4ZEtD-LvJ7zpNT2VTE4dT2oAXZE-py34_VcaRLksrvBQnEqWUbOjdHCNCKEMs6jGiPGiFUUEOKXazFJN3L36Oaz9cL8olmUmD0EcJ7MjWtOvyHzU6-JqnuDSszE_zxRarfSXYnN5Sbptiian2V8WcFoTtrEvTI4aEl5y10iNSx-xK6ZXs00dNc3cF5ryI6MMSmEB-50Qa79fSt_3f1LN_F9mvB6-YYL8N9DrFhDW8-1sIjaWOe0PSKsU3-K8_hBQLsVG1HPEF_jZe6bD6UXcL5jJgYMLwgoVuJLdz4XRnG87rX4oLuQ8eteHo2Z6PRaV_Dacsdw5w7sCFb0SRHlNeacLYdx-m_-r1lr14bJn-beQE_VS6hBq89ZCJO5u8b2FkcKyfyBctefr6ga40dSC-bQgvRtNO7VymkDRmNmA5KrdCHhHCwrj-NcC8CXH0X8YOd8fEbaQ56BUmWtIqR4TBccke0\",\r\n
+        \ \"token_type\": \"bearer\",\r\n  \"expires_in\": 900,\r\n  \"refresh_token\":
+        \"dzFR9z9pe3A4PBh6oR7L7hgCC-qRy9rQsOuBjtBpdUuVwCIykz-rbEegiwnpkobKBI-LTSYiC73ayWgdD4NwXZwgg6yqT32j-c70-GtjMx8KN1Ux5VlX1TGYQ7YISYQaMsDz2kqOUntsIorkdI_dtLvdh-4RBCZzq6-kbo9amueTy-HUh-KjNKAG5uQOE43xs7__cYsbz2lHz04VXZlWM-bLQ0tRrfwpjWrV0gJQik3rnf6YMx9bqK-w2mB_-wI-f7YNkk495Ww7S4klXp_h2--HfYcItzVBrGNB8qymS6xAnwfViVwyLWJQ-tGyBvFhlJBY_czed6tLnCJIWX1Sc8VPUB6P6HV_IEg6D-S6cWbZOb_sFwtl-9vM2aG_eD5ckv--GiwQhFA7dRgfoZaTwfrCx-WYnrMIZui8_ywgdnPq61Q8JeE2v-Xm8MqmPRxn-U8fpg_gho47SfV9ZvRzbozus77MJAa5NN7kSpJNwylhgq2n_J9R5pBqQPVECMTJB1_syThcOSndJ-opkZdlhmcFii4TlA3y_UcGs9O567DiFFdXQCQVMm9gzSlqWQy-s2yDolaKVT8I7Ay-aPYZML_-XQlV8cz4jxMoGDzeF2U1\",\r\n
+        \ \"scope\": \"owners\"\r\n}"
+  recorded_at: Thu, 12 Jun 2025 20:35:20 GMT
 - request:
     method: get
     uri: https://apis.accela.com/v4/owners/4823151
@@ -54,48 +60,93 @@ http_interactions:
       Accept:
       - application/json
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       Authorization:
-      - tgMx9IgkpNEGbyH8NczpGDJW9v_rx92CUioJQ6peZhS4yecP4-xRlNYqm8tt4hZzkSbG7o0e0Kgn72Ip6Bb2x9WlziwP1_3gs96OOdAakmx12YzLP6k-Ik1wmc4u_Ax7vUsT5Iy7duIsH34j5-DSUFZvAEmDjGXDQyTUPtF9PXT-pgOLgVCib5fpfWaCQrjUWqUpm6Kb8Q57QNsEXoWb2bVX-Jx5hHX620MI0Aqz01A5iq7gaQan7GcNsh3B8j-I6c_qOpMABc0DPNWroA6H8zcNpD_PgbiKkhCX8curW7h5jDo6ex0Kl_pS5t_uOzUb0BchEWR_ff1Nq_ElzdvAtyWM0JJw1BhkWRXdZN0g-MfyF_ZEaHWpEN_DYNE9dVAD8yUvAuyBOmxZWlpRVeK_G12KrT49x1nD_WHejtqRYoc1
+      - AisMLrUTDT8JtWeaaoLzZR4q4XFGnuHeSw-7t-jJbMDrzQn0y5eeaTnmt4Vl5KBNfGK5XywkGCLfhZcV6zGpPA2aliLgifp4N4vG778_77JE7C5ZDAjMEY4an1wjN-8xei4wuLWd8BkVkkkE2Lu4_KC5AyWj9O97FdUrFKI4ZEtD-LvJ7zpNT2VTE4dT2oAXZE-py34_VcaRLksrvBQnEqWUbOjdHCNCKEMs6jGiPGiFUUEOKXazFJN3L36Oaz9cL8olmUmD0EcJ7MjWtOvyHzU6-JqnuDSszE_zxRarfSXYnN5Sbptiian2V8WcFoTtrEvTI4aEl5y10iNSx-xK6ZXs00dNc3cF5ryI6MMSmEB-50Qa79fSt_3f1LN_F9mvB6-YYL8N9DrFhDW8-1sIjaWOe0PSKsU3-K8_hBQLsVG1HPEF_jZe6bD6UXcL5jJgYMLwgoVuJLdz4XRnG87rX4oLuQ8eteHo2Z6PRaV_Dacsdw5w7sCFb0SRHlNeacLYdx-m_-r1lr14bJn-beQE_VS6hBq89ZCJO5u8b2FkcKyfyBctefr6ga40dSC-bQgvRtNO7VymkDRmNmA5KrdCHhHCwrj-NcC8CXH0X8YOd8fEbaQ56BUmWtIqR4TBccke0
       X-Accela-Agency:
-      - islandton
+      - nullisland
+      User-Agent:
+      - Faraday v2.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Thu, 12 Jun 2025 20:35:21 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Resp-Code:
+      - resource_not_found
+      X-Accela-Resp-Message:
+      - Reference owner 4823151 cannot be found.
+      X-Accela-Traceid:
+      - 250612203521297-487e03c2
+      X-Azure-Ref:
+      - 20250612T203521Z-r1d94467965zgb2qhC1MNZ1ea0000000044000000000bkb3
+      X-Cache:
+      - CONFIG_NOCACHE
+    body:
+      encoding: UTF-8
+      string: '{"status":404,"code":"resource_not_found","message":"Reference owner
+        4823151 cannot be found.","traceId":"250612203521297-487e03c2"}'
+  recorded_at: Thu, 12 Jun 2025 20:35:21 GMT
+- request:
+    method: get
+    uri: https://apis.accela.com/v4/owners/515079627
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Accela-Appid:
+      - '638853549908464776'
+      Authorization:
+      - AisMLrUTDT8JtWeaaoLzZR4q4XFGnuHeSw-7t-jJbMDrzQn0y5eeaTnmt4Vl5KBNfGK5XywkGCLfhZcV6zGpPA2aliLgifp4N4vG778_77JE7C5ZDAjMEY4an1wjN-8xei4wuLWd8BkVkkkE2Lu4_KC5AyWj9O97FdUrFKI4ZEtD-LvJ7zpNT2VTE4dT2oAXZE-py34_VcaRLksrvBQnEqWUbOjdHCNCKEMs6jGiPGiFUUEOKXazFJN3L36Oaz9cL8olmUmD0EcJ7MjWtOvyHzU6-JqnuDSszE_zxRarfSXYnN5Sbptiian2V8WcFoTtrEvTI4aEl5y10iNSx-xK6ZXs00dNc3cF5ryI6MMSmEB-50Qa79fSt_3f1LN_F9mvB6-YYL8N9DrFhDW8-1sIjaWOe0PSKsU3-K8_hBQLsVG1HPEF_jZe6bD6UXcL5jJgYMLwgoVuJLdz4XRnG87rX4oLuQ8eteHo2Z6PRaV_Dacsdw5w7sCFb0SRHlNeacLYdx-m_-r1lr14bJn-beQE_VS6hBq89ZCJO5u8b2FkcKyfyBctefr6ga40dSC-bQgvRtNO7VymkDRmNmA5KrdCHhHCwrj-NcC8CXH0X8YOd8fEbaQ56BUmWtIqR4TBccke0
+      X-Accela-Agency:
+      - nullisland
+      User-Agent:
+      - Faraday v2.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '325'
+      Date:
+      - Thu, 12 Jun 2025 20:44:53 GMT
       Content-Type:
       - application/json
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
-      - Microsoft-IIS/7.5
-      - unknow
-      X-Accela-Resp-Gateway-Version:
-      - 3.1.0.1
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      X-Accela-Traceid:
-      - 140916194858636-62923abc
-      Date:
-      - Tue, 16 Sep 2014 19:48:57 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612204453189-11a71313
+      X-Azure-Ref:
+      - 20250612T204453Z-156d548487b57szthC1BOS05sg00000002d00000000092mt
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"result":{"id":4823151,"fullName":"TAYLOR CYNTHIA","isPrimary":"Y","mailAddress":{"city":"SHAKER
-        HEIGHTS ","postalCode":"44120","addressLine2":"16090 PARKLAND DR","state":{"value":"OH","text":"OH"}},"address":{"city":"SHAKER
-        HEIGHTS ","state":{"value":"OH","text":"OH"}},"status":{"value":"A","text":"Active"}},"status":200}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:48:59 GMT
-recorded_with: VCR 2.9.2
+      encoding: ASCII-8BIT
+      string: '{"result":{"isPrimary":"Y","lastName":"TYSON","middleName":"L","firstName":"TERRI","id":515079627,"keyFieldsNull":false,"fullName":"TYSON
+        TERRI L","syncIndex":true,"mailAddress":{"addressLine1":"6605 TIVERTON CIR","postalCode":"45459","city":"DAYTON","state":{"value":"OH","text":"OH"}},"address":{"addressLine1":"6605
+        TIVERTON CIR","postalCode":"45459","city":"DAYTON","state":{"value":"OH","text":"OH"}},"status":{"value":"A","text":"Active"}},"status":200}'
+  recorded_at: Thu, 12 Jun 2025 20:44:53 GMT
+recorded_with: VCR 6.3.1

@@ -5,46 +5,52 @@ http_interactions:
     uri: https://apis.accela.com/oauth2/token
     body:
       encoding: UTF-8
-      string: grant_type=password&agency_name=islandton&environment=TEST&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&username=developer&password=accela&scope=records%20addresses
+      string: agency_name=nullisland&client_id=638853549908464776&client_secret=4588a663f51143e69432e2734143e44b&environment=TEST&grant_type=password&password=accela&scope=records+addresses&username=developer
     headers:
+      X-Accela-Appid:
+      - '638853549908464776'
       Content-Type:
       - application/x-www-form-urlencoded
-      X-Accela-Appid:
-      - '635395466279594650'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '937'
+      Date:
+      - Thu, 12 Jun 2025 22:43:17 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - TiPMix=35.68615784025376; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
+        Max-Age=3600; Secure
+      Vary:
+      - Accept-Encoding
       X-Accela-Traceid:
-      - 140916194903825-8a1728e8
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 16 Sep 2014 19:49:04 GMT
+      - 250612224317679-95bfff74
+      X-Azure-Ref:
+      - 20250612T224317Z-156d548487b8jn4vhC1BOSxwmc00000003vg000000008mw5
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"access_token":"tgMx9IgkpNEGbyH8NczpGLgd9JElNEq0xTlVRZGLBFnQ40RfY4wT6ZM7R0WR8rL6_GW39MeU705FCwfUS5ZQcfpphzSa9PENhcAqfNJrLSpyblU6gFOHEZVkP18EiBdyahUd9d56eC7tu7MnqnHsSFKCOpHOEV8WQPx-K1Xvrlmlmyq6x8rjQsgukF6YvEvzLuUgAIWzGjfgXhJJLJpwcajBtHfQSrIF8g-4SLv7KZKLo8gnP3owp-km2kpeY_mFY28ldKkLnhYzH3k3GXlB5-7ui_gyO10b1hipQvY3A34U3A8WQ21IJfJuXz8Lk2QKpYNKrxLsaau5JDffq_OAoSDZP1MdxeU9D9YFGApodppMqHIMIe14Ygbr2ibLYTiI8k5fod_Zd4e_ibKp0YF0pmKJ2daBTe7vIh8TfikjgAtAndo1nuXANM-nCNuGS1U30","token_type":"bearer","expires_in":"86400","refresh_token":"rALM!IAAAAHBlwbP7K3cEtIG0ndz8dCK93UrQcV-n8cZCAgbgmhJL4QAAAAF1kopnPbQRCoR-_R_oLqAciukEIxIwCrASdtw9-8F8TVpgDKLo3LGEDR3R1E7xpCkHUQ5C9Jj45uVGTwOfcX3FoSjqsgvtZMeqf4A0du24-QfL2xMv9l2tiO-PhwkVropV8d39PrD07EuIV2_V1KC5essG779DssYQExaw_5Hqj2QnZYN8XLkkFX4wcOR52rJ--ZnNaG3MagqF7SMgMl8QDa89HWchN5k8ZqSTpT9tPKS-XOxVCTlZUidjzSp2BNcfVvv9RBgxLOOv8DEPXCGuvdihk59lJY5onC9Yc5NPBQ","scope":"addresses
-        get_civicid_profile records"}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:49:05 GMT
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"access_token\": \"AisMLrUTDT8JtWeaaoLzZZKIPtf89IAcQEiB33e9Di2Pka7q4vl2T-PTbZQ5ng8ZDLjgLorkjRlb7ODvZvFY188ip62Qb-HyraQg9FS67ysWzX8t-c6NPLlhYyVbvwJ2gzAYDF2IDKzO5SQvZXy7U7_pRZU5v4Ce5e6TTDxYbbIkpyOIF6qpR73N4Y2Oo78rBwzhFqfKh6g8hUoZyU3CtueBIJSsHmPal3V24Lk7TKDEEpDTYHAlk3xc26vVdYiGfrOVZlR3cWNmdwzyoVNFo-Z0O8IZDGMGAAEcCdrcs0Ob92YVsotN0u7GN0SpFKtgRqDwwIjH9v3ivBY5F9Hoy-4Pv_Td_NdADls68jWPOCQaNmIPB7f5dp06qy39hhN4eh_czV9GUuyo0E6TklzOln8UPaDvvres4IyruJ2DZ-7inkwTowrANYcL7Z8K61oyApJZFhHDMRMBFgS1nvjZK1EW9Cu3LdV5N7Umog_n1-yiiOmDfdoMBPxXn6o8vKqGGCB9gPhHo4SO5hII2nTOCgQ59pzWXTYh5deDaiQRq8_YYrfZ2ZNAo91g-pu5tPcBFxNhFZvHEMHeldO1T3UCIASwQ1gVMni_JrOvbilkQUjyrr5ZFyNZKIFX1XYwrJos0\",\r\n
+        \ \"token_type\": \"bearer\",\r\n  \"expires_in\": 900,\r\n  \"refresh_token\":
+        \"VZpkBZmjyJq7gpqMIX5JH1htvxHG3IaLuxL1xhGjP_OGWjZitb97u7TheiWVOsHGgz68N6bXH5woXoixTuHXuw5O32ueItfsk4q1XZSjJ7uZPJoqaJhQ_1MoySKvIoRz1l7V0_QEqWSFP-uk8Jhc9CBYq0ZAsImoEZqbR29BmwF9jKL3f9weuuxSGdqyASzrGz4nTjL_MP9rrFfFztm_4YgZS4jElFLaUMlIqLs48V1VhJIm0UwrIUnQT59ob5ITIhFJT1EewoEILvLLcDdPROdazM06xU0SMFOAMykDwymA-MTjlof5jiBqrnY41NLwsL39I_oGigD_3s2h-qezackYIlLEZmxufVkQ-yTOiwgJW-FlMuxP0NmNJKTYpwp_LZN5l8gs72Tj9nQqT3tQXvKeMcaYAoYHOUguhq_vrS2lksVXFVnVCvkNH-l3tBqCMvyGM122I2FfDWlncjecLFO5rcjV_YcyNM38xI--YI2KnxSdJuZ-ha7RLj7PValphpQeZbZkftum7Jn0v9oykAKDMNOoZRYOazMVj37k94uTJOrxFC8-NqhiPTd7qYYAWdCtAvta2qg3NX8JdCXKtSoP3bbGUH6uAUn4rAedYMjPM9tmc4gHU3H8H_iMpzHt0\",\r\n
+        \ \"scope\": \"records addresses\"\r\n}"
+  recorded_at: Thu, 12 Jun 2025 22:43:17 GMT
 - request:
     method: get
-    uri: https://apis.accela.com/v4/records/ISLANDTON-14CAP-00000-000CR
+    uri: https://apis.accela.com/v4/records/NULLISLAND-REC25-00000-0004Q
     body:
       encoding: US-ASCII
       string: ''
@@ -54,50 +60,50 @@ http_interactions:
       Accept:
       - application/json
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       Authorization:
-      - tgMx9IgkpNEGbyH8NczpGLgd9JElNEq0xTlVRZGLBFnQ40RfY4wT6ZM7R0WR8rL6_GW39MeU705FCwfUS5ZQcfpphzSa9PENhcAqfNJrLSpyblU6gFOHEZVkP18EiBdyahUd9d56eC7tu7MnqnHsSFKCOpHOEV8WQPx-K1Xvrlmlmyq6x8rjQsgukF6YvEvzLuUgAIWzGjfgXhJJLJpwcajBtHfQSrIF8g-4SLv7KZKLo8gnP3owp-km2kpeY_mFY28ldKkLnhYzH3k3GXlB5-7ui_gyO10b1hipQvY3A34U3A8WQ21IJfJuXz8Lk2QKpYNKrxLsaau5JDffq_OAoSDZP1MdxeU9D9YFGApodppMqHIMIe14Ygbr2ibLYTiI8k5fod_Zd4e_ibKp0YF0pmKJ2daBTe7vIh8TfikjgAtAndo1nuXANM-nCNuGS1U30
+      - AisMLrUTDT8JtWeaaoLzZZKIPtf89IAcQEiB33e9Di2Pka7q4vl2T-PTbZQ5ng8ZDLjgLorkjRlb7ODvZvFY188ip62Qb-HyraQg9FS67ysWzX8t-c6NPLlhYyVbvwJ2gzAYDF2IDKzO5SQvZXy7U7_pRZU5v4Ce5e6TTDxYbbIkpyOIF6qpR73N4Y2Oo78rBwzhFqfKh6g8hUoZyU3CtueBIJSsHmPal3V24Lk7TKDEEpDTYHAlk3xc26vVdYiGfrOVZlR3cWNmdwzyoVNFo-Z0O8IZDGMGAAEcCdrcs0Ob92YVsotN0u7GN0SpFKtgRqDwwIjH9v3ivBY5F9Hoy-4Pv_Td_NdADls68jWPOCQaNmIPB7f5dp06qy39hhN4eh_czV9GUuyo0E6TklzOln8UPaDvvres4IyruJ2DZ-7inkwTowrANYcL7Z8K61oyApJZFhHDMRMBFgS1nvjZK1EW9Cu3LdV5N7Umog_n1-yiiOmDfdoMBPxXn6o8vKqGGCB9gPhHo4SO5hII2nTOCgQ59pzWXTYh5deDaiQRq8_YYrfZ2ZNAo91g-pu5tPcBFxNhFZvHEMHeldO1T3UCIASwQ1gVMni_JrOvbilkQUjyrr5ZFyNZKIFX1XYwrJos0
       X-Accela-Agency:
-      - islandton
+      - nullisland
+      User-Agent:
+      - Faraday v2.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '1026'
+      Date:
+      - Thu, 12 Jun 2025 22:43:18 GMT
       Content-Type:
       - application/json
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
-      - Microsoft-IIS/7.5
-      - unknow
-      X-Accela-Resp-Gateway-Version:
-      - 3.1.0.1
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      X-Accela-Traceid:
-      - 140916194905370-da91f401
-      Date:
-      - Tue, 16 Sep 2014 19:49:05 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612224318133-3e8dd32b
+      X-Azure-Ref:
+      - 20250612T224317Z-156d548487b6zkzjhC1BOShfac00000005p00000000024wv
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"result":[{"name":"D-I Builders Development Model Home","id":"ISLANDTON-14CAP-00000-000CR","type":{"module":"Building","type":"Residential","value":"Building/Residential/New/NA","category":"NA","text":"Residential
-        New","group":"Building","subType":"New","id":"Building-Residential-New-NA"},"description":"","status":{"value":"Submitted","text":"Submitted"},"infraction":false,"initiatedProduct":"AV360","createdBy":"DI","balance":0.0,"serviceProviderCode":"ISLANDTON","statusDate":"2014-08-20
-        11:02:00","totalJobCost":0.0,"reportedChannel":{"value":"Call Center","text":"Call
-        Center"},"reportedDate":"2014-08-20 11:02:00","totalFee":0.0,"totalPay":0.0,"module":"Building","customId":"BLD14-00187","jobValue":0.0,"publicOwned":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"openedDate":"2014-08-20
-        00:00:00","trackingId":262040261,"estimatedProductionUnit":0.0,"actualProductionUnit":0.0,"createdByCloning":"Y","undistributedCost":0.0,"booking":false,"value":"14CAP-00000-000CR"}],"status":200}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:49:06 GMT
-recorded_with: VCR 2.9.2
+      encoding: ASCII-8BIT
+      string: '{"result":[{"id":"NULLISLAND-REC25-00000-0004Q","type":{"module":"Building","value":"Building/Commercial/Demolition/NA","type":"Commercial","text":"Commercial
+        Demolition","group":"Building","alias":"Commercial Demolition","subType":"Demolition","category":"NA","id":"Building-Commercial-Demolition-NA"},"description":"Description:
+        test\r\nWhat are you reporting? IGS - AccelaV4 - Commercial Demolition - Fire
+        Site\r\nPlan Description: test\r\nPlan Type: Civil\r\nOneView Id: 97729\r\nDevice
+        Type: Console\r\nDevice Model: Unknown\r\nAuthor First Name: Nikhil\r\nAuthor
+        Last Name: Rajwar\r\nAuthor Email: nikhil.rajwar@granicus.com\r\nAuthor Telephone:
+        898998989\r\nApproximate Address: Luquillo, Puerto Rico\r\nLat/Lng Coordinates:
+        18.3441, -65.72021\r\nOriginationIpAddress: 172.69.152.136\r\nInitialBoundaryName:
+        All Puerto Rico\r\nInitialBoundaryName: Puerto Rico East\r\n","module":"Building","status":{"value":"Submitted","text":"Submitted"},"recordClass":"COMPLETE","statusDate":"2025-06-10
+        23:00:43","updateDate":"2025-06-10 23:00:46","createdBy":"DEVELOPER","initiatedProduct":"AV360","jobValue":0.0,"renewalInfo":{"expirationStatus":"Pending","expirationDate":"2025-01-31
+        00:00:00"},"openedDate":"2025-06-10 00:00:00","trackingId":293157876,"customId":"BLD25-00120","undistributedCost":0.0,"serviceProviderCode":"NULLISLAND","totalJobCost":0.0,"value":"REC25-00000-0004Q","totalFee":40.0,"totalPay":0.0,"balance":40.0,"booking":false,"infraction":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"publicOwned":false}],"status":200}'
+  recorded_at: Thu, 12 Jun 2025 22:43:18 GMT
+recorded_with: VCR 6.3.1

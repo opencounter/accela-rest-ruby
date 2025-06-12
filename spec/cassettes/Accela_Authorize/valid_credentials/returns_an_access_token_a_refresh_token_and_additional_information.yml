@@ -5,41 +5,47 @@ http_interactions:
     uri: https://apis.accela.com/oauth2/token
     body:
       encoding: UTF-8
-      string: grant_type=password&agency_name=islandton&environment=TEST&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&username=mdeveloper&password=accela&scope=records%20addresses
+      string: agency_name=nullisland&client_id=638853549908464776&client_secret=4588a663f51143e69432e2734143e44b&environment=TEST&grant_type=password&password=accela&scope=records+addresses&username=developer
     headers:
+      X-Accela-Appid:
+      - '638853549908464776'
       Content-Type:
       - application/x-www-form-urlencoded
-      X-Accela-Appid:
-      - '635395466279594650'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '937'
+      Date:
+      - Thu, 12 Jun 2025 20:34:25 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - '-1'
-      Server:
-      - Microsoft-IIS/8.5
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - TiPMix=93.94547587241908; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
+        Max-Age=3600; Secure
+      Vary:
+      - Accept-Encoding
       X-Accela-Traceid:
-      - 140930155450945-3ba87230
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 30 Sep 2014 15:54:51 GMT
+      - 250612203425263-73802033
+      X-Azure-Ref:
+      - 20250612T203425Z-156d548487bbcnlthC1BOS668n00000002p0000000005qc2
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"access_token":"xrWrmbLisKkiBniryq-MqqacOI4yLAO0Wt3sDps7dYKzEEfA65kq9_q6aEAyxI76RFPc3rqjZzQaXcNPMHlyblfWD2e1uYG_cPS2OoTVJRDaL3HA0p4jcu4RqCREs9nY4wpQSa7FsDUyE2tQwO7GzHU2usymUXygKU3brS7DHsbSSscKZOUpBfmD5C4hI24w7bBozqUrf3EK0-_M5nERR4l81LTdzCfDUuj1SPqcSumwkfh2ZhgSzBgny_wHkZkxLEqONbxobX60BhTrwoUUV4FJIdy3ovpVuuGsldDGghgMdCIm9yAYgqF14XceEiUeNcuGEQuXei-MTcO2rtJWtyvT1hoMwjRHx8eJFrcvrSl29pyihsoDyTiKP6sEBtZdlJMeb5pe7EBiU6TZIqyVVuSJRxP1gH0nj_JlYeU9OhS7WbaQQ38fCu5VIQVVJjeb0","token_type":"bearer","expires_in":"86400","refresh_token":"drO6!IAAAACliqodjQavvXbo4lczlqfsvhUB3RjX-JGmujTEzOG384QAAAAGbFXBMR4sKnMJ94n6t3wRmJK0ct6706HTRxSsXcSiXmen2qYS7mEEgdZRbYeXX-g0Gsq0WqA8_PbL7pYv_GuwM3qNbe_Z9WAsna1Ghhz6nGoWQlHYtglU-nk5Z-o6dv7JBTjIBN7Ajp15ZHq8QUYlNHR5K9Rhnt-Os2guD8eEh4c5fGxJjVaEJmIyK-KN4KWVLueG38YGs6gn9nT2y65ZiitMbU9zLJuz3vKpwuVY5BEOzLA8ubpnJyDbw_tm95kig-EbhdBn_j_N6_wnoF_DawEYnLn-up_XfO0zku9KgUA","scope":"addresses
-        get_civicid_profile records"}'
-    http_version: 
-  recorded_at: Tue, 30 Sep 2014 15:54:51 GMT
-recorded_with: VCR 2.9.2
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"access_token\": \"AisMLrUTDT8JtWeaaoLzZT3icP3DtcsLybHtJzzLFgCKYRg5Uk4DHYPIBCyearOmFoYRiHtAcivmlQTel6NuwjHqft9dDyrRAwrFx6xMlMWE3Vj8CR99liFKoEhcghYrr8cbgGH19y3MNvcOxX8VV4XKyEcIRG9f4P-XAt_gvEMP_DLvd822am4AmUbtOGdn5LtspOHiaJN_0voKgs50HDuPVyMdsE1vhf5zdQRsCDBx-GmRHqkjK9Ib3l2F2QnlgqGI_aVi-hHKF8RWQa4wzUtx5wzrs9SgBHhwZljwK5xnjeZyY_VXGutGZoCuZ8q1-UacD6Kt8C6fHLxFO7NHFuPyJeE5Js1leJIs1VP1spgeCel6QYz7MyX_dyj06GksJI_8Ih0p1JZX7bEZvLATnbjBGIDgq2m0Yj36abKXjjoj5bEEfRSxbok62hU65nUBUWm00ZR8bp-4E1lSdB8wSAghN6RFow-xemADESaUY0VUIdCJ2bG7ay0bhtVoUHkm9rtfK0DZQ-QSuHid6gOErIyhV6D_Lhpf0fIwcbgCRV80M2LfDQzQmDhL71lXQA9rIbSVu8DpgL7YMEI3I24qUEonfCRAztVj38QCYrpP4Ki7HPc_Q71scHcHw3aCkNWa0\",\r\n
+        \ \"token_type\": \"bearer\",\r\n  \"expires_in\": 900,\r\n  \"refresh_token\":
+        \"dzFR9z9pe3A4PBh6oR7L7pxhGO0bUqUs4micQm1wJW3mYyev_am-Dy2-pOR3zvaWBsAAfTU4rtED8eICGtsIr5WCvscGKXdUdcIByKQxfgXhNfvJlHAa7ayAYw3aTRgyluFeoipICUvjgaH9paeDp3niunuKuezSOtcVu-GnKmvN1GwR-AQlsfXc-mSMMWFR4wi4ohEjYfSd18vbXFjIlEnrD2H3zixWgY5wVhUxdt14V4dvCMUPLjs0rfnISGkheoi9iq0AvG4cd7C_e19HOJVljeFMI-ahghMRJ1QlPlmusIL-jJcFvOsLakbI73Q3c7M4I7fZvLd6b9oatPYsbFfAo1S-xFJnkV7gFjJnK0X-KaWZQK94srV3yWzgsHhpluc3oMfikiVbe9SdVpcshzUWw2qfE8a8w8OTayzkfLK9XEucM2OU14QN7Yi_Eugxn4j_pHJKSNvELM9uPwEN-IzdJQL7R5XtQv31xinQ_RoCMvc2hGWEYlAxk9S2duWpq1ZkgTP95NYeaQGEQWwhXqKu4M7siGb67NnNCmMJShT4ii84Mw6scDKPwd0DjIx1jqGwOBbCuo8dx_MwoeXwV1JRhqe8U3aMT8PhTY-AMvk-NEUzeCfOQJBu2bqhtj7Z0\",\r\n
+        \ \"scope\": \"records addresses\"\r\n}"
+  recorded_at: Thu, 12 Jun 2025 20:34:25 GMT
+recorded_with: VCR 6.3.1

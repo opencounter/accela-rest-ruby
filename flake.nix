@@ -31,8 +31,13 @@
           {
             default = devenv.lib.mkShell {
               inherit inputs pkgs;
+
               modules = [
                 {
+                  packages = with pkgs; [
+                    libyaml.dev
+                  ];
+
                   # https://devenv.sh/reference/options/
                   languages.ruby = {
                     enable = true;

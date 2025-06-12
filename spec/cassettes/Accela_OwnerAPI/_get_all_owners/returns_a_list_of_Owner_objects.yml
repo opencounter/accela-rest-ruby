@@ -5,43 +5,49 @@ http_interactions:
     uri: https://apis.accela.com/oauth2/token
     body:
       encoding: UTF-8
-      string: grant_type=password&agency_name=islandton&environment=TEST&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&username=developer&password=accela&scope=owners
+      string: agency_name=nullisland&client_id=638853549908464776&client_secret=4588a663f51143e69432e2734143e44b&environment=TEST&grant_type=password&password=accela&scope=owners&username=developer
     headers:
+      X-Accela-Appid:
+      - '638853549908464776'
       Content-Type:
       - application/x-www-form-urlencoded
-      X-Accela-Appid:
-      - '635395466279594650'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '883'
+      Date:
+      - Thu, 12 Jun 2025 20:34:27 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - TiPMix=66.07535067775031; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
+        Max-Age=3600; Secure
+      Vary:
+      - Accept-Encoding
       X-Accela-Traceid:
-      - 140916194854966-d6872f73
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 16 Sep 2014 19:48:54 GMT
+      - 250612203427752-aeddeef4
+      X-Azure-Ref:
+      - 20250612T203427Z-156d548487b6w2zkhC1BOSqneg0000000240000000004u61
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"access_token":"tgMx9IgkpNEGbyH8NczpGImVJ6BOeua-OlXBuSxLbVO80DvNK7m1U00OXhUIO4InXRd-zFKl3WsyuZfZ6wljyJsOSBB527rDpa5o7PNqYzHxL8n2nxxNbTae-648kWINaP4z8rdGYb_EbuKeNd3CeiI0OQbIzgFBndzob7nByKSwbiZ17ybyA4f5UowHQAZzULXewRybezfThzYx0U4MWyQXzRv2XrFfuUrGkLbCKn-VGrbtF1uBwKTSVYLkBZh3IMkiz9Zd3PElVn4Ig-pdSFS792Etph43lvFJPvHCH5v1FG_BX8Qc_IyLs0az_iOvFG5l6Ej7KJejJFdJ5o_rNuEireX6TFE81m0Jxd0NtsjBGDv4UV4I9kbCd3Mj4l3lm_3FzmB1H7lxARNMUz9qDE_SOQphvfl8d_BblYfEiJY1","token_type":"bearer","expires_in":"86400","refresh_token":"rALM!IAAAAMC-ayUBqKyh0NLZdO_lttjSLUNsC_X_zZKsnnWYEvsx0QAAAAEO1b2fPgd4R0yRqDuHOPeR3pxGnAmCP7bZhbHGL2Ufa3yBAb2RHjtUqFrOEaa3CpTapOw6hCoaJ6BKtq1fzD1d19A9-bLKqNPusd3Ydzyk-9nQHiKmyZQwRn6shUpzRR-IBtXkRs0Ir_Dy_3LVJgBTztgs5dmWr89AEsSUlW6AgpibO392tbv4G3ADwr1fmqgsWd_pK6AS--Q6xGt-AXI-dLAarNLHnJ5eYCWRwSf31RGwNWvimClXNtLxl0XW5d9hEboP2PXgRxNk17H1DyYY","scope":"get_civicid_profile
-        owners"}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:48:56 GMT
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"access_token\": \"AisMLrUTDT8JtWeaaoLzZY6ZG38bnoorRbEbGZTCA2VV2Q0FSNk1QGguFTWb3bnslZHNbjB3H3XahpSodXOiBpJHAcrlJ0H6BjLCaURlcfTVLM8pFHqkWuUcATe1iDzZG5e9YWeNmVKNtYszOicM2RoK1B4ur7kD0uLD5aRqR2AAerIRq8IN-8nv-znfr5_t6dLizfRty5WWDtgxJkqDmRKStF0hiGEem4lUQNtAACtEmj0w4a35T3NjKvSAdQwiaM1GD4A9QIM9-Ww8gMAmxPIRGR0IobJoOWgVljfCH-2eudUVhJ1cy4qK3RBaIJDQm5YR54dU7jOmbNOrje697nSKO7s7mEY6bEWKpecPX8abYV8POlOekD4nUo3U1vWsTb--EuSLVNwEjGuLSd1RtOxuc8LyBRdcEnyqUE60JBXgeM2w0-c3_MeF1TfkV4tA3zkvmWMR5TTMMYNmh8ukmuyyFiFWuRP2UUHo87DnV7KCbBx2nN375QoXxRS0Z6kVSyUrRTZsr755vBDI0yAPymtryb4kV5KxxrccOIHSlHoo94GG27DSVvS1bGNdi6N8cV444P6KLdbO94POrrfc5JdkWzzAv5AQyFog6k5ONEs1\",\r\n
+        \ \"token_type\": \"bearer\",\r\n  \"expires_in\": 900,\r\n  \"refresh_token\":
+        \"dzFR9z9pe3A4PBh6oR7L7ocuWc9-MOap7NWG7_9DJ7tCQ8PUY3AvxYovDTidU-SZQvlGLXZPNIpLrCsLxj-OH7i0bJZkK8IDfBAtknYHxk_0qsbpqlJ7tu-wreimu2TT7CqRInNcOlOmDtxRl9I8Q69REiPzARMixO3zhUC56r5gBbpVTR1H06qpIsDWClULqxXy9Ygfgq7ajfnN-0Li-KbC-kW_BP-Xfl1jip9enu4n1aSTev82jGZXQvuIlidk3PH-UyO5Hn3edANAB2_1nXwsehR8XaaNM_G3RFsyavJ8MYAKBacNX4fwXQflRcNlMFgJw9ZzM_2DJldUpUPKJAkzmLrqqKshL8aCEfUihwsTSgB5qi41AgsBiEkVzlTsODPF-Gzjv8ExMkzDEmLWjw2MMwqFiKfF6ALC3WSSYuqAO2z5JP87Mw5e7GYYA07-yxiyR93dPmFDnJobLTyyAqHKZzih2_Hj8uDBJQH1qOU6jE9bsK0AzftN11L-0BSpdpexU-T_YTqCjsKi9QxS5R8Ove2Daj_M-fnqGp_OzstjBiv2Ajh1Lb2aXNSp56ovHxC-FNGpIvnZuyQxqhIoC1S0041EJYnahem_mv_Q0_EjvtG6imeyrcSGiVwJuNLx0\",\r\n
+        \ \"scope\": \"owners\"\r\n}"
+  recorded_at: Thu, 12 Jun 2025 20:34:27 GMT
 - request:
     method: get
     uri: https://apis.accela.com/v4/owners?state=OH
@@ -54,55 +60,88 @@ http_interactions:
       Accept:
       - application/json
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       Authorization:
-      - tgMx9IgkpNEGbyH8NczpGImVJ6BOeua-OlXBuSxLbVO80DvNK7m1U00OXhUIO4InXRd-zFKl3WsyuZfZ6wljyJsOSBB527rDpa5o7PNqYzHxL8n2nxxNbTae-648kWINaP4z8rdGYb_EbuKeNd3CeiI0OQbIzgFBndzob7nByKSwbiZ17ybyA4f5UowHQAZzULXewRybezfThzYx0U4MWyQXzRv2XrFfuUrGkLbCKn-VGrbtF1uBwKTSVYLkBZh3IMkiz9Zd3PElVn4Ig-pdSFS792Etph43lvFJPvHCH5v1FG_BX8Qc_IyLs0az_iOvFG5l6Ej7KJejJFdJ5o_rNuEireX6TFE81m0Jxd0NtsjBGDv4UV4I9kbCd3Mj4l3lm_3FzmB1H7lxARNMUz9qDE_SOQphvfl8d_BblYfEiJY1
+      - AisMLrUTDT8JtWeaaoLzZY6ZG38bnoorRbEbGZTCA2VV2Q0FSNk1QGguFTWb3bnslZHNbjB3H3XahpSodXOiBpJHAcrlJ0H6BjLCaURlcfTVLM8pFHqkWuUcATe1iDzZG5e9YWeNmVKNtYszOicM2RoK1B4ur7kD0uLD5aRqR2AAerIRq8IN-8nv-znfr5_t6dLizfRty5WWDtgxJkqDmRKStF0hiGEem4lUQNtAACtEmj0w4a35T3NjKvSAdQwiaM1GD4A9QIM9-Ww8gMAmxPIRGR0IobJoOWgVljfCH-2eudUVhJ1cy4qK3RBaIJDQm5YR54dU7jOmbNOrje697nSKO7s7mEY6bEWKpecPX8abYV8POlOekD4nUo3U1vWsTb--EuSLVNwEjGuLSd1RtOxuc8LyBRdcEnyqUE60JBXgeM2w0-c3_MeF1TfkV4tA3zkvmWMR5TTMMYNmh8ukmuyyFiFWuRP2UUHo87DnV7KCbBx2nN375QoXxRS0Z6kVSyUrRTZsr755vBDI0yAPymtryb4kV5KxxrccOIHSlHoo94GG27DSVvS1bGNdi6N8cV444P6KLdbO94POrrfc5JdkWzzAv5AQyFog6k5ONEs1
       X-Accela-Agency:
-      - islandton
+      - nullisland
+      User-Agent:
+      - Faraday v2.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '1041'
+      Date:
+      - Thu, 12 Jun 2025 20:34:28 GMT
       Content-Type:
       - application/json
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
-      - Microsoft-IIS/7.5
-      - unknow
-      X-Accela-Resp-Gateway-Version:
-      - 3.1.0.1
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      X-Accela-Traceid:
-      - 140916194856402-f573ad1e
-      Date:
-      - Tue, 16 Sep 2014 19:48:56 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612203428201-2197eb48
+      X-Azure-Ref:
+      - 20250612T203428Z-156d548487bjmjtxhC1BOStnm80000000fg0000000002rzw
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"result":[{"parcelId":"008391077","id":4818534,"fullName":"BRICKER
-        MICHAEL D","isPrimary":"Y","mailAddress":{"city":"BATAVIA ","postalCode":"45103","addressLine2":"4231
-        PEACE HAVEN LN","state":{"value":"OH","text":"OH"}},"address":{"city":"BATAVIA
-        ","state":{"value":"OH","text":"OH"}},"status":{"value":"A","text":"Active"}},{"parcelId":"047181028","id":1876184,"fullName":"MOSHELL
-        ADELINE H","isPrimary":"Y","mailAddress":{"city":"FREDERICKTOWN ","postalCode":"43019","addressLine2":"38
-        WEST SANDUSKY ST","state":{"value":"OH","text":"OH"}},"address":{"city":"FREDERICKTOWN
-        ","state":{"value":"OH","text":"OH"}},"status":{"value":"A","text":"Active"}},{"parcelId":"137230010","id":4823151,"fullName":"TAYLOR
-        CYNTHIA","isPrimary":"Y","mailAddress":{"city":"SHAKER HEIGHTS ","postalCode":"44120","addressLine2":"16090
-        PARKLAND DR","state":{"value":"OH","text":"OH"}},"address":{"city":"SHAKER
-        HEIGHTS ","state":{"value":"OH","text":"OH"}},"status":{"value":"A","text":"Active"}}],"status":200,"page":{"offset":0,"limit":25,"hasmore":false}}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:48:57 GMT
-recorded_with: VCR 2.9.2
+      encoding: ASCII-8BIT
+      string: '{"result":[{"parcelId":"N64 03303 0051","fullName":"ALLEN JOSETTE M
+        AND DAVID L","isPrimary":"Y","id":515079626,"keyFieldsNull":false,"syncIndex":true,"mailAddress":{"city":"DAYTON","postalCode":"45429","addressLine1":"4440
+        SOUTHERN BLVD","state":{"value":"OH","text":"OH"}},"address":{"city":"DAYTON","postalCode":"45429","addressLine1":"4440
+        SOUTHERN BLVD","state":{"value":"OH","text":"OH"}},"status":{"value":"A","text":"Active"}},{"parcelId":"R72
+        17626 0001","fullName":"CHILDREN''S MEDICAL CENTER ETAL 4","isPrimary":"Y","id":515079641,"keyFieldsNull":false,"syncIndex":true,"mailAddress":{"city":"DAYTON","postalCode":"45404","addressLine1":"1
+        CHILDRENS PLZ","state":{"value":"OH","text":"OH"},"country":{"value":"US","text":"US"}},"address":{"city":"DAYTON","postalCode":"45404","addressLine1":"1
+        CHILDRENS PLZ","state":{"value":"OH","text":"OH"},"country":{"value":"US","text":"US"}},"status":{"value":"A","text":"Active"}},{"parcelId":"R72
+        00203 0011","fullName":"CITY OF DAYTON","isPrimary":"Y","id":515079642,"keyFieldsNull":false,"syncIndex":true,"mailAddress":{"city":"DAYTON","postalCode":"45439","addressLine1":"3033
+        KETTERING BLVD","state":{"value":"OH","text":"OH"},"country":{"value":"US","text":"US"}},"address":{"city":"DAYTON","postalCode":"45439","addressLine1":"3033
+        KETTERING BLVD","state":{"value":"OH","text":"OH"},"country":{"value":"US","text":"US"}},"status":{"value":"A","text":"Active"}},{"parcelId":"R72
+        00204 0001","fullName":"CITY OF DAYTON","isPrimary":"Y","id":515079642,"keyFieldsNull":false,"syncIndex":true,"mailAddress":{"city":"DAYTON","postalCode":"45439","addressLine1":"3033
+        KETTERING BLVD","state":{"value":"OH","text":"OH"},"country":{"value":"US","text":"US"}},"address":{"city":"DAYTON","postalCode":"45439","addressLine1":"3033
+        KETTERING BLVD","state":{"value":"OH","text":"OH"},"country":{"value":"US","text":"US"}},"status":{"value":"A","text":"Active"}},{"parcelId":"N64
+        03404 0012","fullName":"CITY OF KETTERING","isPrimary":"Y","id":515079624,"keyFieldsNull":false,"syncIndex":true,"mailAddress":{"city":"DAYTON","postalCode":"45429-2734","addressLine1":"3600
+        SHROYER RD","state":{"value":"OH","text":"OH"}},"address":{"city":"DAYTON","postalCode":"45429-2734","addressLine1":"3600
+        SHROYER RD","state":{"value":"OH","text":"OH"}},"status":{"value":"A","text":"Active"}},{"parcelId":"N64
+        03408 0016","fullName":"CITY OF KETTERING","isPrimary":"Y","id":515079624,"keyFieldsNull":false,"syncIndex":true,"mailAddress":{"city":"DAYTON","postalCode":"45429-2734","addressLine1":"3600
+        SHROYER RD","state":{"value":"OH","text":"OH"}},"address":{"city":"DAYTON","postalCode":"45429-2734","addressLine1":"3600
+        SHROYER RD","state":{"value":"OH","text":"OH"}},"status":{"value":"A","text":"Active"}},{"parcelId":"N64
+        03301 0085","fullName":"HORNSBY CHARLES J","lastName":"HORNSBY","isPrimary":"Y","id":515079625,"keyFieldsNull":false,"firstName":"CHARLES","middleName":"J","syncIndex":true,"mailAddress":{"city":"DAYTON","postalCode":"45409","addressLine1":"2300
+        WILLOWGROVE AVE","state":{"value":"OH","text":"OH"}},"address":{"city":"DAYTON","postalCode":"45409","addressLine1":"2300
+        WILLOWGROVE AVE","state":{"value":"OH","text":"OH"}},"status":{"value":"A","text":"Active"}},{"parcelId":"80-246810","fullName":"JOE
+        JONES","lastName":"JONES","isPrimary":"N","id":514448741,"keyFieldsNull":false,"firstName":"JOE","syncIndex":true,"mailAddress":{"city":"CINCINNATI","postalCode":"45214","addressLine1":"3700
+        CREEK RD","state":{"value":"OH","text":"OH"}},"address":{"city":"CINCINNATI","postalCode":"45214","addressLine1":"3700
+        CREEK RD","state":{"value":"OH","text":"OH"},"country":{"value":"45214","text":"45214"}},"status":{"value":"A","text":"Active"}},{"parcelId":"OAKLAND-4","fullName":"JOE
+        JONES","lastName":"JONES","isPrimary":"N","id":514448741,"keyFieldsNull":false,"firstName":"JOE","syncIndex":true,"mailAddress":{"city":"CINCINNATI","postalCode":"45214","addressLine1":"3700
+        CREEK RD","state":{"value":"OH","text":"OH"}},"address":{"city":"CINCINNATI","postalCode":"45214","addressLine1":"3700
+        CREEK RD","state":{"value":"OH","text":"OH"},"country":{"value":"45214","text":"45214"}},"status":{"value":"A","text":"Active"}},{"parcelId":"N64
+        00109 0062","fullName":"KELLEY JEREMY P AND JILL E","isPrimary":"Y","id":515079640,"keyFieldsNull":false,"syncIndex":true,"mailAddress":{"city":"DAYTON","postalCode":"45429","addressLine1":"1101
+        CHATEAU DR","state":{"value":"OH","text":"OH"},"country":{"value":"US","text":"US"}},"address":{"city":"DAYTON","postalCode":"45429","addressLine1":"1101
+        CHATEAU DR","state":{"value":"OH","text":"OH"},"country":{"value":"US","text":"US"}},"status":{"value":"A","text":"Active"}},{"parcelId":"N64
+        00109 0053","fullName":"MADLIGER RICHARD A AND STEPHANY M","isPrimary":"Y","id":515079638,"keyFieldsNull":false,"syncIndex":true,"mailAddress":{"city":"DAYTON","postalCode":"45429","addressLine1":"1016
+        SWANGO DR","state":{"value":"OH","text":"OH"},"country":{"value":"US","text":"US"}},"address":{"city":"DAYTON","postalCode":"45429","addressLine1":"1016
+        SWANGO DR","state":{"value":"OH","text":"OH"},"country":{"value":"US","text":"US"}},"status":{"value":"A","text":"Active"}},{"parcelId":"R72
+        00110 0001","fullName":"MONTGOMERY COUNTY","isPrimary":"Y","id":515079643,"keyFieldsNull":false,"syncIndex":true,"mailAddress":{"city":"DAYTON","postalCode":"45422","addressLine1":"451
+        W 3RD ST? DAYTON, OH 45422","state":{"value":"OH","text":"OH"},"country":{"value":"US","text":"US"}},"address":{"city":"DAYTON","postalCode":"45422","addressLine1":"451
+        W 3RD ST?","state":{"value":"OH","text":"OH"},"country":{"value":"US","text":"US"}},"status":{"value":"A","text":"Active"}},{"parcelId":"N64
+        00109 0047","fullName":"MYERS AMANDA L","isPrimary":"Y","id":515079639,"keyFieldsNull":false,"syncIndex":true,"mailAddress":{"city":"DAYTON","postalCode":"45429","addressLine1":"1117
+        HOLLENDALE DR","state":{"value":"OH","text":"OH"},"country":{"value":"US","text":"US"}},"address":{"city":"DAYTON","postalCode":"45429","addressLine1":"1117
+        HOLLENDALE DR","state":{"value":"OH","text":"OH"},"country":{"value":"US","text":"US"}},"status":{"value":"A","text":"Active"}},{"parcelId":"N64
+        03412 0019","fullName":"OAK CREEK SWIM CLUB INC","isPrimary":"Y","id":515079528,"keyFieldsNull":false,"syncIndex":true,"mailAddress":{"city":"KETTERING","postalCode":"45429","addressLine1":"PO
+        BOX 2233","state":{"value":"OH","text":"OH"}},"address":{"city":"KETTERING","postalCode":"45429","addressLine1":"PO
+        BOX 2233","state":{"value":"OH","text":"OH"}},"status":{"value":"A","text":"Active"}},{"parcelId":"E21
+        17201A0020","fullName":"THE RONALD AND MELISSA WEST BARBER SCHOLARSHIP FUND","isPrimary":"Y","id":515079648,"keyFieldsNull":false,"syncIndex":true,"mailAddress":{"city":"DAYTON","postalCode":"45419","addressLine1":"3303
+        N DIXIE DR","state":{"value":"OH","text":"OH"}},"address":{"city":"DAYTON","postalCode":"45419","addressLine1":"3303
+        N DIXIE DR","state":{"value":"OH","text":"OH"}},"status":{"value":"A","text":"Active"}},{"parcelId":"N64
+        00109 0029","fullName":"TYSON TERRI L","lastName":"TYSON","isPrimary":"Y","id":515079627,"keyFieldsNull":false,"firstName":"TERRI","middleName":"L","syncIndex":true,"mailAddress":{"city":"DAYTON","postalCode":"45459","addressLine1":"6605
+        TIVERTON CIR","state":{"value":"OH","text":"OH"}},"address":{"city":"DAYTON","postalCode":"45459","addressLine1":"6605
+        TIVERTON CIR","state":{"value":"OH","text":"OH"}},"status":{"value":"A","text":"Active"}}],"status":200,"page":{"offset":0,"limit":25,"hasmore":false}}'
+  recorded_at: Thu, 12 Jun 2025 20:34:28 GMT
+recorded_with: VCR 6.3.1

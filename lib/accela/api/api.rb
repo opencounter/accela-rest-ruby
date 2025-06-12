@@ -2,7 +2,7 @@ module Accela
   class API
     include Escaper
 
-    LOGGER = Logger.new(STDOUT).tap { |logger| logger.level = Logger::INFO }
+    LOGGER = Logger.new(STDERR).tap { |logger| logger.level = Logger::DEBUG }
 
     def self.connection
       new(Configuration)

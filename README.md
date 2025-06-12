@@ -25,7 +25,7 @@ Here is an example workflow:
 input_record = Accela::Record.new housing_units: 829,
                                   type: { type.id = "Building-Commercial-Addition-NA" }
 record = Accela::RecordAPI.create_record(input_record)
-record.id # => "ISLANDTON-14CAP-00000-000CR"
+record.id # => "NULLISLAND-REC25-00000-0004Q"
 ```
 
 #### Fetching models
@@ -36,7 +36,7 @@ Most models support the `all` and `find` methods. These work similar to ActiveRe
 records = Accela::RecordAPI.get_all_records
 records.length # => 25
 
-record = Accela::RecordAPI.get_records("ISLANDTON-14CAP-00000-000CR")
+record = Accela::RecordAPI.get_records("NULLISLAND-REC25-00000-0004Q")
 record.name # => "D-I Builders Development Model Home"
 ```
 

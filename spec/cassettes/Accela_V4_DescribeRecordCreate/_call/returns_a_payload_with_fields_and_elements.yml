@@ -5,43 +5,49 @@ http_interactions:
     uri: https://apis.accela.com/oauth2/token
     body:
       encoding: UTF-8
-      string: grant_type=password&agency_name=islandton&environment=TEST&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&username=mdeveloper&password=accela&scope=records
+      string: agency_name=nullisland&client_id=638853549908464776&client_secret=4588a663f51143e69432e2734143e44b&environment=TEST&grant_type=password&password=accela&scope=records&username=developer
     headers:
+      X-Accela-Appid:
+      - '638853549908464776'
       Content-Type:
       - application/x-www-form-urlencoded
-      X-Accela-Appid:
-      - '635395466279594650'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '905'
+      Date:
+      - Thu, 12 Jun 2025 23:12:39 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - '-1'
-      Server:
-      - Microsoft-IIS/8.5
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - TiPMix=48.92239007527955; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
+        Max-Age=3600; Secure
+      Vary:
+      - Accept-Encoding
       X-Accela-Traceid:
-      - 140930154040883-781efd4b
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 30 Sep 2014 15:40:41 GMT
+      - 250612231239666-beaaf650
+      X-Azure-Ref:
+      - 20250612T231239Z-156d548487bmgnl5hC1BOSdwkg0000000afg000000003p8e
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"access_token":"xrWrmbLisKkiBniryq-MqkypZoBIU5TZfo0CdbZwqNRJHWrEZO3TugO7JEUpnD_MM5Xtzt7pyx9qy2Ir5XC_SfzNRM5isFENPhqw6LomBh6hTvErmDOSSqVifJsRGbQpQ5h2Ig7ke7J1sY0_K0TG7OaHY0nRdGDDJEX0-wnWm3aIHaBa3BrA7wPzlYDys5U3l6Iqf_t-B3fwabTpsF4_4Lq71i0cqOBXMBvlSzxgIP6PcGJOzeaV_uk9sz9g4_NijHCRsXyfrq6Z_rTK5A2ZI778iVd5JNcsS9HC2_mLeLD2qz2WOa6q6Ho3fU-iC-6TW-5P9UU0BrY5ctP932Eow74yvZ-6HebTNxZE3S20Q4QbcSqAurP7g-9eZmDk50wgWmh9rvnhoW4bbnlg-WyLUs_CSxm8i24UMHxHtLx-rf1NrNaFTaz9N1X2Xgjm79VB0","token_type":"bearer","expires_in":"86400","refresh_token":"drO6!IAAAAApt10LttcUh038TlP5bsG_q1SpO8acSfgB4yGoFb4Wi0QAAAAGhSolVMyQlkADMMFCNOYlq1_LW827tTY_TpN6eixiUWn9evASX2GINR4y27GqKgH3pqqcjXFGGTHGn1rBal522pyhSp_h4DC1p-TAIsotNGMdAaDUosS4L13fPxHjYfvxucIZjADo8tT1Bu9vK9e2PsgEtx3bqbImbml_c_TdYP4bNwTqhxor9XsTvzCTFHC6XOjgrNGm5BOI6e8e07Q06NzRNDBA0JaCKybT8lvTz0Tt2UszSY4-IshIr7PNN19PBLpwJ92v2FYKM5bGX56ou","scope":"get_civicid_profile
-        records"}'
-    http_version: 
-  recorded_at: Tue, 30 Sep 2014 15:40:41 GMT
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"access_token\": \"mZ-l62OaT1966dQLNtgHPM2NrP-4cRMUqzk_kq46xzbp7iehJjwa6KDNyAjnnm6MS61miQvXnpv5CUKl1XtJeo7q8Dt0R8Mk-lfcGNCg4kM9ZUZZdwVg7V8FiMx5l5LaxkoF1pEXJOsuivzhwcOG8jbuSwK-kcaCmVwbt3iV_6e4LVpFpZXgPTeg2dskVdu8Zegalh-60Rn7wPUj_nOsA7icAb4K99N0iDOV1hSz1HnpJ70PDJdZn2nVKfhLpo2_oyHUK3yzIJiKmsjUDB8T5sHOkmLf_2WxfBwVsNK234BRr3CPOH0vCEDT3cQux0McZNzj4kL1RDeupRKGeRXDgXCaSQOrrJygPfVYi4MxjCVITUQfQoyS_xGisBxLhd5r0mg01H5e-iWrK-1FdSPV4dWFUnEOeLnH4iehJt0mclTpR8vdAMIKaJEJOZ-4UNeSb5jOdVE2HgeYAruVXlUkRVorlfBO6lCZI-R0R7IxRokvlQpGdsK1mnXWAoGRiXv004mIBSK4FqXpZ7MUtyXyHfswAofXVh-kPVL9L_YAH_Wz-cO_zssdsOs69qth3s54aP75uzpGdHsS78uJIZYctuGv6n5XxgYaGTLII_u9qKCcWqd4mmXwzFXe1uere3Wi0\",\r\n
+        \ \"token_type\": \"bearer\",\r\n  \"expires_in\": 900,\r\n  \"refresh_token\":
+        \"VZpkBZmjyJq7gpqMIX5JH3u7Vxgp_t6_i2jiKo1AGPMoji-Xv59O2D7B7_dYwHs72FSF7m-CQtV7xqZgH6N4fRQU_fwDx5hcjWvhs9CejkSBRWcCfauAqOht5ZQgzNwDE9GtMusGrwm_tLY8LU23HQXTjUZwddhp0EzDTwZMfBh14O5PnVoWhJktoMJljE3h1g0xjyPUVXpwUo5aHE6APcAmr9CpytdWBypt6gNnbo3FsvEE9Y9_vREoJx-EQycVoIUOSGuwnlSHLwOh1_vB1bwn-bmhGji_NkgsjkpFEBgYwOuauOIxPzek2Y6LYTjXNfDJ6Sq2mTg5V3KVNgNDbTObyytnMeQiEVQxMOTVP9XOR-IIagSIIrdqLReMvzEqEgVKRXam-2yKRDc-5GFBSVb66b98n_F3q68CZ-T6iFgER12jQmAajLhdeQYsECusK2U8nyKubKOsbjxfnYyhIRoeNWXvg8tSdHpbZJj1IZ9xSQrfSuMcGEWtRPxR0QwNsx-xdaN_cLgLB_tfOwypKk3KTmP1gQ3583I1CuaY-XP_55Xjq2XO9d-38nTrsWIAqL5GdzKk6R6x2Bbtb9-_-S28_FwSo5z-4nwMXIJqqJaE5YYEQjisGi1kDZODm40M0\",\r\n
+        \ \"scope\": \"records\"\r\n}"
+  recorded_at: Thu, 12 Jun 2025 23:12:39 GMT
 - request:
     method: get
     uri: https://apis.accela.com/v4/records/describe/create
@@ -54,46 +60,41 @@ http_interactions:
       Accept:
       - application/json
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       Authorization:
-      - xrWrmbLisKkiBniryq-MqkypZoBIU5TZfo0CdbZwqNRJHWrEZO3TugO7JEUpnD_MM5Xtzt7pyx9qy2Ir5XC_SfzNRM5isFENPhqw6LomBh6hTvErmDOSSqVifJsRGbQpQ5h2Ig7ke7J1sY0_K0TG7OaHY0nRdGDDJEX0-wnWm3aIHaBa3BrA7wPzlYDys5U3l6Iqf_t-B3fwabTpsF4_4Lq71i0cqOBXMBvlSzxgIP6PcGJOzeaV_uk9sz9g4_NijHCRsXyfrq6Z_rTK5A2ZI778iVd5JNcsS9HC2_mLeLD2qz2WOa6q6Ho3fU-iC-6TW-5P9UU0BrY5ctP932Eow74yvZ-6HebTNxZE3S20Q4QbcSqAurP7g-9eZmDk50wgWmh9rvnhoW4bbnlg-WyLUs_CSxm8i24UMHxHtLx-rf1NrNaFTaz9N1X2Xgjm79VB0
+      - mZ-l62OaT1966dQLNtgHPM2NrP-4cRMUqzk_kq46xzbp7iehJjwa6KDNyAjnnm6MS61miQvXnpv5CUKl1XtJeo7q8Dt0R8Mk-lfcGNCg4kM9ZUZZdwVg7V8FiMx5l5LaxkoF1pEXJOsuivzhwcOG8jbuSwK-kcaCmVwbt3iV_6e4LVpFpZXgPTeg2dskVdu8Zegalh-60Rn7wPUj_nOsA7icAb4K99N0iDOV1hSz1HnpJ70PDJdZn2nVKfhLpo2_oyHUK3yzIJiKmsjUDB8T5sHOkmLf_2WxfBwVsNK234BRr3CPOH0vCEDT3cQux0McZNzj4kL1RDeupRKGeRXDgXCaSQOrrJygPfVYi4MxjCVITUQfQoyS_xGisBxLhd5r0mg01H5e-iWrK-1FdSPV4dWFUnEOeLnH4iehJt0mclTpR8vdAMIKaJEJOZ-4UNeSb5jOdVE2HgeYAruVXlUkRVorlfBO6lCZI-R0R7IxRokvlQpGdsK1mnXWAoGRiXv004mIBSK4FqXpZ7MUtyXyHfswAofXVh-kPVL9L_YAH_Wz-cO_zssdsOs69qth3s54aP75uzpGdHsS78uJIZYctuGv6n5XxgYaGTLII_u9qKCcWqd4mmXwzFXe1uere3Wi0
       X-Accela-Agency:
-      - islandton
+      - nullisland
+      User-Agent:
+      - Faraday v2.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '2937'
+      Date:
+      - Thu, 12 Jun 2025 23:12:40 GMT
       Content-Type:
       - application/json
-      Expires:
-      - '-1'
-      Server:
-      - Microsoft-IIS/7.5
-      - Microsoft-IIS/8.5
-      - unknow
-      X-Accela-Resp-Gateway-Version:
-      - 3.1.0.1
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      X-Accela-Traceid:
-      - 140930154042404-18e4bcdf
-      Date:
-      - Tue, 30 Sep 2014 15:40:42 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612231240177-3c3d33f1
+      X-Azure-Ref:
+      - 20250612T231239Z-156d548487b57szthC1BOS05sg00000002ug000000003h72
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"status":200,"result":{"fields":[{"name":"customId","isRequired":false},{"name":"customForms","isRequired":false},{"name":"type","isRequired":true},{"name":"misdemeanor","isRequired":false},{"name":"inspectorName","isRequired":false},{"name":"enforceDepartment","isRequired":false},{"name":"scheduledDate","isRequired":false},{"name":"customTables","isRequired":false},{"name":"completeUser","isRequired":false},{"name":"housingUnits","isRequired":false},{"name":"description","isRequired":false},{"name":"priority","isRequired":false},{"name":"value","isRequired":false},{"name":"recordClass","isRequired":false},{"name":"enforceUser","isRequired":false},{"name":"inspectorId","isRequired":false},{"name":"estimatedDueDate","isRequired":false},{"name":"actualProductionUnit","isRequired":false},{"name":"defendantSignature","isRequired":false},{"name":"status","isRequired":false},{"name":"appearanceDayOfWeek","isRequired":false},{"name":"trackingId","isRequired":false},{"name":"publicOwned","isRequired":false},{"name":"assignedDate","isRequired":false},{"name":"enforceUserId","isRequired":false},{"name":"completedDate","isRequired":false},{"name":"reportedDate","isRequired":false},{"name":"completedByUser","isRequired":false},{"name":"inPossessionTime","isRequired":false},{"name":"createdByCloning","isRequired":false},{"name":"closedByUser","isRequired":false},{"name":"overallApplicationTime","isRequired":false},{"name":"offenseWitnessed","isRequired":false},{"name":"appearanceDate","isRequired":false},{"name":"closedDate","isRequired":false},{"name":"estimatedProductionUnit","isRequired":false},{"name":"statusDate","isRequired":false},{"name":"infraction","isRequired":false},{"name":"completedByDepartment","isRequired":false},{"name":"completeDate","isRequired":false},{"name":"reportedChannel","isRequired":false},{"name":"assignedToDepartment","isRequired":false},{"name":"closedByDepartment","isRequired":false},{"name":"booking","isRequired":false},{"name":"initiatedProduct","isRequired":false},{"name":"openedDate","isRequired":false},{"name":"reportedType","isRequired":false},{"name":"numberOfBuildings","isRequired":false},{"name":"constructionType","isRequired":false},{"name":"assignedUser","isRequired":false},{"name":"severity","isRequired":false},{"name":"renewalInfo","isRequired":false},{"name":"firstIssuedDate","isRequired":false},{"name":"statusReason","isRequired":false},{"name":"inspectorDepartment","isRequired":false},{"name":"shortNotes","isRequired":false}],"elements":[{"name":"parcels","isRequired":true,"isReference":false},{"name":"addresses","isRequired":false,"isReference":false},{"name":"owners","isRequired":true,"isReference":false},{"name":"professionals","isRequired":true,"isReference":false},{"name":"contacts","isRequired":true,"isReference":false,"types":[{"value":"Veterinarian","maxOccurance":1,"minOccurance":0},{"value":"Advocate","maxOccurance":1,"minOccurance":1}]}]}}'
-    http_version: 
-  recorded_at: Tue, 30 Sep 2014 15:40:42 GMT
-recorded_with: VCR 2.9.2
+      encoding: ASCII-8BIT
+      string: '{"status":200,"result":{"fields":[{"name":"actualProductionUnit","isRequired":false},{"name":"appearanceDate","isRequired":false},{"name":"appearanceDayOfWeek","isRequired":false},{"name":"assignedDate","isRequired":false},{"name":"assignedToDepartment","isRequired":false},{"name":"assignedUser","isRequired":false},{"name":"booking","isRequired":false},{"name":"closedByDepartment","isRequired":false},{"name":"closedByUser","isRequired":false},{"name":"closedDate","isRequired":false},{"name":"completedByDepartment","isRequired":false},{"name":"completedByUser","isRequired":false},{"name":"completedDate","isRequired":false},{"name":"constructionType","isRequired":false},{"name":"customId","isRequired":false},{"name":"defendantSignature","isRequired":false},{"name":"description","isRequired":false},{"name":"enforceDepartment","isRequired":false},{"name":"enforceUser","isRequired":false},{"name":"enforceUserId","isRequired":false},{"name":"estimatedDueDate","isRequired":false},{"name":"estimatedProductionUnit","isRequired":false},{"name":"firstIssuedDate","isRequired":false},{"name":"housingUnits","isRequired":false},{"name":"inPossessionTime","isRequired":false},{"name":"infraction","isRequired":false},{"name":"inspectorDepartment","isRequired":false},{"name":"inspectorId","isRequired":false},{"name":"inspectorName","isRequired":false},{"name":"misdemeanor","isRequired":false},{"name":"numberOfBuildings","isRequired":false},{"name":"offenseWitnessed","isRequired":false},{"name":"priority","isRequired":false},{"name":"publicOwned","isRequired":false},{"name":"recordClass","isRequired":false},{"name":"renewalInfo","isRequired":false},{"name":"reportedChannel","isRequired":false},{"name":"reportedType","isRequired":false},{"name":"scheduledDate","isRequired":false},{"name":"severity","isRequired":false},{"name":"shortNotes","isRequired":false},{"name":"status","isRequired":false},{"name":"statusReason","isRequired":false},{"name":"type","isRequired":true}],"elements":[{"name":"recordDetail","isRequired":true,"isReference":false,"isNeeded":true},{"name":"addresses","isRequired":false,"isReference":false,"isNeeded":true},{"name":"parcels","isRequired":false,"isReference":false,"isNeeded":true},{"name":"owners","isRequired":false,"isReference":false,"isNeeded":true},{"name":"professionals","isRequired":false,"isReference":false,"isNeeded":true},{"name":"additional","isRequired":false,"isReference":false,"isNeeded":false},{"name":"customForms","isRequired":false,"isReference":false,"isNeeded":true},{"name":"gis","isRequired":false,"isReference":false,"isNeeded":false},{"name":"structures","isRequired":false,"isReference":false,"isNeeded":false},{"name":"establishments","isRequired":false,"isReference":false,"isNeeded":false},{"name":"assets","isRequired":false,"isReference":false,"isNeeded":false},{"name":"customTables","isRequired":false,"isReference":false,"isNeeded":true},{"name":"documents","isRequired":false,"isReference":false,"isNeeded":true},{"name":"education","isRequired":false,"isReference":false,"isNeeded":false},{"name":"continuingEducation","isRequired":false,"isReference":false,"isNeeded":false},{"name":"examinations","isRequired":false,"isReference":false,"isNeeded":false},{"name":"comments","isRequired":false,"isReference":false,"isNeeded":true},{"name":"contacts","isRequired":false,"isReference":false,"isNeeded":true,"types":[{"value":"Accounts
+        Receivable","maxOccurance":3,"minOccurance":0},{"value":"Applicant","maxOccurance":1,"minOccurance":0}]}]}}'
+  recorded_at: Thu, 12 Jun 2025 23:12:40 GMT
+recorded_with: VCR 6.3.1

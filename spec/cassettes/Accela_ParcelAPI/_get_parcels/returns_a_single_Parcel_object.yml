@@ -5,43 +5,49 @@ http_interactions:
     uri: https://apis.accela.com/oauth2/token
     body:
       encoding: UTF-8
-      string: grant_type=password&agency_name=islandton&environment=TEST&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&username=developer&password=accela&scope=parcels
+      string: agency_name=nullisland&client_id=638853549908464776&client_secret=4588a663f51143e69432e2734143e44b&environment=TEST&grant_type=password&password=accela&scope=parcels&username=developer
     headers:
+      X-Accela-Appid:
+      - '638853549908464776'
       Content-Type:
       - application/x-www-form-urlencoded
-      X-Accela-Appid:
-      - '635395466279594650'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '884'
+      Date:
+      - Thu, 12 Jun 2025 20:44:59 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - TiPMix=26.77493293154194; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
+        Max-Age=3600; Secure
+      Vary:
+      - Accept-Encoding
       X-Accela-Traceid:
-      - 140916194901591-bb18442c
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 16 Sep 2014 19:49:01 GMT
+      - 250612204459798-538c1391
+      X-Azure-Ref:
+      - 20250612T204459Z-156d548487b9vtzfhC1BOSz4rs00000002v0000000007pr1
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"access_token":"tgMx9IgkpNEGbyH8NczpGF-BOJK5G4goWsaWR44zcMQSfxhThoQbW5uYAd9T1CHO0J619t1pWDRYlvTz4CtIbtqzlw8X1RXfciDQ47CUOgjJKeW9mBFmlcMpVIMlJQ5ne8OhyEVQJ8Dy_t6GRZX5CNBpvaKsUX61PJcU6HqhJF1UxyMcLznc39JHd7IZrp4aOTVNk7a4ZIaGoNHZtlJHKNzlPnoZEHIAGfyahYPKAxULM5d5y8uCrqsIsDI-pnnbUMvpSaMDZ3mPYRpRoOIKSeu9yyGSe2p_4uHGNzEY41tVsY8dgKtFrNHhAspytJ19W9IykI3hum6DSARl7hSJqQ4BzTBemyk1WDNfszTK4HvQ8sWZfUI55k5rShNBlIlrXoSybWgbYOaQRuGJAbUthg8JCZcaoSkTrNu6nuOHFkg1","token_type":"bearer","expires_in":"86400","refresh_token":"rALM!IAAAADWhWylF0lsGiYzeA-6e2oNvBHqeKusrVrMZSBQObXX10QAAAAF26rjuO0ulxvWtD_4uf9vunEB29jCZw9lLObmD7DmO6nrPDjvEhibaKkUIPVSl5Q0aeBxQnznUzbP2Fl4w8_Fa9-WmIB8xu52MUi3H46BUz8UJPg6P060uEshIS-IVEpkwfjxNdJuKSdpTnhdR6Qif6kwLZNpgyq3c18tsOzh2zRZ8e_jdOxyvYyuMei1IibVdL-5d6sZ9ZYU62uDmKRcMyIzE6XhdDFI2Bsrx53NP89Npeatz0F2RavMqg9EX2uNAqGRTvh0ut41lhjEk5DEL","scope":"get_civicid_profile
-        parcels"}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:49:03 GMT
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"access_token\": \"AisMLrUTDT8JtWeaaoLzZV188_lrkfYGvguUZnYWqc5pvvHTevWMojcKkkqfb6Pe6ob74Oi6mORcQyHHCHQa15n_2ah2pcoIJ0xYRDlglbgfkUKh2iEnHOCvzDnyvYJ2kt9-0ky740tDfmuY63V7PJTdSRJC_yqIpzGBfz6aiXhVLLe0XDD1yRED2wVP2kv1_kz_Mz1jZHcxBeRrF00nvaZ9jw62hRjHRzkRVn_9S435oimdnmmkSsN0QSQRS4inznNykUqzAumO2s3bDFvBu1lUP8n5ScdcUH6LUd2PUd6mXBv85mzPKGDzrG-9IgJlH6fNkfawwCr3i-RzRdAlmojh4EDzTr1UE2N_J9NwHPH6s4Un4WFmiGeRgwgDBZww7k1CQAogCB3szkRF5P2t3kAZ2qgLXjLzem3sUTAaQXwM6RbGHcDrsChHb5tM3aPrfvk9QB-xAN81xDGN-dTq-vR_Lw26XtTdsgJ9o5RxSyUJcZvP6UXB9Q2AHZPGhlQ4426g98heJPWZkJd5L3zA_a4q1Fs0jcC-LlCyHshOhOmoAm8BjcjzE3kpt8Z4eXMvuZFPHTJNHLpIsPQYlr5nasI4nZC_pjdxbyqyECuII8gtABO8Fgw5-B3cBIgnB6Ng0\",\r\n
+        \ \"token_type\": \"bearer\",\r\n  \"expires_in\": 900,\r\n  \"refresh_token\":
+        \"dzFR9z9pe3A4PBh6oR7L7jrJ20MvihYek_dni3o2V23puRJXPxWmtDjQsacADMSzxwpnCH36wK7EulpITX7Z4l77MFExoGnXIODrL8Rg6Uz2FQ8ouFZ_CyMS_eWkVnUCja9N_r237oP_bZKkw1AKso-n0fTizNEpcOtaQCdVxS_k6MLJYFwzxpH1kNjZ1sSyUsrrYb1xbzRmkbwOrBow3Y4eWVTnhkEFi751dlWaoHy8hmqrfcwagnzxKYC_HekrugHBYSxa5O7T2-oyPsU_JgIeAPgwvqIjGDuJerjlHq14cfRM-6l1hdszE4wCIPwRyqWdTqsT6h2VM2vdqU930e7yYCFuXWfE1u1wG_qcP0iI6SNRUK7TFJk_BIO3HkksxzWs2F8s1kM4nsCAk4nSDiS_smsVOg_goeJbLChpNGMDCU3qjGlKJHZw1EeWcLF5VHS1ey0IYWaqx5td7_vOKIUDNqG8rFu9ahIqFYBNmMLsATC7Kk4AK5QIcLjQqmVPF0G52jRnpZ6tknaM1RTqDc74sEKfkzaORffDl4nYXSaKwRg96bTjwOvdyrJnnOLPM58gHk6vh1tyOzdBMIJwfCaLA6MLstlDo4UU4ulZrlD2O7TMahilHKZrMv-SF2l-0\",\r\n
+        \ \"scope\": \"parcels\"\r\n}"
+  recorded_at: Thu, 12 Jun 2025 20:44:59 GMT
 - request:
     method: get
     uri: https://apis.accela.com/v4/parcels/137200001
@@ -54,46 +60,86 @@ http_interactions:
       Accept:
       - application/json
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       X-Accela-Environment:
       - TEST
       X-Accela-Agency:
-      - islandton
+      - nullisland
+      User-Agent:
+      - Faraday v2.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '146'
+      Date:
+      - Thu, 12 Jun 2025 20:45:00 GMT
       Content-Type:
       - application/json
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
-      - Microsoft-IIS/7.5
-      - unknow
-      X-Accela-Resp-Gateway-Version:
-      - 3.1.0.1
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      X-Accela-Traceid:
-      - 140916194903042-2ab61d02
-      Date:
-      - Tue, 16 Sep 2014 19:49:03 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612204500268-57beba1f
+      X-Azure-Ref:
+      - 20250612T204500Z-156d548487b6jhpphC1BOShe4w00000004vg000000008rpc
+      X-Cache:
+      - CONFIG_NOCACHE
+    body:
+      encoding: ASCII-8BIT
+      string: "{}"
+  recorded_at: Thu, 12 Jun 2025 20:45:00 GMT
+- request:
+    method: get
+    uri: https://apis.accela.com/v4/parcels/00012476
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Accela-Appid:
+      - '638853549908464776'
+      X-Accela-Environment:
+      - TEST
+      X-Accela-Agency:
+      - nullisland
+      User-Agent:
+      - Faraday v2.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 12 Jun 2025 20:46:56 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612204656687-9c97f720
+      X-Azure-Ref:
+      - 20250612T204656Z-156d548487bndpl4hC1BOS8qcs0000000fg0000000003tm2
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
       encoding: UTF-8
-      string: '{"result":{"parcelNumber":"137200001","isPrimary":"N","id":"137200001","parcelArea":550800.0,"status":{"value":"A","text":"Active"}},"status":200}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:49:03 GMT
-recorded_with: VCR 2.9.2
+      string: '{"result":{"parcelArea":469.81,"isPrimary":"N","parcelNumber":"00012476","id":"00012476","status":{"value":"A","text":"Active"}},"status":200}'
+  recorded_at: Thu, 12 Jun 2025 20:46:56 GMT
+recorded_with: VCR 6.3.1

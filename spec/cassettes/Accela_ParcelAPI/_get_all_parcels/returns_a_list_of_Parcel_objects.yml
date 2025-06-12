@@ -5,43 +5,49 @@ http_interactions:
     uri: https://apis.accela.com/oauth2/token
     body:
       encoding: UTF-8
-      string: grant_type=password&agency_name=islandton&environment=TEST&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&username=developer&password=accela&scope=parcels
+      string: agency_name=nullisland&client_id=638853549908464776&client_secret=4588a663f51143e69432e2734143e44b&environment=TEST&grant_type=password&password=accela&scope=parcels&username=developer
     headers:
+      X-Accela-Appid:
+      - '638853549908464776'
       Content-Type:
       - application/x-www-form-urlencoded
-      X-Accela-Appid:
-      - '635395466279594650'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '884'
+      Date:
+      - Thu, 12 Jun 2025 20:44:59 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - TiPMix=76.83969500899934; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
+        Max-Age=3600; Secure
+      Vary:
+      - Accept-Encoding
       X-Accela-Traceid:
-      - 140916194859419-dfff2e6b
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 16 Sep 2014 19:49:00 GMT
+      - 250612204458899-f2b2cc69
+      X-Azure-Ref:
+      - 20250612T204458Z-156d548487bndpl4hC1BOS8qcs0000000ffg000000004xq9
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"access_token":"tgMx9IgkpNEGbyH8NczpGK48aDi5Z41xplcssS1jmG8GuhB23dU-xu9H58RV8CniUdMuJtrXUj7C2adxSW94gEdVU8wK98_TgstIBO3Xe2IB1xjgcOZNVg-CRW3UX88CFYldppLKA1sMHgj9EDTrb_7AflLeJ7DW6f3QsACBAA0vmn1u3KTv0mr-ekCU56NW5GmH2KcouFJ-MU_EkoG_-qnhTe8ORWEaOm5hyWjfx2dGtp-2p7gZXh9mkOofOCEM3mtccU25s7recpeHYFKoXlceAd5xjshlAAPhm7jXGWEDc88_LlBFTy4yNzx3YIw9eM4XkAa2fbN2lOtFeodgxuQHiYlzv1sejpvG5jqV97cBroo7cVJI0Ty5tJ4mtXGVpqjgO8-5BDruJHgBqCJI7NHCtr0Ur_i568PaUKShJdQ1","token_type":"bearer","expires_in":"86400","refresh_token":"rALM!IAAAAIyTs_dvCM-A_xj6bI2lfMrje4OqMOP94qMUa9fegoj30QAAAAEYRiqpTRWjAwkv_UbQHUugDjpb5vpast_Q1Bke1WZ6CVvALMHmmHa8Fo9FaeggWvvg_774kr1_UVPSRtaGf1fHqryZLdn-tLLRaE2uALsK1ww7cb7nZICk568IoDmj45LCk0tie2xVhBUJO1_ObL-78SUP-HWryZLYeaVOgPIEj8xd8Zoieb-FL5-UVRIz7yRghuv13gXLFaMNs7yKhlXSdz_OA2e4GrVLH2qi4uQEa3mSGQw-15kpveNYAYPuQDpaRcPhRNFZtmcT_7IgHTyP","scope":"get_civicid_profile
-        parcels"}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:49:00 GMT
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"access_token\": \"AisMLrUTDT8JtWeaaoLzZaZYL0GirmYlc-dAh87ARbjlvV238x7QNM_Xhd4PUxAixW6NlBZ33sWGF7eF9ATxogZsmKnaM_dLSv_8GEt74W10AzzUWoCyUo-XvpvsRhGArZShKTKLqQUTdpy1wK7CiQAteB1VoCQ0WuW42Vidt62HBADr6-SjL1cabu8p-GfzPWm6lnIXb0qc_Xas5qF5dk3Cq58nhqP3Msji9s02vF4IOZKI4zK26aKI2ZtVj0Q3hGJJ6v4TRytd-rIL86SxmaUlxp5S6ePPKKmElrWH_ImV2FIHh7s4otUEz1Aih3r89498E0W1rehF97ZbpmqINGIdqOUSoD51yEKS-3731tL-o9z-UQRXbwlaV5RUvAwkEQ4HkkUoy-LK4q0Dc8zoXt3eRbZgKPM2nKO4GgU_qVwW_AqHifMN5eNQNtc2iOesuUFkuj4p8IG32fI1Eiejckp6K94Wki8gLcyF2yFt3-XPskCF9eOeaI_F72twTVWpV-q_36eAanqlgUybRI-6kCSBvS9Su_T-eDdmPREnaS5wCo7Ad6w4fDEXAIxwUQ3NeG9l-6uPicaQuwJcupSbFocU-x_5yBYcAGxZRS-ZHgYfADSL5bEthaFCltIXxMVR0\",\r\n
+        \ \"token_type\": \"bearer\",\r\n  \"expires_in\": 900,\r\n  \"refresh_token\":
+        \"dzFR9z9pe3A4PBh6oR7L7sUrPvL--UrWJq0l7SNJAEYrhNEIwjNY5puV_a2sWH0c05S-ZPCGJ-uO3JJj1ZCpfzUxn2LEWmeVLAqFUEQairgXVCWPbaJonDYRZdWdPTvIIkfTY4hj5y94O7lIGPM9TWkQbFb6D1jCnNNP3sytCgQ9N8JuQ9I_UccoZpEJB8tiiaX8NYmQA2RchhYM69pEDRTfuDhcRyPcL_8GkcEOKDAnCxZGnpWzXBKqfyGkBRLdqxQxFq_SOL2AFPyNtf5rXSu7PeXSX-FmyF1l1bZTZWOAhE5Rw7TuK7GzBoQHeJ6SxwqNstDvnCXsKoL4O-w8x7Mq4kZ9IPBEsAV-B9jWBmEeQG0-NXJPAh6hvklC2TygnN78_BYzWuqBQXEWYQ7KxMIhErox8tzASFqf195WlHB4JZ_eol1DWygMfqCWeKDR7IHw19BRo8P4MxJ5AghKGGBnxINO9iZtypPLl4L8qz7rMu3hiEpSCZ1_TKD7jbXm7o238E78mXZkdF29vvTG5rKvlkjOIhIwDgF7p7nSznI9VSxsiaagIz8ZTNyj3HjlklPDDm3h4EfybzwvnCsQko2hux70ZYsopO6AeCP4cPklKOimHESBGrlS0wI3kYAh0\",\r\n
+        \ \"scope\": \"parcels\"\r\n}"
+  recorded_at: Thu, 12 Jun 2025 20:44:59 GMT
 - request:
     method: get
     uri: https://apis.accela.com/v4/parcels?isPrimary=N
@@ -54,46 +60,45 @@ http_interactions:
       Accept:
       - application/json
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       X-Accela-Environment:
       - TEST
       X-Accela-Agency:
-      - islandton
+      - nullisland
+      User-Agent:
+      - Faraday v2.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '3130'
+      Date:
+      - Thu, 12 Jun 2025 20:44:59 GMT
       Content-Type:
       - application/json
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
-      - Microsoft-IIS/7.5
-      - unknow
-      X-Accela-Resp-Gateway-Version:
-      - 3.1.0.1
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      X-Accela-Traceid:
-      - 140916194900839-b6303424
-      Date:
-      - Tue, 16 Sep 2014 19:49:01 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612204459358-7c14d93e
+      X-Azure-Ref:
+      - 20250612T204459Z-156d548487bjmjtxhC1BOStnm80000000fg0000000003qxq
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"result":[{"parcelNumber":"-","isPrimary":"N","id":"-","status":{"value":"A","text":"Active"}},{"parcelNumber":"005010004","isPrimary":"N","id":"005010004","parcelArea":7927920.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010005","isPrimary":"N","id":"005010005","parcelArea":1.3068E7,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010008","isPrimary":"N","id":"005010008","parcelArea":1062000.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010010","isPrimary":"N","id":"005010010","parcelArea":5052960.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010011","isPrimary":"N","id":"005010011","parcelArea":4791600.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010016","isPrimary":"N","id":"005010016","parcelArea":9300.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010022","isPrimary":"N","id":"005010022","parcelArea":5445000.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010023","isPrimary":"N","id":"005010023","parcelArea":1.646568E7,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010024","isPrimary":"N","id":"005010024","parcelArea":1001880.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010026","isPrimary":"N","id":"005010026","parcelArea":8102160.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010027","isPrimary":"N","id":"005010027","parcelArea":5401440.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010028","isPrimary":"N","id":"005010028","parcelArea":8189280.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010029","isPrimary":"N","id":"005010029","parcelArea":1.071576E7,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010030","isPrimary":"N","id":"005010030","parcelArea":4356000.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010031","isPrimary":"N","id":"005010031","parcelArea":4486680.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010032","isPrimary":"N","id":"005010032","parcelArea":6229080.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010033","isPrimary":"N","id":"005010033","parcelArea":7927920.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010034","isPrimary":"N","id":"005010034","parcelArea":1.250172E7,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005010036","isPrimary":"N","id":"005010036","parcelArea":8058600.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005020003","isPrimary":"N","id":"005020003","parcelArea":8145720.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005020016","isPrimary":"N","id":"005020016","parcelArea":2720000.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005020017","isPrimary":"N","id":"005020017","parcelArea":1500000.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005020018","isPrimary":"N","id":"005020018","parcelArea":648000.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"005020019","isPrimary":"N","id":"005020019","parcelArea":1568160.0,"status":{"value":"A","text":"Active"}}],"status":200,"page":{"offset":0,"limit":25,"hasmore":true}}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:49:01 GMT
-recorded_with: VCR 2.9.2
+      encoding: ASCII-8BIT
+      string: '{"result":[{"parcelNumber":"#123","isPrimary":"N","id":"#123","parcelArea":200.0,"status":{"value":"A","text":"Active"},"subdivision":{"value":"test","text":"test"}},{"lot":"1","block":"1","parcelNumber":"00001","isPrimary":"N","id":"00001","status":{"value":"A","text":"Active"},"subdivision":{"value":"5","text":"5"}},{"parcelNumber":"00012468","isPrimary":"N","id":"00012468","parcelArea":486.75,"status":{"value":"I","text":"Inactive"}},{"parcelNumber":"00012468-1","section":0,"isPrimary":"N","id":"00012468-1","parcelArea":486.75,"improvedValue":0.0,"exemptionValue":0.0,"gisSequenceNumber":0,"landValue":0.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"00012468-2","section":0,"isPrimary":"N","id":"00012468-2","parcelArea":486.75,"improvedValue":0.0,"exemptionValue":0.0,"gisSequenceNumber":0,"landValue":0.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"00012476","isPrimary":"N","id":"00012476","parcelArea":469.81,"status":{"value":"A","text":"Active"}},{"parcelNumber":"00012849","isPrimary":"N","id":"00012849","book":"1243","status":{"value":"A","text":"Active"}},{"parcelNumber":"00016634","isPrimary":"N","id":"00016634","planArea":"SM","status":{"value":"A","text":"Active"}},{"lot":"002,002A,003,022,024,025,026","block":"0269","parcelNumber":"002-000-001","isPrimary":"N","id":"002-000-001","legalDescription":"Existing
+        Development: 5 commercial buildings Cat IV & V unreinforced masonry, of varying
+        heights, containing commercial uses plus 22 rooms of residential hotel occupancy,
+        all constructed between 1918 and 1927, one landmark building (#113) and one
+        vacant lot","parcelArea":34660.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"00274894","isPrimary":"N","id":"00274894","status":{"value":"I","text":"Inactive"}},{"parcelNumber":"0111222333","isPrimary":"N","id":"0111222333","status":{"value":"A","text":"Active"}},{"parcelNumber":"0111222340","isPrimary":"N","id":"0111222340","status":{"value":"I","text":"Inactive"}},{"parcelNumber":"0111222341","section":0,"isPrimary":"N","id":"0111222341","parcelArea":0.0,"improvedValue":0.0,"exemptionValue":0.0,"gisSequenceNumber":0,"landValue":0.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"0111222342","section":0,"isPrimary":"N","id":"0111222342","parcelArea":0.0,"improvedValue":0.0,"exemptionValue":0.0,"gisSequenceNumber":0,"landValue":0.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"0111222343","section":0,"isPrimary":"N","id":"0111222343","parcelArea":0.0,"improvedValue":0.0,"exemptionValue":0.0,"gisSequenceNumber":0,"landValue":0.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"0122184299001","section":0,"isPrimary":"N","id":"0122184299001","parcelArea":0.0,"improvedValue":110000.0,"exemptionValue":0.0,"gisSequenceNumber":0,"landValue":45000.0,"status":{"value":"A","text":"Active"}},{"parcelNumber":"0122184299002","section":0,"isPrimary":"N","id":"0122184299002","parcelArea":0.0,"improvedValue":110000.0,"exemptionValue":0.0,"gisSequenceNumber":0,"landValue":45000.0,"status":{"value":"A","text":"Active"}},{"lot":"013","block":"1222","parcelNumber":"013-000-000","isPrimary":"N","id":"013-000-000","parcel":"50''X44.5","status":{"value":"A","text":"Active"}},{"page":"12","lot":"10","block":"16","parcelNumber":"020316-0000-0010","isPrimary":"N","id":"020316-0000-0010","legalDescription":"New
+        Horizon Subdivsion, Phase I, lot 10, block 16, west","parcelArea":2450.0,"tract":"463.2","mapNumber":"611.0","book":"450","councilDistrict":"6","status":{"value":"A","text":"Active"}},{"parcelNumber":"020316-0000-0010-9000","isPrimary":"N","id":"020316-0000-0010-9000","status":{"value":"P","text":"Inactive"}},{"parcelNumber":"020316-0000-0010-9001","isPrimary":"N","id":"020316-0000-0010-9001","status":{"value":"P","text":"Inactive"}},{"parcelNumber":"020316-0000-0010-9002","isPrimary":"N","id":"020316-0000-0010-9002","status":{"value":"P","text":"Inactive"}},{"parcelNumber":"020316-0000-0010-9003","isPrimary":"N","id":"020316-0000-0010-9003","status":{"value":"P","text":"Inactive"}},{"parcelNumber":"020316-0000-0010-9004","isPrimary":"N","id":"020316-0000-0010-9004","status":{"value":"P","text":"Inactive"}},{"parcelNumber":"020316-0000-0010-9005","isPrimary":"N","id":"020316-0000-0010-9005","status":{"value":"P","text":"Inactive"}}],"status":200,"page":{"offset":0,"limit":25,"hasmore":true}}'
+  recorded_at: Thu, 12 Jun 2025 20:44:59 GMT
+recorded_with: VCR 6.3.1

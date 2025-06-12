@@ -5,43 +5,49 @@ http_interactions:
     uri: https://apis.accela.com/oauth2/token
     body:
       encoding: UTF-8
-      string: grant_type=password&agency_name=islandton&environment=TEST&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&username=developer&password=accela&scope=addresses
+      string: agency_name=nullisland&client_id=638853549908464776&client_secret=4588a663f51143e69432e2734143e44b&environment=TEST&grant_type=password&password=accela&scope=addresses&username=developer
     headers:
+      X-Accela-Appid:
+      - '638853549908464776'
       Content-Type:
       - application/x-www-form-urlencoded
-      X-Accela-Appid:
-      - '635395466279594650'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '886'
+      Date:
+      - Thu, 12 Jun 2025 20:34:21 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - TiPMix=73.43679407926788; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
+        Max-Age=3600; Secure
+      Vary:
+      - Accept-Encoding
       X-Accela-Traceid:
-      - 140916194844904-4b003d5e
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 16 Sep 2014 19:48:45 GMT
+      - 250612203421471-e24cfdc0
+      X-Azure-Ref:
+      - 20250612T203421Z-156d548487bbjnx8hC1BOS5g1n0000000fgg000000002ghz
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"access_token":"tgMx9IgkpNEGbyH8NczpGGyt4Fglu-HNuUZ-WR4amw87rknynptdMvy1mAHIpYKrTZAHZMgGXASZzKh8u0nAWjUKi2l0Z4tLLyprN4cZfDgvncarhNin3nHy4KTbVL3VAHYi4cVGA2hd0JCAwrYtEh6SRkwjKoHhJCLN31zoF9p0HGwE0vo0CSJbZJFRZN4RiIg9BtK6x30TIprjspF2evMWghCq9fPbjKiBcpsA3FrX7yCLhNgwjm1XmgbbCYOzB7ywOoBxOO4t2p7qzDIEPzJSMouRsJh8shZuehD4rutbhqMWi7hQzyLMvrWaXK6AhmtDGJ8siM-hcW5cEaRDDCzBB757yxeX1O8CZauE5nqvejstvnj91xAmN2NOEZdV2J7RyxRv-cm1F57d2xvyx6Rg2lniJv-uSlsb4iTMqBo1","token_type":"bearer","expires_in":"86400","refresh_token":"rALM!IAAAADNTf3azxnfrrZ4byIEXU9TvGtzJ-f1Bhjq5AUMxHQm60QAAAAEs1nYS4-OhZuzv5PL0-G7aMp_8ArCuHQgjZvu19uKhqM5pHoG1uHHgeTEEVeeKP_Iuss3uN1JLK63QqcwVnMKmH0LU2WMc3ATYTOJ39rFW2pIsK9LGL2Bou2_yPMg3BmA1fQadi87F-BffFjFqgII10jPPH2cU2wlRcMB_rexnMAmJUJTSbYAeIR5Wv2B-FmPhrqWX9hzD34an-KW4KN0HZvp9r1JvaGDbfjVBDTXgYqAmEFVJCY-NPwHuCZuATO9mCSw0XPmGhs6T_PS9MB-J","scope":"addresses
-        get_civicid_profile"}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:48:46 GMT
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"access_token\": \"AisMLrUTDT8JtWeaaoLzZaa6KfFu7VL90vd15uRIei5DHgQjgcGOXZpHg2dG8pRvtU7syXWf2le7nwWBJjEi2AA4QDk2Kb8Rp6letWNTgBoiMN-mjtbyySBLsn8d0TukpFH8trMk33RpUnbzMCg-QO0KWWQ7B_-HjNirBjyL80-yqN5Z1w6UPmxT_0j92BELH7A_MGnhm5BiAmMm9s_lyqjdW3ut4__MfRXIoHQ6GFQW0iJRYd15LujEZ1n5V_tC1YfnHIkqvlm0lK8AD7CWMuAf9f545Mm_7Qq5-iPON2Dw1VhhIInp83Z-JnaXUbAQQ_nIwC3nyoQTrgNytmuJOd9_ANQvUYbreIKUrHufYE6TvYjCNNhL4SPRLskhe_rDmCC2lrW6HAzoQxQEf9-iJbxoRqSARtzct5qqFgaynFgAVvpkYRwgK0mhtYaJi8g-8Tzq4ZA5SX5Bx2-tdZyjxmpxTTjaW4PgqZpTUkBcjQi-3XHaTSI1Zh8HSZrz8k_t9A7ZiVE_PVe2jYqtghewwDNQJFXGHprjhJCfw1kZ1HbjKz-hPgRtOfPOskRK248hcJ0rcTv_4WBHa-JROFrhXNLevg7mC1hsNHUWYtOA7aFZoYQwEDFf8C_J9BAGJcVe0\",\r\n
+        \ \"token_type\": \"bearer\",\r\n  \"expires_in\": 900,\r\n  \"refresh_token\":
+        \"dzFR9z9pe3A4PBh6oR7L7jhsT0BWbiGEDs4DROaam_5Mcc_TNUfGs87Pzj6mZCEt07meq1APAOMONnc6dir0x6MxHEiCD_i_Uidw-HkSuS93pLJCdC2yiN6-SEtCj95GKQClJtYDgA-M4UYGXs4vpgPb5lsP5KUCc2sD6ujGBXvXiyc0EOEVDn12F2c5YVWF22fBn4LyJ6W6n50iAkKlvcLhUYmhgASvT91moT8XTjUqHU5Cni1YQMBCavKqPTyKfBn6Egb3EiYC6K_OlyGvp4rqpmLFJnNQ1jzNHZve7gO9_dR8wM6bjI3kcrBA7aux1yg8Elo7c7W_C0N5ZAG0EFoaJ-gy9BlscqoFShjH6uVrwMKNR0bn1rrFr5Tsvu7IaOaNi-LhqBwUHHS70Y1D61iFIIxJGfw9I9N7eAePNrSa0_1TKQ0CKOyApotgCIytd3bCuF9R9k9Cd4BrH9pkZf6lSTnxrYYBdwCASm3PrjpJoVhmwBCCCCWAl9GTK2SNaMBvSZScMd9Piocm7RuVW5NwPQ5-u8K0NVzRlCmzBmRtuBzeAbCflKFL1pAczfbbhvmjAmJBnUG5A2uR8GJ3CDZ6JM7bXVdvjx5q8fygUDq2EChRd1Pq4vzKN9eJYeU40\",\r\n
+        \ \"scope\": \"addresses\"\r\n}"
+  recorded_at: Thu, 12 Jun 2025 20:34:22 GMT
 - request:
     method: get
     uri: https://apis.accela.com/v4/addresses/2
@@ -54,47 +60,41 @@ http_interactions:
       Accept:
       - application/json
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       X-Accela-Environment:
       - TEST
       X-Accela-Agency:
-      - islandton
+      - nullisland
+      User-Agent:
+      - Faraday v2.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '330'
+      Date:
+      - Thu, 12 Jun 2025 20:34:22 GMT
       Content-Type:
       - application/json
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
-      - Microsoft-IIS/7.5
-      - unknow
-      X-Accela-Resp-Gateway-Version:
-      - 3.1.0.1
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      X-Accela-Traceid:
-      - 140916194846261-ac0d0040
-      Date:
-      - Tue, 16 Sep 2014 19:48:46 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612203422487-abd2804d
+      X-Azure-Ref:
+      - 20250612T203422Z-156d548487bqh4gdhC1BOSan2n0000000erg000000009pp8
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"result":{"city":"PETALUMA","postalCode":"94952","auditStatus":"A","isPrimary":"Y","streetStart":1249,"streetName":"LINDBERG","id":2,"sourceNumber":11,"country":{"value":"US","text":"United
-        States"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"LN","text":"LN"},"status":{"value":"A","text":"Active"}},"status":200}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:48:47 GMT
-recorded_with: VCR 2.9.2
+      encoding: ASCII-8BIT
+      string: '{"result":{"postalCode":"86004","city":"SUNRISE","auditStatus":"A","sourceNumber":260,"streetName":"HUNTINGTON","streetStart":505,"isPrimary":"N","id":2,"syncIndex":true,"country":{"value":"US","text":"United
+        States"},"state":{"value":"AZ","text":"AZ"},"direction":{"value":"E","text":"E"},"streetSuffix":{"value":"DR","text":"DR"},"status":{"value":"A","text":"Active"}},"status":200}'
+  recorded_at: Thu, 12 Jun 2025 20:34:22 GMT
+recorded_with: VCR 6.3.1

@@ -5,46 +5,52 @@ http_interactions:
     uri: https://apis.accela.com/oauth2/token
     body:
       encoding: UTF-8
-      string: grant_type=password&agency_name=islandton&environment=TEST&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&username=mdeveloper&password=accela&scope=records%20addresses
+      string: agency_name=nullisland&client_id=638853549908464776&client_secret=4588a663f51143e69432e2734143e44b&environment=TEST&grant_type=password&password=accela&scope=records+addresses&username=developer
     headers:
+      X-Accela-Appid:
+      - '638853549908464776'
       Content-Type:
       - application/x-www-form-urlencoded
-      X-Accela-Appid:
-      - '635395466279594650'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '937'
+      Date:
+      - Thu, 12 Jun 2025 23:12:48 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - TiPMix=75.13597036621158; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
+        Max-Age=3600; Secure
+      Vary:
+      - Accept-Encoding
       X-Accela-Traceid:
-      - 140916194947856-d0d00d73
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 16 Sep 2014 19:49:48 GMT
+      - 250612231248123-e771e1fc
+      X-Azure-Ref:
+      - 20250612T231247Z-156d548487bmgnl5hC1BOSdwkg0000000ak0000000000z39
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"access_token":"tgMx9IgkpNEGbyH8NczpGI2bni8gKJ3F_hH5U0x1OXrpUDNaXh65FkTVlg7ikSVCwMKzhj5961vvQDBkGmaDNcgHszyUdf092Bv_HDA9i7nfU5BZk2c3x0NrI3FWj47avQsWIj6EgLGk9SN1wKF-GHGFN1p5F7XArcjP38DTyjHjiuRM8bYYYOyMz9NF7PKBIuUf-oHNcQFll4FsbbW9YGl_K4634hf2OQ_2h-ZdlBH2n-AtRiCKchEnzyZ4bU0VUqxxmkCIdR73rVLzN7LVObBGhW-M7Hwaj4tFuFKN88c5Aq7iAK9u_xwNGNMRaQY6JnSrS3zpor0BzPNNCMSRJKBxINHuA20XQJ1eFpICch2YutQs5w3X3ZDpB8DeqCHCjpS-3tuLJDc4mph8adPGFmTGpYJzNAa_K3YpxnrV8nPIG4CWJCrr-UG_EXQZArDf0","token_type":"bearer","expires_in":"86400","refresh_token":"rALM!IAAAAOWB5Zo_k_D_ODJXqEEOE2HFg9sJCVFsAgVX8ilyq-uU4QAAAAEMJwC-xuM9kfOa75bMGxogki_OmKG9BZ2AeZsKIravALUbL78fcvuo808IWAdUNBJoJrhpSHLsC9wTM7NNbtDiFQ1hyZ_uEvBrACxtEQTSqcVH9S7xOX3vAnX8WYUU5RQ4OJIVyffTlF6m1Iw6Dj4BvP4EhdzpANf7vifug8YoDJfLLWgcaCeu3anDdeO1oK07faluxez_dIRx1CrOt8yxQj3J7GJn48EVG6v_204BNHpWQGYxCEN-kFzTyTZ3nmyL9wLOfWQvZ45LnI5pOJ9Bc5fhAzNIts-9_4_2eeHKCg","scope":"addresses
-        get_civicid_profile records"}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:49:49 GMT
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"access_token\": \"mZ-l62OaT1966dQLNtgHPDvV1ZQAv-Vo8CT8BckAsiLddnO5BR-SxJo27_KxwgpsEM679PXxP1xOctRTIeoGUTJQxX6DnaL6sI7tWNksjwfenjsiuqZGHRbdrCrHTxl3fjfVBZVmXK8c_hf8bLyPu5F0kEXQLia0xLm1wQNE-YqkOMLwQy6cTwEESu6WObSrVAJKIyzfaDOaleViqBkqubbPqSkg5u5Cv6tfLMJb8_MUB8pTLcMQigKUEkPfpQokbj8uNPYflzRVJrUOxFYVAODkCgYHQ7HMzyGoFmE-OU_XUDwJF4JwaujZGTJsnWYXdDy4pWmG-cEoWwtuUu_shpEoYXPwb63WTC8VEeaUBg30U2sYn3VXcETkAO-cpSCsfHBlYiq0MAIRc47p0Q-1VaFMeUqCquKqM21KxSxUseMY-BHMHMQFG4rKS8XmxNmI2cURY05SyqbL56dUuAaeDuWqqueUxz9TrD6my5CbZlk_zAwdPpoPpqKfruDDh9eaPrIER5iqetnjkO6590XdfAxBUlwsOYNq2Jxl8GA9-2kJasPA9BTbks7IX5qQjIHmtSTDSfSgWjTcWVVCW8QBKa0_rQlhkBTPqSjArmzaTjGDM-i5J6Gpd0Q0iQiBKIA30\",\r\n
+        \ \"token_type\": \"bearer\",\r\n  \"expires_in\": 900,\r\n  \"refresh_token\":
+        \"VZpkBZmjyJq7gpqMIX5JH9-MVuDF8NncO5BC8_sh8ROflkbK_PTl0Njr6GelFsBQTg2evdHr1e1SYsQsOYH2Eo4fobUql1Qi9zMbp6bWh5dum72W-iKimR-fpY6Dfcs-WxJYFq6J5GEqLrzp_J0m6CC6ZSICj8Nn97Yn2wWtDwhQnJEE7ZzwfoqDz2MEEisFIkjg6LYmn0eWSYWuzRFebB8hgYd82dsECF01KL1-HlVOqvGOOJP6N8O13Zt9ad0fWxzOcs_ICte_V1wiuJGZXZgAgpUrx-hx5cs_xidmrIA7PciRR_9jcrBYP4_Ic9M5SR7ICobUAr7FU5uwE5dsvxykG5xP02caazr0WlNudfkSmLlJdlgezI-c35SQgcPj_poDGuwf-AsXr2wtU5q4bSQI9nc-hu1OXnO5beFN1-of9Zrw39pwFCws1XeYFCB548oyxCyxLaJq2JrB94wEIVds5_WJs8VsQ4vYWcMqqMgwLc84trRCSjNE-nRHGiMLFNfqgbyOg4zTsbQkGpTHOIBeslZjvM1VGh9_SLNiVPtimUwigDu6Ns_8Ua2XQ73CthPPGqlf4vhq2tcy0lSclpnACZMgXwqRN2wFWq_nk7C3exrTszURlv2hvxaBHbWp0\",\r\n
+        \ \"scope\": \"records addresses\"\r\n}"
+  recorded_at: Thu, 12 Jun 2025 23:12:48 GMT
 - request:
     method: get
-    uri: https://apis.accela.com/v4/records/ISLANDTON-14CAP-00000-000CR?expand=addresses
+    uri: https://apis.accela.com/v4/records/NULLISLAND-REC25-00000-0004Q?expand=addresses
     body:
       encoding: US-ASCII
       string: ''
@@ -54,52 +60,54 @@ http_interactions:
       Accept:
       - application/json
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       Authorization:
-      - tgMx9IgkpNEGbyH8NczpGI2bni8gKJ3F_hH5U0x1OXrpUDNaXh65FkTVlg7ikSVCwMKzhj5961vvQDBkGmaDNcgHszyUdf092Bv_HDA9i7nfU5BZk2c3x0NrI3FWj47avQsWIj6EgLGk9SN1wKF-GHGFN1p5F7XArcjP38DTyjHjiuRM8bYYYOyMz9NF7PKBIuUf-oHNcQFll4FsbbW9YGl_K4634hf2OQ_2h-ZdlBH2n-AtRiCKchEnzyZ4bU0VUqxxmkCIdR73rVLzN7LVObBGhW-M7Hwaj4tFuFKN88c5Aq7iAK9u_xwNGNMRaQY6JnSrS3zpor0BzPNNCMSRJKBxINHuA20XQJ1eFpICch2YutQs5w3X3ZDpB8DeqCHCjpS-3tuLJDc4mph8adPGFmTGpYJzNAa_K3YpxnrV8nPIG4CWJCrr-UG_EXQZArDf0
+      - mZ-l62OaT1966dQLNtgHPDvV1ZQAv-Vo8CT8BckAsiLddnO5BR-SxJo27_KxwgpsEM679PXxP1xOctRTIeoGUTJQxX6DnaL6sI7tWNksjwfenjsiuqZGHRbdrCrHTxl3fjfVBZVmXK8c_hf8bLyPu5F0kEXQLia0xLm1wQNE-YqkOMLwQy6cTwEESu6WObSrVAJKIyzfaDOaleViqBkqubbPqSkg5u5Cv6tfLMJb8_MUB8pTLcMQigKUEkPfpQokbj8uNPYflzRVJrUOxFYVAODkCgYHQ7HMzyGoFmE-OU_XUDwJF4JwaujZGTJsnWYXdDy4pWmG-cEoWwtuUu_shpEoYXPwb63WTC8VEeaUBg30U2sYn3VXcETkAO-cpSCsfHBlYiq0MAIRc47p0Q-1VaFMeUqCquKqM21KxSxUseMY-BHMHMQFG4rKS8XmxNmI2cURY05SyqbL56dUuAaeDuWqqueUxz9TrD6my5CbZlk_zAwdPpoPpqKfruDDh9eaPrIER5iqetnjkO6590XdfAxBUlwsOYNq2Jxl8GA9-2kJasPA9BTbks7IX5qQjIHmtSTDSfSgWjTcWVVCW8QBKa0_rQlhkBTPqSjArmzaTjGDM-i5J6Gpd0Q0iQiBKIA30
       X-Accela-Agency:
-      - islandton
+      - nullisland
+      User-Agent:
+      - Faraday v2.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '1498'
+      Date:
+      - Thu, 12 Jun 2025 23:12:48 GMT
       Content-Type:
       - application/json
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
-      - Microsoft-IIS/7.5
-      - unknow
-      X-Accela-Resp-Gateway-Version:
-      - 3.1.0.1
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      X-Accela-Traceid:
-      - 140916194949354-7c558de0
-      Date:
-      - Tue, 16 Sep 2014 19:49:48 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612231248623-534a2333
+      X-Azure-Ref:
+      - 20250612T231248Z-156d548487brpfk5hC1BOS692w00000001tg000000004354
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"result":[{"addresses":[{"id":1000619244,"streetStart":1,"refAddressId":16830,"city":"PETALUMA","postalCode":"94952","serviceProviderCode":"ISLANDTON","isPrimary":"Y","streetName":"ALLEGHENY","recordId":{"id":"ISLANDTON-14CAP-00000-000CR","serviceProviderCode":"ISLANDTON","trackingId":0,"value":"14CAP-00000-000CR"},"country":{"value":"US","text":"United
-        States"},"status":{"value":"A","text":"Active"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"CT","text":"CT"}}],"name":"D-I
-        Builders Development Model Home","id":"ISLANDTON-14CAP-00000-000CR","type":{"module":"Building","type":"Residential","value":"Building/Residential/New/NA","category":"NA","text":"Residential
-        New","group":"Building","subType":"New","id":"Building-Residential-New-NA"},"description":"","status":{"value":"Submitted","text":"Submitted"},"infraction":false,"initiatedProduct":"AV360","createdBy":"DI","balance":0.0,"serviceProviderCode":"ISLANDTON","statusDate":"2014-08-20
-        11:02:00","totalJobCost":0.0,"reportedChannel":{"value":"Call Center","text":"Call
-        Center"},"reportedDate":"2014-08-20 11:02:00","totalFee":0.0,"totalPay":0.0,"module":"Building","customId":"BLD14-00187","jobValue":0.0,"publicOwned":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"openedDate":"2014-08-20
-        00:00:00","trackingId":262040261,"estimatedProductionUnit":0.0,"actualProductionUnit":0.0,"createdByCloning":"Y","undistributedCost":0.0,"booking":false,"value":"14CAP-00000-000CR"}],"status":200}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:49:50 GMT
-recorded_with: VCR 2.9.2
+      encoding: ASCII-8BIT
+      string: '{"result":[{"addresses":[{"streetStart":0,"id":1006457698,"keyFieldsNull":false,"yCoordinate":18.3441,"xCoordinate":-65.72021,"addressLine1":"Luquillo,
+        Puerto Rico","refAddressId":0,"city":"Luquillo","serviceProviderCode":"NULLISLAND","county":"Luquillo","isPrimary":"Y","recordId":{"id":"NULLISLAND-REC25-00000-0004Q","serviceProviderCode":"NULLISLAND","trackingId":0,"missingIdentifier":false,"value":"REC25-00000-0004Q"},"country":{"value":"PR","text":"Puerto
+        Rico"},"state":{"value":"PR","text":"PR"}}],"id":"NULLISLAND-REC25-00000-0004Q","type":{"module":"Building","value":"Building/Commercial/Demolition/NA","type":"Commercial","text":"Commercial
+        Demolition","group":"Building","subType":"Demolition","category":"NA","alias":"Commercial
+        Demolition","id":"Building-Commercial-Demolition-NA"},"description":"Description:
+        test\r\nWhat are you reporting? IGS - AccelaV4 - Commercial Demolition - Fire
+        Site\r\nPlan Description: test\r\nPlan Type: Civil\r\nOneView Id: 97729\r\nDevice
+        Type: Console\r\nDevice Model: Unknown\r\nAuthor First Name: Nikhil\r\nAuthor
+        Last Name: Rajwar\r\nAuthor Email: nikhil.rajwar@granicus.com\r\nAuthor Telephone:
+        898998989\r\nApproximate Address: Luquillo, Puerto Rico\r\nLat/Lng Coordinates:
+        18.3441, -65.72021\r\nOriginationIpAddress: 172.69.152.136\r\nInitialBoundaryName:
+        All Puerto Rico\r\nInitialBoundaryName: Puerto Rico East\r\n","module":"Building","status":{"value":"Submitted","text":"Submitted"},"openedDate":"2025-06-10
+        00:00:00","jobValue":0.0,"recordClass":"COMPLETE","trackingId":293157876,"serviceProviderCode":"NULLISLAND","initiatedProduct":"AV360","customId":"BLD25-00120","totalJobCost":0.0,"statusDate":"2025-06-10
+        23:00:43","renewalInfo":{"expirationDate":"2025-01-31 00:00:00","expirationStatus":"Pending"},"createdBy":"DEVELOPER","undistributedCost":0.0,"updateDate":"2025-06-10
+        23:00:46","value":"REC25-00000-0004Q","totalFee":40.0,"totalPay":0.0,"balance":40.0,"booking":false,"infraction":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"publicOwned":false}],"status":200}'
+  recorded_at: Thu, 12 Jun 2025 23:12:48 GMT
+recorded_with: VCR 6.3.1

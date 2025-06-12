@@ -1,0 +1,10 @@
+{
+    "rubyLsp.indexing": {
+        "excludedPatterns": [
+            "node_modules/**",
+            "tmp/**",
+            "scratch/**"
+        ],
+    },
+    "rubyLsp.rspec.rspecCommand": "RUBYOPT='-W0' bundle exec rspec"
+}

@@ -5,10 +5,10 @@ http_interactions:
     uri: https://apis.accela.com/oauth2/token
     body:
       encoding: UTF-8
-      string: agency_name=ISLANDTON&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&environment=SUPP&grant_type=password&password=accela&scope=records+settings&username=mdeveloper
+      string: agency_name=nullisland&client_id=638853549908464776&client_secret=4588a663f51143e69432e2734143e44b&environment=TEST&grant_type=password&password=accela&scope=records+settings&username=developer
     headers:
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -22,58 +22,51 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-store, must-revalidate, no-cache, max-age=0
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '912'
+      Date:
+      - Thu, 12 Jun 2025 23:12:41 GMT
       Content-Type:
-      - application/json
-      Server:
-      - Microsoft-IIS/10.0
-      - Microsoft-IIS/10.0
-      X-Aspnetmvc-Version:
-      - '5.2'
-      X-Accela-Traceid:
-      - 171025180821620-ade1af66
-      Arr-Disable-Session-Affinity:
-      - 'true'
-      - 'true'
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - ASP.NET_SessionId=w3y4flxpvexk3gimrzzthohj; path=/; HttpOnly
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      Date:
-      - Wed, 25 Oct 2017 18:08:21 GMT
+      - TiPMix=39.22490536504806; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
+        Max-Age=3600; Secure
+      Vary:
+      - Accept-Encoding
+      X-Accela-Traceid:
+      - 250612231240959-04c3fa07
+      X-Azure-Ref:
+      - 20250612T231240Z-156d548487b6htt6hC1BOSaw6w00000003u0000000005d1f
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"access_token":"oNfheN33k9gArZpAZdwR2_0_CUYwbjNbkXFed2lCDAJJzaIF47IMM7wSyxa11Hg3QTdOU5yghuljICFCY4z38Pc7C8WyL8QSTUyvoN1jipTzSJQpFdFlHPi4YlhfRjDun347flsfOZsL_GsQFfrrR4tmgi5LMQasX2IwOLz0s_hu-OhFRGDV5agTY9_Zg_uLlCZcdmmP-NBHB5-Nes5uURpkxje92IvSHgYfQL7M5li81LQyKj3Pbhcfg10meFxxh0V498usmKfOx8WmFMGvLlA5TiuvI1tEuzENnb9siWyiaoejHMsA6NZ-Y5vPe6tLYgLSv3qje-LDmHvsDYZHcXjhEnRNrNrKZI2wDsStOGBw5AOEt2FWJWiIF2VNIwkk3tkBvchLk2BkRL73v1jrWKMccXiPmyPepiEQwAK4Yhjpl6vTXaY9j2zQXNeKP2qe0","token_type":"bearer","expires_in":86400,"refresh_token":"0SCJ!IAAAAG8HxrLGiXyh7oifcTB06VGVitCXOaB6g2yzPQBSxzEB0QAAAAFSJduprM4EuyAzzvWr8QqtT8ezf97rhdfKSCOQm4_EgPimMPyZNaI6SKIkagyhxzHFWN9JZ9byWQKkl8PJa8EjHhOtx_sd50JAFaFaInV_zGbl0tTjlXASei-nCS-kEbLUtGuCozdtr9pCu1i8i9W44TLXNsIkcj0IrXwfurS9TZJkZGuMNqccOcB97QMvusxeouiFxZAfBlh52udooRpxeFp3iu_tUMZYXjwrvsPgMFjL9JrKt1FZp7hcPGcHfMPANvHnqkRxXFhLkMer6rsC","scope":"get_civicid_profile
-        records settings"}'
-    http_version: 
-  recorded_at: Wed, 25 Oct 2017 18:08:21 GMT
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"access_token\": \"mZ-l62OaT1966dQLNtgHPLGL_rUcjsDADxEjPy_S7WiK23UUlsoAB703anlfQA5ZmA_85PoYOyfQd7xBt6KwJ8ls_ZynMVlZppS7yRrmE411qQ9812SsfCLjkj_hnkCr0stkb9qgQ243wC4MNbE3f5hTfBTPShBFuO6Nms3luJho6RLrmlKmH-NZ6uxWU7yVJZbFCCR8rzHtJzk3llf04zpIaYVmwWsBUtb4NHGy36xNg5paROVsPhBaXkDupK4eLUvpoplcDaRGd6K6GqoT2dCFDA4OZYkQ2abXutIjctrwZ6Cobak-qQWA9okZ7APvtreuckQuaPNFxuob4GFDZpIJTqm-eVVIMY2gtuf9eg1ejRJxWAvmiAVcLy6vtSDtn4tMoAo7mnj30qXwUPvI1_-ieKGM3rU0RO3Jp2J_YIfK6GwQT06n0q0pD6WdEq4qDt4QkAxGnR1CB8mVy8Bk7mHZm_Q4RGDeBYTgVW4DK5l4ll9mJpddRFHKvQC7bPKtC_EwRRt1ToXrvaRQj4hQKTqgBcNXekxbeYZQyxbUiYMYOqetXkL18m2WDSJSbyTV2SD1u6c4lk4Gd4ttJm6wr2N6Xbv4QHr2XZ6cGYy6r2_4MpoqwCXbz8w7lN-6y44_0\",\r\n
+        \ \"token_type\": \"bearer\",\r\n  \"expires_in\": 900,\r\n  \"refresh_token\":
+        \"VZpkBZmjyJq7gpqMIX5JH7vPSI_H-V6vTks_0FU882kPgWga70uJlClFHb5UvTNadawSxMr_qR8CZzvnejeQ1mAgrtVV2bnbOGNJ55vbv2ZISZroMBiudi1JpW28lFNf2Xz349eFBWKo2ch-nrh7cpbMsTZOrdPBukHvO_zF4wmGRtqvAFJFCcJK47c4Ah1G_9UBRZD4rL203YuGVjBKIKodXwtnXYQfHKQcgFsaJHqIUJy48TZPW8NntnWwNkv6PBlwZOnbDK8zwXeYwhgRK1xahq-V0TQPj2aFo7wOK76aNgDgX5h85mtFEfshK61ZuLPJ9JC1VYyTSAN2gRXaXfkopzXw202qK-WUv41PlFnYUNbDpTFlom8B9hlnjuTuCLeEkFbG0yGBSHNaCqElsEZ6D8ZLc-FzC8mwJBa3v6usCdUQTJiVbPbGrTluby1sTPi3QEFhnBaGADYwHP2enZjOZTc2wYtitIHn9qmh2oeWBcR4WWVvgEo0ijdjIqXRhHg9q492w0rry9DBEUvHhyZX5RMzZdUqnTe43hnR2iXTnuZ5r6dFHsafL_vvku9BTCmRqo6Ekj6w8wNV5BRPFYyaSpfoO88auRSYBW0OJuySL23qTC9JmLnEjA3gBZrz0\",\r\n
+        \ \"scope\": \"records settings\"\r\n}"
+  recorded_at: Thu, 12 Jun 2025 23:12:41 GMT
 - request:
     method: post
-    uri: https://apis.accela.com/v4/records/initialize
+    uri: https://apis.accela.com/v4/records/initialize?isFeeEstimate=true
     body:
       encoding: UTF-8
-      string: '{"actualProductionUnit":123.43,"type":{"id":"Building-Commercial-Addition-NA"}}'
+      string: '{"actualProductionUnit":123.43,"name":"Commercial Building Permit","type":{"id":"Building-Commercial-Addition-NA"}}'
     headers:
       Content-Type:
       - application/json
       Accept:
       - application/json
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       Authorization:
-      - oNfheN33k9gArZpAZdwR2_0_CUYwbjNbkXFed2lCDAJJzaIF47IMM7wSyxa11Hg3QTdOU5yghuljICFCY4z38Pc7C8WyL8QSTUyvoN1jipTzSJQpFdFlHPi4YlhfRjDun347flsfOZsL_GsQFfrrR4tmgi5LMQasX2IwOLz0s_hu-OhFRGDV5agTY9_Zg_uLlCZcdmmP-NBHB5-Nes5uURpkxje92IvSHgYfQL7M5li81LQyKj3Pbhcfg10meFxxh0V498usmKfOx8WmFMGvLlA5TiuvI1tEuzENnb9siWyiaoejHMsA6NZ-Y5vPe6tLYgLSv3qje-LDmHvsDYZHcXjhEnRNrNrKZI2wDsStOGBw5AOEt2FWJWiIF2VNIwkk3tkBvchLk2BkRL73v1jrWKMccXiPmyPepiEQwAK4Yhjpl6vTXaY9j2zQXNeKP2qe0
+      - mZ-l62OaT1966dQLNtgHPLGL_rUcjsDADxEjPy_S7WiK23UUlsoAB703anlfQA5ZmA_85PoYOyfQd7xBt6KwJ8ls_ZynMVlZppS7yRrmE411qQ9812SsfCLjkj_hnkCr0stkb9qgQ243wC4MNbE3f5hTfBTPShBFuO6Nms3luJho6RLrmlKmH-NZ6uxWU7yVJZbFCCR8rzHtJzk3llf04zpIaYVmwWsBUtb4NHGy36xNg5paROVsPhBaXkDupK4eLUvpoplcDaRGd6K6GqoT2dCFDA4OZYkQ2abXutIjctrwZ6Cobak-qQWA9okZ7APvtreuckQuaPNFxuob4GFDZpIJTqm-eVVIMY2gtuf9eg1ejRJxWAvmiAVcLy6vtSDtn4tMoAo7mnj30qXwUPvI1_-ieKGM3rU0RO3Jp2J_YIfK6GwQT06n0q0pD6WdEq4qDt4QkAxGnR1CB8mVy8Bk7mHZm_Q4RGDeBYTgVW4DK5l4ll9mJpddRFHKvQC7bPKtC_EwRRt1ToXrvaRQj4hQKTqgBcNXekxbeYZQyxbUiYMYOqetXkL18m2WDSJSbyTV2SD1u6c4lk4Gd4ttJm6wr2N6Xbv4QHr2XZ6cGYy6r2_4MpoqwCXbz8w7lN-6y44_0
       X-Accela-Agency:
-      - ISLANDTON
+      - nullisland
       User-Agent:
-      - Faraday v0.9.2
+      - Faraday v2.13.1
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -81,99 +74,96 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '3798'
+      Date:
+      - Thu, 12 Jun 2025 23:12:42 GMT
       Content-Type:
       - application/json
-      Expires:
-      - "-1"
-      Server:
-      - Apache-Coyote/1.1
-      - Microsoft-IIS/10.0
-      - Microsoft-IIS/7.5
-      X-Accela-Resp-Gateway-Version:
-      - 3.2.1
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      X-Accela-Traceid:
-      - 171025180821782-c5fdcece
-      Arr-Disable-Session-Affinity:
-      - 'true'
-      Date:
-      - Wed, 25 Oct 2017 18:08:22 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612231241550-88c56269
+      X-Azure-Ref:
+      - 20250612T231241Z-156d548487b57szthC1BOS05sg00000002wg000000001em9
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"message":"EMSE Script Framework Versions<BR>EVENT TRIGGERED: ApplicationSubmitBefore<BR>SCRIPT
-        EXECUTED: ApplicationSubmitBefore<BR>INCLUDE VERSION: 2<BR>SCRIPT VERSION
-        : 9<BR>GLOBAL VERSION : 3.22<BR>lookup(EMSE_VARIABLE_BRANCH_PREFIX,ApplicationSubmitBefore)
-        = ASB<BR>Executing: PreExecuteForBeforeEvents, Elapsed Time: 0.031 Seconds<BR>Finished:
-        PreExecuteForBeforeEvents, Elapsed Time: 0.031 Seconds<BR>Executing: ApplicationSubmitBefore,
-        Elapsed Time: 0.031 Seconds<BR>MDEVELOPER : ApplicationSubmitBefore : #01
-        : Criteria : true <BR>MDEVELOPER : ApplicationSubmitBefore : #01 : Action
-        :  showDebug = 3; showMessage=false; branch(\"EMSE:GlobalFlags\");<BR>Executing:
-        EMSE:GlobalFlags, Elapsed Time: 0.031 Seconds<BR>Finished: EMSE:GlobalFlags,
-        Elapsed Time: 0.031 Seconds<BR>MDEVELOPER : ApplicationSubmitBefore : #02
-        : Criteria : true <BR>MDEVELOPER : ApplicationSubmitBefore : #02 : Action
-        :  branch(\"ASB:\" + appTypeArray[0] + \"/*/*/*\");<BR>Executing: ASB:Building/*/*/*,
-        Elapsed Time: 0.031 Seconds<BR>MDEVELOPER : ASB:Building/*/*/* : #01 : Criteria
-        : {DPW Review Reqd} == \"CHECKED\" <BR>MDEVELOPER : ASB:Building/*/*/* : #02
-        : Criteria : {DPW Review Reqd} == \"CHECKED\" <BR>MDEVELOPER : ASB:Building/*/*/*
-        : #03 : Criteria : true <BR>MDEVELOPER : ASB:Building/*/*/* : #03 : Action
-        :  editAppSpecific(\"Submitter\",''Raj Koul JI'',capId);<BR>WARNING: Submitter
-        was not updated.<BR>MDEVELOPER : ASB:Building/*/*/* : #04 : Criteria : true
-        <BR>MDEVELOPER : ASB:Building/*/*/* : #04 : Action :  comment (\"DPW Fees
-        Checked...1\");<BR>DPW Fees Checked...1<BR>Finished: ASB:Building/*/*/*, Elapsed
-        Time: 0.156 Seconds<BR>MDEVELOPER : ApplicationSubmitBefore : #03 : Criteria
-        : true <BR>MDEVELOPER : ApplicationSubmitBefore : #03 : Action :  branch(\"ASB:\"
-        + appTypeArray[0] + \"/\" + appTypeArray[1] + \"/*/*\");<BR>Executing: ASB:Building/Commercial/*/*,
-        Elapsed Time: 0.156 Seconds<BR>Finished: ASB:Building/Commercial/*/*, Elapsed
-        Time: 0.156 Seconds<BR>MDEVELOPER : ApplicationSubmitBefore : #04 : Criteria
-        : true <BR>MDEVELOPER : ApplicationSubmitBefore : #04 : Action :  branch(\"ASB:\"
-        + appTypeArray[0] + \"/\" + appTypeArray[1] + \"/\" + appTypeArray[2] + \"/*\");<BR>Executing:
-        ASB:Building/Commercial/Addition/*, Elapsed Time: 0.156 Seconds<BR>Finished:
-        ASB:Building/Commercial/Addition/*, Elapsed Time: 0.156 Seconds<BR>MDEVELOPER
-        : ApplicationSubmitBefore : #05 : Criteria : true <BR>MDEVELOPER : ApplicationSubmitBefore
-        : #05 : Action :  branch(\"ASB:\" + appTypeArray[0] + \"/\" + appTypeArray[1]
-        + \"/*/\" + appTypeArray[3]);<BR>Executing: ASB:Building/Commercial/*/NA,
-        Elapsed Time: 0.172 Seconds<BR>Finished: ASB:Building/Commercial/*/NA, Elapsed
-        Time: 0.172 Seconds<BR>MDEVELOPER : ApplicationSubmitBefore : #06 : Criteria
-        : true <BR>MDEVELOPER : ApplicationSubmitBefore : #06 : Action :  branch(\"ASB:\"
-        + appTypeString);<BR>Executing: ASB:Building/Commercial/Addition/NA, Elapsed
-        Time: 0.172 Seconds<BR>Finished: ASB:Building/Commercial/Addition/NA, Elapsed
-        Time: 0.172 Seconds<BR>Finished: ApplicationSubmitBefore, Elapsed Time: 0.172
-        Seconds<BR>","result":{"id":"ISLANDTON-17EST-00000-00085","type":{"module":"Building","value":"Building/Commercial/Addition/NA","type":"Commercial","category":"NA","text":"Commercial
-        Addition","subType":"Addition","group":"Building","alias":"Commercial Addition","id":"Building-Commercial-Addition-NA"},"serviceProviderCode":"ISLANDTON","initiatedProduct":"AV360","statusDate":"2017-10-25
-        11:08:22","actualProductionUnit":123.43,"createdBy":"MDEVELOPER","trackingId":251196024,"customId":"17EST-000042","jobValue":0.0,"value":"17EST-00000-00085","totalFee":0.0,"totalPay":0.0,"balance":0.0,"booking":false,"infraction":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"publicOwned":false},"status":200}'
-    http_version: 
-  recorded_at: Wed, 25 Oct 2017 18:08:22 GMT
+      encoding: ASCII-8BIT
+      string: '{"message":"EMSE Script Framework Versions<BR>EVENT TRIGGERED: ApplicationSubmitAfter<BR>SCRIPT
+        EXECUTED: APPLICATIONSUBMITAFTERV3.0<BR>INCLUDE VERSION: 3.1.28<BR>SCRIPT
+        VERSION : 3<BR>GLOBAL VERSION : 3<BR>**WARNING: getting project parents:  Project
+        Parents Not Found: record ID: NULLISLAND-25EST-00000<BR>**WARNING: Could not
+        find parent license Cap for child CAP(25EST-00000-00008): <BR><B>EMSE Script
+        Results for 25EST-000005</B><BR>capId = class com.accela.aa.aamain.cap.CapIDModel<BR>cap
+        = class com.accela.aa.emse.dom.CapScriptModel<BR>currentUserID = DEVELOPER<BR>currentUserGroup
+        = BuildingAgencyAdmin<BR>systemUserObj = class com.accela.aa.aamain.people.SysUserModel<BR>appTypeString
+        = Building/Commercial/Addition/NA<BR>capName = Commercial Building Permit<BR>capStatus
+        = Submitted<BR>fileDate = 6/12/2025<BR>fileDateYYYYMMDD = 2025-06-12<BR>sysDate
+        = class com.accela.aa.emse.util.ScriptDateTime<BR>parcelArea = 0<BR>estValue
+        = 0<BR>calcValue = 0<BR>feeFactor = CONT<BR>houseCount = 0<BR>feesInvoicedTotal
+        = 0<BR>balanceDue = 0<BR>lookup(EMSE_VARIABLE_BRANCH_PREFIX,ApplicationSubmitAfter)
+        = ASA<BR>Executing : PreExecuteForAfterEvents, Elapsed Time: 0.045 Seconds<BR>Finished:
+        PreExecuteForAfterEvents, Elapsed Time: 0.045 Seconds<BR>{Change of Use} =
+        null<BR>{Existing Use} = null<BR>{Proposed Use} = null<BR>{Existing Floor
+        Area} = null<BR>{New Floor Area} = null<BR>{Number of Stories} = null<BR>{Building
+        Height} = null<BR>{Occupancy Classification} = null<BR>{Occupant Load} = null<BR>{Type
+        of Construction} = null<BR>{Existing Fire Sprinklers?} = null<BR>{Fire Sprinklers
+        Included in Project?} = null<BR>{Fire Sprinkler Type} = null<BR>{Fire Sprinkler
+        Comments} = null<BR>{Existing Fire Alarm System?} = null<BR>{Fire Alarms Included
+        in Project?} = null<BR>{Fire Alarm Comments} = null<BR>{Water Meter Size}
+        = null<BR>{Irrigation Meter Size} = null<BR>{Backflow Device} = null<BR>{Total
+        Acreage} = null<BR>{Disturbed Acreage} = null<BR>{Flood Zone} = null<BR>{Base
+        Flood Elevation} = null<BR>{Not in Flood Zone} = null<BR>{Zoning 1} = null<BR>{Zoning
+        2} = null<BR>{Zoning 3} = null<BR>{Land Use 1} = null<BR>{Land Use 2} = null<BR>{Land
+        Use 3} = null<BR>{Parking Spaces Required} = null<BR>{Parking Spaces Provided}
+        = null<BR>{Planning Case Required} = null<BR>{Required Planning Case Type}
+        = null<BR>{Application Expiration Date} = null<BR>{Permit Issued Date} = null<BR>{Permit
+        Expiration Date} = null<BR>{Project Description} = null<BR>{Zoning_Num} =
+        null<BR>Executing : ApplicationSubmitAfter, Elapsed Time: 0.046 Seconds<BR>Executing
+        : EMSE:GlobalFlags, Elapsed Time: 0.046 Seconds<BR>Finished: EMSE:GlobalFlags,
+        Elapsed Time: 0.046 Seconds<BR>Executing : ASA:Building/*/*/*, Elapsed Time:
+        0.046 Seconds<BR>Executing : EMSE:SetContactRelationshipToContactType, Elapsed
+        Time: 0.047 Seconds<BR>Finished: EMSE:SetContactRelationshipToContactType,
+        Elapsed Time: 0.05 Seconds<BR>Finished: ASA:Building/*/*/*, Elapsed Time:
+        0.071 Seconds<BR>Executing : ASA:Building/Commercial/*/*, Elapsed Time: 0.072
+        Seconds<BR>Finished: ASA:Building/Commercial/*/*, Elapsed Time: 0.072 Seconds<BR>Executing
+        : ASA:Building/*/*/NA, Elapsed Time: 0.072 Seconds<BR>Finished: ASA:Building/*/*/NA,
+        Elapsed Time: 0.072 Seconds<BR>Executing : ASA:Building/Commercial/Addition/*,
+        Elapsed Time: 0.072 Seconds<BR>Finished: ASA:Building/Commercial/Addition/*,
+        Elapsed Time: 0.072 Seconds<BR>Executing : ASA:Building/Commercial/*/NA, Elapsed
+        Time: 0.072 Seconds<BR>Finished: ASA:Building/Commercial/*/NA, Elapsed Time:
+        0.072 Seconds<BR>Executing : ASA:Building/Commercial/Addition/NA, Elapsed
+        Time: 0.072 Seconds<BR>Finished: ASA:Building/Commercial/Addition/NA, Elapsed
+        Time: 0.072 Seconds<BR>currentUserID: DEVELOPER<BR>Finished: ApplicationSubmitAfter,
+        Elapsed Time: 0.072 Seconds<BR>","result":{"name":"Commercial Building Permit","id":"NULLISLAND-25EST-00000-00008","type":{"module":"Building","value":"Building/Commercial/Addition/NA","type":"Commercial","text":"Commercial
+        Addition","group":"Building","subType":"Addition","category":"NA","alias":"Commercial
+        Addition","id":"Building-Commercial-Addition-NA"},"jobValue":0.0,"trackingId":259462307,"serviceProviderCode":"NULLISLAND","initiatedProduct":"AV360","actualProductionUnit":123.43,"customId":"25EST-000005","statusDate":"2025-06-12
+        16:12:41","renewalInfo":{"expirationDate":"2025-01-31 00:00:00","expirationStatus":"Pending"},"createdBy":"DEVELOPER","value":"25EST-00000-00008","totalFee":0.0,"totalPay":0.0,"balance":0.0,"booking":false,"infraction":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"publicOwned":false},"status":200}'
+  recorded_at: Thu, 12 Jun 2025 23:12:42 GMT
 - request:
     method: post
-    uri: https://apis.accela.com/v4/records/ISLANDTON-17EST-00000-00085/finalize
+    uri: https://apis.accela.com/v4/records/NULLISLAND-25EST-00000-00008/finalize
     body:
       encoding: UTF-8
-      string: "{}"
+      string: '{"name":"Commercial Building Permit"}'
     headers:
       Content-Type:
       - application/json
       Accept:
       - application/json
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       Authorization:
-      - oNfheN33k9gArZpAZdwR2_0_CUYwbjNbkXFed2lCDAJJzaIF47IMM7wSyxa11Hg3QTdOU5yghuljICFCY4z38Pc7C8WyL8QSTUyvoN1jipTzSJQpFdFlHPi4YlhfRjDun347flsfOZsL_GsQFfrrR4tmgi5LMQasX2IwOLz0s_hu-OhFRGDV5agTY9_Zg_uLlCZcdmmP-NBHB5-Nes5uURpkxje92IvSHgYfQL7M5li81LQyKj3Pbhcfg10meFxxh0V498usmKfOx8WmFMGvLlA5TiuvI1tEuzENnb9siWyiaoejHMsA6NZ-Y5vPe6tLYgLSv3qje-LDmHvsDYZHcXjhEnRNrNrKZI2wDsStOGBw5AOEt2FWJWiIF2VNIwkk3tkBvchLk2BkRL73v1jrWKMccXiPmyPepiEQwAK4Yhjpl6vTXaY9j2zQXNeKP2qe0
+      - mZ-l62OaT1966dQLNtgHPLGL_rUcjsDADxEjPy_S7WiK23UUlsoAB703anlfQA5ZmA_85PoYOyfQd7xBt6KwJ8ls_ZynMVlZppS7yRrmE411qQ9812SsfCLjkj_hnkCr0stkb9qgQ243wC4MNbE3f5hTfBTPShBFuO6Nms3luJho6RLrmlKmH-NZ6uxWU7yVJZbFCCR8rzHtJzk3llf04zpIaYVmwWsBUtb4NHGy36xNg5paROVsPhBaXkDupK4eLUvpoplcDaRGd6K6GqoT2dCFDA4OZYkQ2abXutIjctrwZ6Cobak-qQWA9okZ7APvtreuckQuaPNFxuob4GFDZpIJTqm-eVVIMY2gtuf9eg1ejRJxWAvmiAVcLy6vtSDtn4tMoAo7mnj30qXwUPvI1_-ieKGM3rU0RO3Jp2J_YIfK6GwQT06n0q0pD6WdEq4qDt4QkAxGnR1CB8mVy8Bk7mHZm_Q4RGDeBYTgVW4DK5l4ll9mJpddRFHKvQC7bPKtC_EwRRt1ToXrvaRQj4hQKTqgBcNXekxbeYZQyxbUiYMYOqetXkL18m2WDSJSbyTV2SD1u6c4lk4Gd4ttJm6wr2N6Xbv4QHr2XZ6cGYy6r2_4MpoqwCXbz8w7lN-6y44_0
       X-Accela-Agency:
-      - ISLANDTON
+      - nullisland
       User-Agent:
-      - Faraday v0.9.2
+      - Faraday v2.13.1
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -181,40 +171,79 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '734'
+      Date:
+      - Thu, 12 Jun 2025 23:12:45 GMT
       Content-Type:
       - application/json
-      Expires:
-      - "-1"
-      Server:
-      - Apache-Coyote/1.1
-      - Microsoft-IIS/10.0
-      - Microsoft-IIS/7.5
-      X-Accela-Resp-Gateway-Version:
-      - 3.2.1
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      X-Accela-Traceid:
-      - 171025180823687-153a239f
-      Arr-Disable-Session-Affinity:
-      - 'true'
-      Date:
-      - Wed, 25 Oct 2017 18:08:25 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612231242603-95626584
+      X-Azure-Ref:
+      - 20250612T231242Z-156d548487bqh4gdhC1BOSan2n0000000f800000000014d6
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"result":{"id":"ISLANDTON-17CAP-00000-001JI","type":{"module":"Building","value":"Building/Commercial/Addition/NA","type":"Commercial","category":"NA","text":"Commercial
-        Addition","subType":"Addition","group":"Building","alias":"Commercial Addition","id":"Building-Commercial-Addition-NA"},"module":"Building","recordClass":"COMPLETE","serviceProviderCode":"ISLANDTON","initiatedProduct":"AV360","statusDate":"2017-10-25
-        11:08:23","createdBy":"MDEVELOPER","trackingId":291712888,"customId":"BLD17-00906","jobValue":0.0,"value":"17CAP-00000-001JI","totalFee":0.0,"totalPay":0.0,"balance":20.0,"booking":false,"infraction":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"publicOwned":false},"status":200}'
-    http_version: 
-  recorded_at: Wed, 25 Oct 2017 18:08:26 GMT
-recorded_with: VCR 2.9.3
+      encoding: ASCII-8BIT
+      string: '{"message":"EMSE Script Framework Versions<BR>EVENT TRIGGERED: ConvertToRealCAPAfter<BR>SCRIPT
+        EXECUTED: CONVERTTOREALCAPAFTERNEW<BR>INCLUDE VERSION: 3.1.28<BR>SCRIPT VERSION
+        : 2<BR>GLOBAL VERSION : 3<BR>**WARNING: getting project parents:  Project
+        Parents Not Found: record ID: NULLISLAND-REC25-00000<BR><B>EMSE Script Results
+        for BLD25-00137</B><BR>capId = class com.accela.aa.aamain.cap.CapIDModel<BR>cap
+        = class com.accela.aa.emse.dom.CapScriptModel<BR>currentUserID = DEVELOPER<BR>currentUserGroup
+        = BuildingAgencyAdmin<BR>systemUserObj = class com.accela.aa.aamain.people.SysUserModel<BR>appTypeString
+        = Building/Commercial/Addition/NA<BR>capName = Commercial Building Permit<BR>capStatus
+        = Submitted<BR>fileDate = 6/12/2025<BR>fileDateYYYYMMDD = 2025-06-12<BR>sysDate
+        = class com.accela.aa.emse.util.ScriptDateTime<BR>parcelArea = 0<BR>estValue
+        = 0<BR>calcValue = 0<BR>feeFactor = CONT<BR>houseCount = 0<BR>feesInvoicedTotal
+        = 0<BR>balanceDue = 0<BR>parentCapId = null<BR>lookup(EMSE_VARIABLE_BRANCH_PREFIX,ConvertToRealCAPAfter)
+        = CTRCA<BR>Executing : PreExecuteForAfterEvents, Elapsed Time: 0.14 Seconds<BR>Finished:
+        PreExecuteForAfterEvents, Elapsed Time: 0.14 Seconds<BR>{Change of Use} =
+        null<BR>{Existing Use} = null<BR>{Proposed Use} = null<BR>{Existing Floor
+        Area} = null<BR>{New Floor Area} = null<BR>{Number of Stories} = null<BR>{Building
+        Height} = null<BR>{Occupancy Classification} = null<BR>{Occupant Load} = null<BR>{Type
+        of Construction} = null<BR>{Existing Fire Sprinklers?} = null<BR>{Fire Sprinklers
+        Included in Project?} = null<BR>{Fire Sprinkler Type} = null<BR>{Fire Sprinkler
+        Comments} = null<BR>{Existing Fire Alarm System?} = null<BR>{Fire Alarms Included
+        in Project?} = null<BR>{Fire Alarm Comments} = null<BR>{Water Meter Size}
+        = null<BR>{Irrigation Meter Size} = null<BR>{Backflow Device} = null<BR>{Total
+        Acreage} = null<BR>{Disturbed Acreage} = null<BR>{Flood Zone} = null<BR>{Base
+        Flood Elevation} = null<BR>{Not in Flood Zone} = null<BR>{Zoning 1} = null<BR>{Zoning
+        2} = null<BR>{Zoning 3} = null<BR>{Land Use 1} = null<BR>{Land Use 2} = null<BR>{Land
+        Use 3} = null<BR>{Parking Spaces Required} = null<BR>{Parking Spaces Provided}
+        = null<BR>{Planning Case Required} = null<BR>{Required Planning Case Type}
+        = null<BR>{Application Expiration Date} = 12/9/2025<BR>{Permit Issued Date}
+        = null<BR>{Permit Expiration Date} = null<BR>{Project Description} = null<BR>{Zoning_Num}
+        = null<BR>{Plan Submission} = 1<BR>{Building Review} = Y<BR>{Engineering Review}
+        = Y<BR>{Fire Review} = Y<BR>{Planning Review} = Y<BR>{Citation Letter Sent}
+        = null<BR>{Certify Letter Nbr} = null<BR>{Delivery Date} = null<BR>{Recipient
+        Signature?} = null<BR>Executing : ConvertToRealCAPAfter, Elapsed Time: 0.14
+        Seconds<BR>Executing : EMSE:GlobalFlags, Elapsed Time: 0.142 Seconds<BR>Finished:
+        EMSE:GlobalFlags, Elapsed Time: 0.142 Seconds<BR>Executing : CTRCA:Building/*/*/*,
+        Elapsed Time: 0.143 Seconds<BR>Executing : EMSE:SetContactRelationshipToContactType,
+        Elapsed Time: 0.144 Seconds<BR>Finished: EMSE:SetContactRelationshipToContactType,
+        Elapsed Time: 0.147 Seconds<BR>Finished: CTRCA:Building/*/*/*, Elapsed Time:
+        0.147 Seconds<BR>Executing : CTRCA:Building/Commercial/*/*, Elapsed Time:
+        0.147 Seconds<BR>Finished: CTRCA:Building/Commercial/*/*, Elapsed Time: 0.149
+        Seconds<BR>Executing : CTRCA:Building/Commercial/Addition/*, Elapsed Time:
+        0.149 Seconds<BR>Finished: CTRCA:Building/Commercial/Addition/*, Elapsed Time:
+        0.151 Seconds<BR>Executing : CTRCA:Building/*/*/NA, Elapsed Time: 0.151 Seconds<BR>Finished:
+        CTRCA:Building/*/*/NA, Elapsed Time: 0.152 Seconds<BR>Executing : CTRCA:Building/Commercial/*/NA,
+        Elapsed Time: 0.152 Seconds<BR>Finished: CTRCA:Building/Commercial/*/NA, Elapsed
+        Time: 0.154 Seconds<BR>Executing : CTRCA:Building/Commercial/Addition/NA,
+        Elapsed Time: 0.154 Seconds<BR>Finished: CTRCA:Building/Commercial/Addition/NA,
+        Elapsed Time: 0.156 Seconds<BR>Finished: ConvertToRealCAPAfter, Elapsed Time:
+        0.156 Seconds<BR>lookup(EMSE_VARIABLE_BRANCH_PREFIX,ConvertToRealCAPAfter)
+        = CTRCA<BR>","result":{"name":"Commercial Building Permit","id":"NULLISLAND-REC25-00000-00058","type":{"module":"Building","value":"Building/Commercial/Addition/NA","type":"Commercial","text":"Commercial
+        Addition","group":"Building","alias":"Commercial Addition","subType":"Addition","category":"NA","id":"Building-Commercial-Addition-NA"},"module":"Building","status":{"value":"Submitted","text":"Submitted"},"recordClass":"COMPLETE","createdBy":"DEVELOPER","serviceProviderCode":"NULLISLAND","statusDate":"2025-06-12
+        16:12:42","initiatedProduct":"AV360","customId":"BLD25-00137","openedDate":"2025-06-12
+        00:00:00","jobValue":0.0,"trackingId":237506959,"renewalInfo":{"expirationDate":"2025-01-31
+        00:00:00","expirationStatus":"Pending"},"value":"REC25-00000-00058","totalFee":0.0,"totalPay":0.0,"balance":0.0,"booking":false,"infraction":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"publicOwned":false},"status":200}'
+  recorded_at: Thu, 12 Jun 2025 23:12:45 GMT
+recorded_with: VCR 6.3.1

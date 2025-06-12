@@ -5,46 +5,52 @@ http_interactions:
     uri: https://apis.accela.com/oauth2/token
     body:
       encoding: UTF-8
-      string: grant_type=password&agency_name=islandton&environment=TEST&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&username=developer&password=accela&scope=records%20addresses
+      string: agency_name=nullisland&client_id=638853549908464776&client_secret=4588a663f51143e69432e2734143e44b&environment=TEST&grant_type=password&password=accela&scope=records+addresses&username=developer
     headers:
+      X-Accela-Appid:
+      - '638853549908464776'
       Content-Type:
       - application/x-www-form-urlencoded
-      X-Accela-Appid:
-      - '635395466279594650'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '937'
+      Date:
+      - Thu, 12 Jun 2025 22:43:27 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - TiPMix=3.7681055140724617; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
+        Max-Age=3600; Secure
+      Vary:
+      - Accept-Encoding
       X-Accela-Traceid:
-      - 140916194925792-9207a1bb
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 16 Sep 2014 19:49:26 GMT
+      - 250612224327277-6c120356
+      X-Azure-Ref:
+      - 20250612T224327Z-156d548487b85chdhC1BOS29zc0000000dh0000000006d4t
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"access_token":"tgMx9IgkpNEGbyH8NczpGGYrF2VtiPeJEtnj5ItFrQSNVt32EZ2rfZrL6xKBrhfDNTYijskKQW-A5IwGIP4_TQhzQaLBFZhKoe_gR-pAL--JxdfBTR6AZ_-nMbruVNXJiIw2E8XtyVsGYo92ycB0HFhJqJjeHymGAPwqRb7ygjL3FvkYcllrwdkiWgHpU-_7HkSYvpXak8PsIK3IYs1qhOgqgFOaNfrHTpt_ZP8Klj4LGx9GhDnJ7YTKsyOL6MNXiEfJRzHJ-OI_DsZr6C0M3AqsVjkwPx1FeTAjldldHRfb99zFht2AXXFa87on3G34IuJWu0uH8Rb80oknucwUsQj9xlwYYucTc5HyEPtcEUem6LXUc-7Nr4miqeTeV5FMMJZbkAEwKsiArIObwKKkBpEyGiN08RQH1Q49pK5tdmy7igEeiDJ2QdDTZ2RNfLLN0","token_type":"bearer","expires_in":"86400","refresh_token":"rALM!IAAAALdZJur_0L2IlU0iN6ZCe-psUb09XaarKDGI76wW8Jcp4QAAAAH7qbSyhzcLiRG-6iTOZHJv8IY6k7s7KkyU1KudojhAS8gT7dwgGVmrOPuTa6ob4Wv8X3OZ8LD7TwjjQyOPSzJWlcte1evO3kv5N5jqQ_K8BAEV3hTnhZxYDOgNPvY-2Q5wDrULra33y11kADkZYm7AQ9cVg-NVMv8uIDiI36jxpjSUME7XmQR95VP2IGkJgo_VySsYvrY0v2zy5MV5OImOySAH024u_fK4vc9YcS9sil3MEiKzga8t4SqLoHfauOYTvibh7yrTOREe5Stonnc5BCxxYIP1k-Ct5ga3IO-DQw","scope":"addresses
-        get_civicid_profile records"}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:49:27 GMT
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"access_token\": \"AisMLrUTDT8JtWeaaoLzZbgH8EstS-MV4nCVEtCojtCJvKzMhpOod2BwyP4vfIiykhwzICHnTOxQV7D-HOR8614ojPq7_Rnl6vOnoRvsmtTdKaPiF3Pq48MVSrHExH3oRMg-yYVspb2ultxV42-R7NvJFFnpnBH5axBl8oRBPRFbdx9ZDVdeKdr3oEP5S0L7USZe0KHhoxhC72O4RsgEV3nRsU76lGmpVPCRc7H0tN_JZALENWRi0hSuI9nYUsJ23fnke77fOUQhTxIE-_r5jBoZoLecmZRT-pTTOx8_7pwWNY7MLVsJWCMPStL1T_pW9dUdt77m7Pso5FfaRBkxWDA-N8xhywLMvgo-Kq5R2rJPMqHXTR55QuKrxNWLATxmrVCRdMTLB5x_KuB7Wa8RLRYDzX2RqGwXgYrTMIMAbL9DqC3nxBW5EOzr1AgGRgYqR6HI9xdxLarfRtQyPcpNk_Jk2Iqpy60Rrn2hAAQQhxGRkntObvUNVwx2Z6-Y3H10fGsx14Y21Qx_-1U3xLHSGM1ZGY6vn6DwR-6WNn4WxJh2uu7KSC_hTCcO4jWNDaapvfUqT_AhtghTHkcBUdd6d4lQ1BrU_KAlogZlXDGT6DjlRN29ouD1o8gmOIJwnPE70\",\r\n
+        \ \"token_type\": \"bearer\",\r\n  \"expires_in\": 900,\r\n  \"refresh_token\":
+        \"VZpkBZmjyJq7gpqMIX5JH1eei-jo-ktJCIr4Y21DZYzAVmXGG4CgwNbaHHKe_IzSAceES8rWhZh8LwIwk7i1DXo87CULlW5P_cy3x_ig68nx7P950Yi6K6uYWuwnovhq_52WwDTpxZC_Z7Redcucl2jtBSjEpbFw-CDCIUf984DYhfq-QqA8sSOEAVUJjdoo2sI3eBqnvgG5E7pAcI0j7zcwDNAgrUVPzy3ytN1iPL1E0_IG7hQQJ3ukhu3MfbQt7U8zmdRTpSLRwoth6TeedHurnpoZwnoCmT0zRnvRV1F11dDj9qLXHE5f5aY6eUQ9X7eC75DRegSt15KuhYLh28AhKIbBCBlOlFWFU34qphxvq9Oz34M7ceKSIieBdrE8CJF1ygvWhSN4tDC0hMu84p81rwnPnNwgRdzbfgYwmxU95h7_iHweTlv8PcqYY701rJM8HaXBIUcEQfXlouMK8ZqNP5xSfB28vtiSOjz9KsaBKeSSGUJ0VeLwHyOUpz6bTUXmvql7hIE0N-0-ychNlEsGOj7VE2OHpMCvL8oq2-sS-pjYA-BwCM11fxgWRmDQ_HYhGOt7mJ3TRdBexqoCAaJ3EUe6rYecwCIprxbEGk4F0a8WCbP4ZsMYpjR_fVuF0\",\r\n
+        \ \"scope\": \"records addresses\"\r\n}"
+  recorded_at: Thu, 12 Jun 2025 22:43:27 GMT
 - request:
     method: get
-    uri: https://apis.accela.com/v4/records/ISLANDTON-14CAP-00000-000CR
+    uri: https://apis.accela.com/v4/records/NULLISLAND-REC25-00000-0004L
     body:
       encoding: US-ASCII
       string: ''
@@ -54,55 +60,55 @@ http_interactions:
       Accept:
       - application/json
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       Authorization:
-      - tgMx9IgkpNEGbyH8NczpGGYrF2VtiPeJEtnj5ItFrQSNVt32EZ2rfZrL6xKBrhfDNTYijskKQW-A5IwGIP4_TQhzQaLBFZhKoe_gR-pAL--JxdfBTR6AZ_-nMbruVNXJiIw2E8XtyVsGYo92ycB0HFhJqJjeHymGAPwqRb7ygjL3FvkYcllrwdkiWgHpU-_7HkSYvpXak8PsIK3IYs1qhOgqgFOaNfrHTpt_ZP8Klj4LGx9GhDnJ7YTKsyOL6MNXiEfJRzHJ-OI_DsZr6C0M3AqsVjkwPx1FeTAjldldHRfb99zFht2AXXFa87on3G34IuJWu0uH8Rb80oknucwUsQj9xlwYYucTc5HyEPtcEUem6LXUc-7Nr4miqeTeV5FMMJZbkAEwKsiArIObwKKkBpEyGiN08RQH1Q49pK5tdmy7igEeiDJ2QdDTZ2RNfLLN0
+      - AisMLrUTDT8JtWeaaoLzZbgH8EstS-MV4nCVEtCojtCJvKzMhpOod2BwyP4vfIiykhwzICHnTOxQV7D-HOR8614ojPq7_Rnl6vOnoRvsmtTdKaPiF3Pq48MVSrHExH3oRMg-yYVspb2ultxV42-R7NvJFFnpnBH5axBl8oRBPRFbdx9ZDVdeKdr3oEP5S0L7USZe0KHhoxhC72O4RsgEV3nRsU76lGmpVPCRc7H0tN_JZALENWRi0hSuI9nYUsJ23fnke77fOUQhTxIE-_r5jBoZoLecmZRT-pTTOx8_7pwWNY7MLVsJWCMPStL1T_pW9dUdt77m7Pso5FfaRBkxWDA-N8xhywLMvgo-Kq5R2rJPMqHXTR55QuKrxNWLATxmrVCRdMTLB5x_KuB7Wa8RLRYDzX2RqGwXgYrTMIMAbL9DqC3nxBW5EOzr1AgGRgYqR6HI9xdxLarfRtQyPcpNk_Jk2Iqpy60Rrn2hAAQQhxGRkntObvUNVwx2Z6-Y3H10fGsx14Y21Qx_-1U3xLHSGM1ZGY6vn6DwR-6WNn4WxJh2uu7KSC_hTCcO4jWNDaapvfUqT_AhtghTHkcBUdd6d4lQ1BrU_KAlogZlXDGT6DjlRN29ouD1o8gmOIJwnPE70
       X-Accela-Agency:
-      - islandton
+      - nullisland
+      User-Agent:
+      - Faraday v2.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '1026'
+      Date:
+      - Thu, 12 Jun 2025 22:43:28 GMT
       Content-Type:
       - application/json
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
-      - Microsoft-IIS/7.5
-      - unknow
-      X-Accela-Resp-Gateway-Version:
-      - 3.1.0.1
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      X-Accela-Traceid:
-      - 140916194927278-3ce9b3a2
-      Date:
-      - Tue, 16 Sep 2014 19:49:27 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612224327829-e8dadd9c
+      X-Azure-Ref:
+      - 20250612T224327Z-156d548487b6htt6hC1BOSaw6w00000003s0000000005tuh
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"result":[{"name":"D-I Builders Development Model Home","id":"ISLANDTON-14CAP-00000-000CR","type":{"module":"Building","type":"Residential","value":"Building/Residential/New/NA","category":"NA","text":"Residential
-        New","group":"Building","subType":"New","id":"Building-Residential-New-NA"},"description":"","status":{"value":"Submitted","text":"Submitted"},"infraction":false,"initiatedProduct":"AV360","createdBy":"DI","balance":0.0,"serviceProviderCode":"ISLANDTON","statusDate":"2014-08-20
-        11:02:00","totalJobCost":0.0,"reportedChannel":{"value":"Call Center","text":"Call
-        Center"},"reportedDate":"2014-08-20 11:02:00","totalFee":0.0,"totalPay":0.0,"module":"Building","customId":"BLD14-00187","jobValue":0.0,"publicOwned":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"openedDate":"2014-08-20
-        00:00:00","trackingId":262040261,"estimatedProductionUnit":0.0,"actualProductionUnit":0.0,"createdByCloning":"Y","undistributedCost":0.0,"booking":false,"value":"14CAP-00000-000CR"}],"status":200}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:49:28 GMT
+      encoding: ASCII-8BIT
+      string: '{"result":[{"id":"NULLISLAND-REC25-00000-0004L","type":{"module":"Building","value":"Building/Residential/Alteration/NA","type":"Residential","text":"Residential
+        Alteration","group":"Building","category":"NA","subType":"Alteration","alias":"Residential
+        Alteration","id":"Building-Residential-Alteration-NA"},"description":"Description:
+        test igs int\r\nSelect a Report Type: SmokeTest2\r\nOneView Id: 119968\r\nDevice
+        Type: HTML5\r\nDevice Model: CitySourcedCan\r\nUser Entered Address: 50 Bannatyne
+        Ave, Winnipeg, MB, R3B 3C5, CAN\r\nApproximate Address: 50 Bannatyne Ave,
+        Winnipeg, Manitoba, R3B 3C5\r\nLat/Lng Coordinates: 49.89708, -97.13467\r\nUserEnteredAddress:
+        50 Bannatyne Ave, Winnipeg, MB, R3B 3C5, CAN\r\nOriginationIpAddress: 127.0.0.1\r\nInitialBoundaryName:
+        All Canada\r\n","module":"Building","status":{"value":"Pending","text":"Pending"},"recordClass":"COMPLETE","initiatedProduct":"AV360","serviceProviderCode":"NULLISLAND","totalJobCost":0.0,"createdBy":"DEVELOPER","statusDate":"2025-06-03
+        00:00:00","updateDate":"2025-06-08 18:46:56","undistributedCost":0.0,"assignedUser":"JDOE","assignedToDepartment":"NULLISLAND-ADMIN-NA-NA-NA-NA-NA","customId":"BLD25-00117","renewalInfo":{"expirationDate":"2025-01-31
+        00:00:00","expirationStatus":"Pending"},"openedDate":"2025-06-03 00:00:00","jobValue":0.0,"trackingId":233138099,"value":"REC25-00000-0004L","totalFee":40.0,"totalPay":0.0,"balance":40.0,"booking":false,"infraction":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"publicOwned":false}],"status":200}'
+  recorded_at: Thu, 12 Jun 2025 22:43:28 GMT
 - request:
     method: get
-    uri: https://apis.accela.com/v4/records/ISLANDTON-14CAP-00000-000CR/addresses
+    uri: https://apis.accela.com/v4/records/NULLISLAND-REC25-00000-0004L/addresses
     body:
       encoding: US-ASCII
       string: ''
@@ -112,47 +118,43 @@ http_interactions:
       Accept:
       - application/json
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       Authorization:
-      - tgMx9IgkpNEGbyH8NczpGGYrF2VtiPeJEtnj5ItFrQSNVt32EZ2rfZrL6xKBrhfDNTYijskKQW-A5IwGIP4_TQhzQaLBFZhKoe_gR-pAL--JxdfBTR6AZ_-nMbruVNXJiIw2E8XtyVsGYo92ycB0HFhJqJjeHymGAPwqRb7ygjL3FvkYcllrwdkiWgHpU-_7HkSYvpXak8PsIK3IYs1qhOgqgFOaNfrHTpt_ZP8Klj4LGx9GhDnJ7YTKsyOL6MNXiEfJRzHJ-OI_DsZr6C0M3AqsVjkwPx1FeTAjldldHRfb99zFht2AXXFa87on3G34IuJWu0uH8Rb80oknucwUsQj9xlwYYucTc5HyEPtcEUem6LXUc-7Nr4miqeTeV5FMMJZbkAEwKsiArIObwKKkBpEyGiN08RQH1Q49pK5tdmy7igEeiDJ2QdDTZ2RNfLLN0
+      - AisMLrUTDT8JtWeaaoLzZbgH8EstS-MV4nCVEtCojtCJvKzMhpOod2BwyP4vfIiykhwzICHnTOxQV7D-HOR8614ojPq7_Rnl6vOnoRvsmtTdKaPiF3Pq48MVSrHExH3oRMg-yYVspb2ultxV42-R7NvJFFnpnBH5axBl8oRBPRFbdx9ZDVdeKdr3oEP5S0L7USZe0KHhoxhC72O4RsgEV3nRsU76lGmpVPCRc7H0tN_JZALENWRi0hSuI9nYUsJ23fnke77fOUQhTxIE-_r5jBoZoLecmZRT-pTTOx8_7pwWNY7MLVsJWCMPStL1T_pW9dUdt77m7Pso5FfaRBkxWDA-N8xhywLMvgo-Kq5R2rJPMqHXTR55QuKrxNWLATxmrVCRdMTLB5x_KuB7Wa8RLRYDzX2RqGwXgYrTMIMAbL9DqC3nxBW5EOzr1AgGRgYqR6HI9xdxLarfRtQyPcpNk_Jk2Iqpy60Rrn2hAAQQhxGRkntObvUNVwx2Z6-Y3H10fGsx14Y21Qx_-1U3xLHSGM1ZGY6vn6DwR-6WNn4WxJh2uu7KSC_hTCcO4jWNDaapvfUqT_AhtghTHkcBUdd6d4lQ1BrU_KAlogZlXDGT6DjlRN29ouD1o8gmOIJwnPE70
       X-Accela-Agency:
-      - islandton
+      - nullisland
+      User-Agent:
+      - Faraday v2.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '516'
+      Date:
+      - Thu, 12 Jun 2025 22:43:28 GMT
       Content-Type:
       - application/json
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
-      - Microsoft-IIS/7.5
-      - unknow
-      X-Accela-Resp-Gateway-Version:
-      - 3.1.0.1
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      X-Accela-Traceid:
-      - 140916194927948-33218460
-      Date:
-      - Tue, 16 Sep 2014 19:49:28 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612224328321-dda4a7b5
+      X-Azure-Ref:
+      - 20250612T224328Z-156d548487bqh4gdhC1BOSan2n0000000f5g000000001q8g
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"result":[{"id":1000619244,"streetStart":1,"refAddressId":16830,"city":"PETALUMA","postalCode":"94952","serviceProviderCode":"ISLANDTON","isPrimary":"Y","streetName":"ALLEGHENY","recordId":{"id":"ISLANDTON-14CAP-00000-000CR","customId":"BLD14-00187","serviceProviderCode":"ISLANDTON","trackingId":262040261,"value":"14CAP-00000-000CR"},"country":{"value":"US","text":"United
-        States"},"status":{"value":"A","text":"Active"},"state":{"value":"CA","text":"CA"},"streetSuffix":{"value":"CT","text":"CT"}}],"status":200}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:49:28 GMT
-recorded_with: VCR 2.9.2
+      encoding: ASCII-8BIT
+      string: '{"result":[{"id":1006457638,"addressLine1":"50 Bannatyne Ave, Winnipeg,
+        R3B","yCoordinate":49.89708,"xCoordinate":-97.13467,"refAddressId":0,"houseAlphaStart":"50","streetStart":50,"keyFieldsNull":false,"streetAddress":"50
+        Bannatyne Ave","postalCode":"R3B","streetName":"Bannatyne","city":"Winnipeg","isPrimary":"Y","county":"Division
+        No. 11","serviceProviderCode":"NULLISLAND","recordId":{"id":"NULLISLAND-REC25-00000-0004L","trackingId":233138099,"missingIdentifier":false,"customId":"BLD25-00117","capClass":"COMPLETE","serviceProviderCode":"NULLISLAND","value":"REC25-00000-0004L"},"country":{"value":"CA","text":"Canada"},"streetSuffix":{"value":"Ave","text":"Ave"}}],"status":200}'
+  recorded_at: Thu, 12 Jun 2025 22:43:28 GMT
+recorded_with: VCR 6.3.1

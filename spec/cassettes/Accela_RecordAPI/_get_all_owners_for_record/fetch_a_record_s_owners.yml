@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 12 Jun 2025 22:42:44 GMT
+      - Thu, 12 Jun 2025 22:43:30 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,23 +31,23 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - TiPMix=2.7901544470275264; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
+      - TiPMix=95.14787129005754; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
         Max-Age=3600; Secure
       Vary:
       - Accept-Encoding
       X-Accela-Traceid:
-      - 250612224244321-7d200289
+      - 250612224329986-3456f666
       X-Azure-Ref:
-      - 20250612T224244Z-156d548487brln94hC1BOSsxe400000001kg000000002xcc
+      - 20250612T224329Z-156d548487bq7dv5hC1BOS912c0000000140000000006q7v
       X-Cache:
       - CONFIG_NOCACHE
     body:
       encoding: ASCII-8BIT
-      string: "{\r\n  \"access_token\": \"AisMLrUTDT8JtWeaaoLzZVt2VnoZG9lyRbLEiiKTqsV-7FJZ5-7TeVDA6qzybRDg6Gu8YXxnubfmwYtETtFzJL2NwFFEfg6mGEy1PL5EhVgQGZBnW8hxtSPgPEs8aI7Ys_2a8XOgJSqmMdzw3eGUm6S4p1d8UDdEZhL1e5R0FvM0bNuXTbaPxT7wvYY49BjGhndNNVBHmwvpxVTyk3RScXsCI99sOSGALrztqoOOv1V8Cl6PFVZzST6d10iEtKTtnV1IIalzVRX7-e5odHZdr7G5nqrQoIQshmJpmNfzDx-eJhJ9Qg79r5oONSDyukdw80GBAoptgNdyhDgmHyY180gy5Aq8-pHgn9uDWeRAET60VV34n1tori480_OWTfLfq9p3ABWOE3hGfslxP1v6wZXodrqAcxit-w4lTg0AMvFRvmYP-KiFbQhsS6GDq2Zndy5dW7oW_C_Xa52uh7RNkUaUI495TBUhbBu_4EoNav5kI0-FzC6QAZurORTGnDP5O_nqntDTrZ9siCtJFBcDKLtn4uC9th0VKNyrY3cRE9q5QvATW2kPI90r46ez-6R6YZppSd8dZv7Yu4pFuwfTg1FPS9YnL5LxGWssTYoPHsFoEcnVLjMzYMA3wHdA4Z600\",\r\n
+      string: "{\r\n  \"access_token\": \"AisMLrUTDT8JtWeaaoLzZZb_5wnum0m4RNE_-WE4nhvuwhDJFsr7KajtcnVeoIoBzdQDVXoCeMkob2fYGkEh_zIn4JJfWf_rQusupW7vR8BZWkKI2-iJ6ovNsv9lYA0MPvxokcdzqAxNx60_2ecZdpG-vjhA6f786HLXC-QFmjHAGPyo1t5ztwyYHycM0ovwAhfjjda7RS2Zr5sOJ_kMa8R36zYKPbThbEEkxDxx0jVed7WgfmtzR_MrX4Q9IkITbJDMzVpoy4AzhFHSwh5PwkwCPZOdlLsFfQC0IstXyIz4-b8nMOy5OiHOFtX6IZ7AZ5PfDE1kNYRELGswimoJlpwYnO-4AWCfSdnCdDuUFUQtf16EtiigHquN35UqGUtqwywhHOdI6m60ijbWZGxXNPxQQ6ntZZYRyNfNAE1nkxBh8VSxhk2WAl4TzDW1bh5rCLr3iXPfsUZymSgLIP0YNgN3M7mIjkiHnxVfVIbAx-VpveuE9Jr5IU__8A7XjE0ErZRMDuJxTM4ZpnwHxlg9hJL8o2DKVanRsgHbRTE0qjQI1uAzQIiVD7hkIVfo4BPXEOvGZMIg7QxMbaHK_FbVpY5OKcFykVfTWcl0fF6s64vNIL53QxLstPxB9WjTOb6V0\",\r\n
         \ \"token_type\": \"bearer\",\r\n  \"expires_in\": 900,\r\n  \"refresh_token\":
-        \"VZpkBZmjyJq7gpqMIX5JH5HdhvQAS6MGl0aOxb0WPODbhMluSN1Nxdi-UChHJHdnifGk56A40C0PW15mucOWJzy7fWE9XbToY1c0eO6r6xtzlTWwV2Lw13XAO8U2KlY1HRsAy3ce4EZgVQjc658iue3NtUfSXf-kGgcXMpMbRMXrRzXWHI9U0ZSlV6ICMnmxGIAM4vrILTlmtcErl-S36CYOi0U7MpiL1zr3rTkg4X26m3hg8RPA_tYTIzMtgtATUKHuth70GMSSe10mfXwM6O_HV7xxCVQbrIYo12lOydAgj-LQ5K3b2xVg72B_K0r-PPFPmFwDDZzpQyTST2q18SGGVf6nyjv-g6n2caejdv2u3aa3bjxeo0KPezrvxjycwWE6q6dHd67CD_CDN6bsKFVZd_F86qP_xyAnAlIeMrcNrxgvZZ11_zoqVCmpMYelr7FXIzVh2hKWdtnirr89SYZcJCJTwLwc4xFG95sRgeTtl1me1Np2gDYpespyKE7uCy1LUJqPMDtA4EfnRSlNiIpRMniYNjQ7mWoQ0jlewsw-AQJaRqOzKb0R763Fncc8cEaodt2mbduUEmgB15my6IZrznkLktxqBwPb8emL-rgbqtmnqooGPiF_Ls41GCrc0\",\r\n
+        \"VZpkBZmjyJq7gpqMIX5JH0XiELLFkQ3dsQ32VE1K2SfZ1gAMqB-OKDCc1b_r1hjt6p5SOOIg37Jp3O00H69Zln9JuCLfVl_k21oiBYheHUxQi2N0Uq4ENL_vqtj4tSThV9Nkeu00N4Nt65HzbE8YoZl-GBcdHhECXa_QrGaYSLaJJZvaz6PBiUp3Wtnbj_3jwBG3obITA05zAOPeAkZJxzo6anQerv5ZSfexLqopajwE9wxNazVZfHwurKz2_O4lHUSWmt-38S4SykWAig0IAatwKQMgJ96An_-J3PqSkSH4uz24N_wOjbm6lL7BveV3-AssYaeTV0yM0jOIZrFEKBDSUYCpwB0hyfRgbOYIrR9seFClVOewrvwSODbUEixp80RMZaCJL5rI8vzT2M6SbgB8IT9mtMn3JRVRwjN9aVU89FvyntdUaVp94qJqZC4GQdrBFKXofjLFvFrnukFmpc_fsK-f_zpT0lKDPyysmvLUbYHdol8hLN3mU9jCk38d7pBtORLlPEkeIIWf27zGYIMgOVPrqP7dlteRxj1KaImaXHcU_N0iJv6o0O01MeKetjiKEyQCDXg4ASBcPETRKiLApBW96KdCT2fe1kNdJXCvX3JLwaTPcbysxRZf1pwO0\",\r\n
         \ \"scope\": \"records addresses\"\r\n}"
-  recorded_at: Thu, 12 Jun 2025 22:42:44 GMT
+  recorded_at: Thu, 12 Jun 2025 22:43:30 GMT
 - request:
     method: get
     uri: https://apis.accela.com/v4/records/NULLISLAND-REC25-00000-0004O
@@ -62,7 +62,7 @@ http_interactions:
       X-Accela-Appid:
       - '638853549908464776'
       Authorization:
-      - AisMLrUTDT8JtWeaaoLzZVt2VnoZG9lyRbLEiiKTqsV-7FJZ5-7TeVDA6qzybRDg6Gu8YXxnubfmwYtETtFzJL2NwFFEfg6mGEy1PL5EhVgQGZBnW8hxtSPgPEs8aI7Ys_2a8XOgJSqmMdzw3eGUm6S4p1d8UDdEZhL1e5R0FvM0bNuXTbaPxT7wvYY49BjGhndNNVBHmwvpxVTyk3RScXsCI99sOSGALrztqoOOv1V8Cl6PFVZzST6d10iEtKTtnV1IIalzVRX7-e5odHZdr7G5nqrQoIQshmJpmNfzDx-eJhJ9Qg79r5oONSDyukdw80GBAoptgNdyhDgmHyY180gy5Aq8-pHgn9uDWeRAET60VV34n1tori480_OWTfLfq9p3ABWOE3hGfslxP1v6wZXodrqAcxit-w4lTg0AMvFRvmYP-KiFbQhsS6GDq2Zndy5dW7oW_C_Xa52uh7RNkUaUI495TBUhbBu_4EoNav5kI0-FzC6QAZurORTGnDP5O_nqntDTrZ9siCtJFBcDKLtn4uC9th0VKNyrY3cRE9q5QvATW2kPI90r46ez-6R6YZppSd8dZv7Yu4pFuwfTg1FPS9YnL5LxGWssTYoPHsFoEcnVLjMzYMA3wHdA4Z600
+      - AisMLrUTDT8JtWeaaoLzZZb_5wnum0m4RNE_-WE4nhvuwhDJFsr7KajtcnVeoIoBzdQDVXoCeMkob2fYGkEh_zIn4JJfWf_rQusupW7vR8BZWkKI2-iJ6ovNsv9lYA0MPvxokcdzqAxNx60_2ecZdpG-vjhA6f786HLXC-QFmjHAGPyo1t5ztwyYHycM0ovwAhfjjda7RS2Zr5sOJ_kMa8R36zYKPbThbEEkxDxx0jVed7WgfmtzR_MrX4Q9IkITbJDMzVpoy4AzhFHSwh5PwkwCPZOdlLsFfQC0IstXyIz4-b8nMOy5OiHOFtX6IZ7AZ5PfDE1kNYRELGswimoJlpwYnO-4AWCfSdnCdDuUFUQtf16EtiigHquN35UqGUtqwywhHOdI6m60ijbWZGxXNPxQQ6ntZZYRyNfNAE1nkxBh8VSxhk2WAl4TzDW1bh5rCLr3iXPfsUZymSgLIP0YNgN3M7mIjkiHnxVfVIbAx-VpveuE9Jr5IU__8A7XjE0ErZRMDuJxTM4ZpnwHxlg9hJL8o2DKVanRsgHbRTE0qjQI1uAzQIiVD7hkIVfo4BPXEOvGZMIg7QxMbaHK_FbVpY5OKcFykVfTWcl0fF6s64vNIL53QxLstPxB9WjTOb6V0
       X-Accela-Agency:
       - nullisland
       User-Agent:
@@ -75,7 +75,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 12 Jun 2025 22:42:44 GMT
+      - Thu, 12 Jun 2025 22:43:30 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -87,9 +87,9 @@ http_interactions:
       X-Powered-By:
       - Undertow/1
       X-Accela-Traceid:
-      - 250612224244749-3b23d8d4
+      - 250612224330430-6b2bd857
       X-Azure-Ref:
-      - 20250612T224244Z-156d548487btwnlthC1BOSqtnw0000000410000000005s1k
+      - 20250612T224330Z-156d548487bzsnrzhC1BOSm16s00000005z0000000005efr
       X-Cache:
       - CONFIG_NOCACHE
     body:
@@ -101,10 +101,10 @@ http_interactions:
         00:00:00","shortNotes":"Short note from HFA","statusDate":"2025-06-07 00:00:00","updateDate":"2025-06-09
         11:03:45","customId":"BLD25-00119","jobValue":0.0,"renewalInfo":{"expirationDate":"2025-01-31
         00:00:00","expirationStatus":"Pending"},"openedDate":"2025-06-06 00:00:00","trackingId":291567751,"assignedUser":"BUILDINGONLY","closedByDepartment":"NULLISLAND/ADMIN/NA/NA/NA/NA/NA","assignedToDepartment":"NULLISLAND-BUILDING-NA-NA-NA-NA-NA","estimatedProductionUnit":0.0,"actualProductionUnit":0.0,"value":"REC25-00000-0004O","totalFee":40.0,"totalPay":0.0,"balance":40.0,"booking":false,"infraction":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"publicOwned":false}],"status":200}'
-  recorded_at: Thu, 12 Jun 2025 22:42:44 GMT
+  recorded_at: Thu, 12 Jun 2025 22:43:30 GMT
 - request:
     method: get
-    uri: https://apis.accela.com/v4/records/NULLISLAND-REC25-00000-0004O/parcels
+    uri: https://apis.accela.com/v4/records/NULLISLAND-REC25-00000-0004O/owners
     body:
       encoding: US-ASCII
       string: ''
@@ -116,7 +116,7 @@ http_interactions:
       X-Accela-Appid:
       - '638853549908464776'
       Authorization:
-      - AisMLrUTDT8JtWeaaoLzZVt2VnoZG9lyRbLEiiKTqsV-7FJZ5-7TeVDA6qzybRDg6Gu8YXxnubfmwYtETtFzJL2NwFFEfg6mGEy1PL5EhVgQGZBnW8hxtSPgPEs8aI7Ys_2a8XOgJSqmMdzw3eGUm6S4p1d8UDdEZhL1e5R0FvM0bNuXTbaPxT7wvYY49BjGhndNNVBHmwvpxVTyk3RScXsCI99sOSGALrztqoOOv1V8Cl6PFVZzST6d10iEtKTtnV1IIalzVRX7-e5odHZdr7G5nqrQoIQshmJpmNfzDx-eJhJ9Qg79r5oONSDyukdw80GBAoptgNdyhDgmHyY180gy5Aq8-pHgn9uDWeRAET60VV34n1tori480_OWTfLfq9p3ABWOE3hGfslxP1v6wZXodrqAcxit-w4lTg0AMvFRvmYP-KiFbQhsS6GDq2Zndy5dW7oW_C_Xa52uh7RNkUaUI495TBUhbBu_4EoNav5kI0-FzC6QAZurORTGnDP5O_nqntDTrZ9siCtJFBcDKLtn4uC9th0VKNyrY3cRE9q5QvATW2kPI90r46ez-6R6YZppSd8dZv7Yu4pFuwfTg1FPS9YnL5LxGWssTYoPHsFoEcnVLjMzYMA3wHdA4Z600
+      - AisMLrUTDT8JtWeaaoLzZZb_5wnum0m4RNE_-WE4nhvuwhDJFsr7KajtcnVeoIoBzdQDVXoCeMkob2fYGkEh_zIn4JJfWf_rQusupW7vR8BZWkKI2-iJ6ovNsv9lYA0MPvxokcdzqAxNx60_2ecZdpG-vjhA6f786HLXC-QFmjHAGPyo1t5ztwyYHycM0ovwAhfjjda7RS2Zr5sOJ_kMa8R36zYKPbThbEEkxDxx0jVed7WgfmtzR_MrX4Q9IkITbJDMzVpoy4AzhFHSwh5PwkwCPZOdlLsFfQC0IstXyIz4-b8nMOy5OiHOFtX6IZ7AZ5PfDE1kNYRELGswimoJlpwYnO-4AWCfSdnCdDuUFUQtf16EtiigHquN35UqGUtqwywhHOdI6m60ijbWZGxXNPxQQ6ntZZYRyNfNAE1nkxBh8VSxhk2WAl4TzDW1bh5rCLr3iXPfsUZymSgLIP0YNgN3M7mIjkiHnxVfVIbAx-VpveuE9Jr5IU__8A7XjE0ErZRMDuJxTM4ZpnwHxlg9hJL8o2DKVanRsgHbRTE0qjQI1uAzQIiVD7hkIVfo4BPXEOvGZMIg7QxMbaHK_FbVpY5OKcFykVfTWcl0fF6s64vNIL53QxLstPxB9WjTOb6V0
       X-Accela-Agency:
       - nullisland
       User-Agent:
@@ -129,7 +129,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 12 Jun 2025 22:42:45 GMT
+      - Thu, 12 Jun 2025 22:43:30 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -141,14 +141,16 @@ http_interactions:
       X-Powered-By:
       - Undertow/1
       X-Accela-Traceid:
-      - 250612224245277-3bdd92be
+      - 250612224330899-598a2854
       X-Azure-Ref:
-      - 20250612T224245Z-156d548487bmgnl5hC1BOSdwkg0000000afg0000000018vz
+      - 20250612T224330Z-156d548487bw92jlhC1BOS79k0000000063000000000a7ed
       X-Cache:
       - CONFIG_NOCACHE
     body:
       encoding: ASCII-8BIT
-      string: '{"result":[{"subdivision":{"value":"Somewhere","text":"Somewhere"},"recordId":{"id":"NULLISLAND-REC25-00000-0004O","trackingId":0,"missingIdentifier":false,"serviceProviderCode":"NULLISLAND","value":"REC25-00000-0004O"},"isPrimary":"Y","lot":"12","block":"11","township":"Here","range":"5","section":2,"legalDescription":"This
-        is my personal application to understand how accela works.","id":"10","parcelNumber":"10"}],"status":200}'
-  recorded_at: Thu, 12 Jun 2025 22:42:45 GMT
+      string: '{"result":[{"id":935313677,"isPrimary":"Y","phone":"202 123 4567","email":"tactics.orbit.5c@icloud.com","fullName":"Hindreen","mailAddress":{"postalCode":"94089","city":"Sunnyvale","addressLine1":"label.1.value","addressLine2":"label.2.value","state":{"value":"CA","text":"CA"},"country":{"value":"US","text":"United
+        States"}},"status":{"text":"Inactive"}},{"id":935313678,"isPrimary":"N","fullName":"Lis","mailAddress":{"city":"SAN
+        RAMON","state":{"value":"CA","text":"CA"},"country":{"value":"US","text":"United
+        States"}},"status":{"text":"Inactive"}}],"status":200}'
+  recorded_at: Thu, 12 Jun 2025 22:43:30 GMT
 recorded_with: VCR 6.3.1

@@ -5,97 +5,136 @@ http_interactions:
     uri: https://apis.accela.com/oauth2/token
     body:
       encoding: UTF-8
-      string: grant_type=password&agency_name=islandton&environment=TEST&client_id=635395466279594650&client_secret=3b1e4026d95e4478a0f8dd1f7a1b7028&username=mdeveloper&password=accela&scope=create_record
+      string: agency_name=nullisland&client_id=638853549908464776&client_secret=4588a663f51143e69432e2734143e44b&environment=TEST&grant_type=password&password=accela&scope=create_record&username=developer
     headers:
+      X-Accela-Appid:
+      - '638853549908464776'
       Content-Type:
       - application/x-www-form-urlencoded
-      X-Accela-Appid:
-      - '635395466279594650'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '911'
+      Date:
+      - Thu, 12 Jun 2025 23:45:51 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - TiPMix=92.93276306793533; path=/; HttpOnly; Domain=construct-prod-auth.azurewebsites.net:443;
+        Max-Age=3600; Secure
+      Vary:
+      - Accept-Encoding
       X-Accela-Traceid:
-      - 140916194937371-bcce0175
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 16 Sep 2014 19:49:38 GMT
+      - 250612234551551-91f7786e
+      X-Azure-Ref:
+      - 20250612T234551Z-156d548487b57szthC1BOS05sg00000002xg000000002keq
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"access_token":"tgMx9IgkpNEGbyH8NczpGBUWlswdZ8VnXDGIPNGboUdAvB7VSbkjXwIIu40rPOMNj1rOBo6hHpCKXk9mrMQSRQLVw4VhOtZExUd-pC1waNAP3JmksMr5ekwm7VjlXy4OLnhsEvo-vWDLEszOMXI1OTIk3hAL0ZYvgT70-9o813op8jvWWBVmhuqWzbSZxKo0_Njgw2X2hukAKkgfTPSCsZLfEfb75Er9gdS8VrIZOdtmyN_Dselh78gPgT1hB7ZfPWqBCA7DBltKMK9TGlcwbpI8WjVOuy8RN4zOPC2Y91Dl3wFGa4JBnZozUZVrUWfxhoIbVAHavqJMm32N9LTB_DCbGEFaW-jQnNR_CBQVcaVQUIy2e6aM2994rfsz5JQ-NiPYncdm3h8o2Ivq6S0WczUY5GwW4DLgoxIPqUDjL5gMMS_i2V6_4UVZD-Jy_rgg0","token_type":"bearer","expires_in":"86400","refresh_token":"rALM!IAAAAIosPwXcVOS7X2wVLjXwsPxP3sknVQdimnMQUPJ6B8wI0QAAAAHbMOV1vBBCVXOkxlaKRsYQKQWtvvPwKtC_NEOk0MSTvjooXjfO4wV8q0lSs2bFlOWLYtjm8CqaOzlwWeqRGAyHA2uIe9cWpb4X1TGk_0v8Jb7pnpf-ZfBouokuOt1Di_hajiDVn8IlvCsPjK4tVHWuxpaFCx2auUypgIAAVQUxDVLcEeiUznuCt6QM1Lyf9nupgXECsE4QLfddKVRd-7gX15bg0cFDjHK7jqGoPYl61qJYMe4s8C3qCNP_mb6Ahz8BFqzISjAsJsisT8REyLGm","scope":"create_record
-        get_civicid_profile"}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:49:38 GMT
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"access_token\": \"mZ-l62OaT1966dQLNtgHPDRO3sD_6fmJF7M6Iu1kRRmnf8prOAeSgWI9r4hXOdGzJYHL2Fc3Ehhy92g-en70QqCTn6bxi9WhaaXvaiU7hEwxnthXS_O1iv46X4Q28cnN-W7GefMWsJ64uL_4hpV570nR-PeovM3sEJ6LxZhDYD4DO2RePlf6U9xvk9-v6gODfOh3QnEMautjOmOt4A2QeLChKhe9Yc_gx_0ugtPEl448kKBl7uCa20sQ0_ZL-BVePlIPYs4LvjtFVsSBj7KvBW9hTVXl76ky8mJ-FKKhvYJ_kXlO9sNFI8L0p_8PamBt9BPLNCdonhID_9a3_TGIS1KArFezsiOMiFW5-D2hZtCD0Xuyi_0WmnsJVZQJEIvpFx6qjO3Wf3scbb98e2_DDPtN_xW2LHw2FU-ViMSh2RTcv2TYpisEEvwYCfOJGbSZXunXp-boT1bpu5uGzX6SC_1Yf2D2ElxZR4LIH42rFZCPRD2GjHc-DR49bWdTL2x18RAJsp3KKz07TEDsYVk43hHAlM9CqQrC9eBjruhy6LnSM3F4Gs3iX9-6xJWir5Bo2jaZSUuJjpdy8VThyUn5hSWCsYCi6flw6k-T5-NwWD1A5sMY58QBrx2zanEWIB4q0\",\r\n
+        \ \"token_type\": \"bearer\",\r\n  \"expires_in\": 900,\r\n  \"refresh_token\":
+        \"CxpeQEEwWLRN64BEu-bULwsB5qt2kCC1ksgOz4pVwDdiQXKLQQK_p1YCE8OQ-bXotbJ1Bzt4KdsVtLMACKmCYfqRwyalciIJkAjtIOnUssG0zkve5VJuvt5LGRescWc3_Cmgf3QSLHErr5gU5c39BumcsxdogemysJvvQj8MEqTRaRtnkECXfwxdeiNf6D00vfuTXqzEJv_-0WjGfogBkVsBXufsfhuFUwD-YboJj1R14edKja2XHrYmPh_bgxQMYpwOFxuIlbxieRdQclsx6WJTaef3ZQe64LLU9DNzsjs3G58s_Uade_CaFPHgVT0MNxSfMeDsHREIf84INKKW7aqARLraqM1Q8WonNte90Su4eeEACvv-NiNzlraltccg_IWoYIVfgci3mFULbISIr1ptiHzqNmmkoV_mcMaymneFsDG1Bqo3RfH062JE_CKke9E7Cs8eA9bNWOzB8W70XH6zJxibCPwr748mXZmDAE_0TUc5v-N4Yul6sM8eYFWxNeipcKfUQ4u4ynViLawXSPNn-wJtfXcHlKMryzHMtTsHG55-GSw47xHUKf6jnyu1e1CCJCKEQvJegWpd7zWiRuAl0-vigWDzQAa4MMrV1Ru-NnZPuousD-uZoldSJtmQ0\",\r\n
+        \ \"scope\": \"create_record\"\r\n}"
+  recorded_at: Thu, 12 Jun 2025 23:45:51 GMT
 - request:
     method: post
     uri: https://apis.accela.com/v4/records
     body:
       encoding: UTF-8
-      string: '{"actualProductionUnit":123.43,"type":{"id":"AMS-Facility-Boiler-Preventative.cMaintenance"}}'
+      string: '{"actualProductionUnit":123.43,"type":{"id":"Building-Residential-Gas-gas"}}'
     headers:
       Content-Type:
       - application/json
       Accept:
       - application/json
       X-Accela-Appid:
-      - '635395466279594650'
+      - '638853549908464776'
       Authorization:
-      - tgMx9IgkpNEGbyH8NczpGBUWlswdZ8VnXDGIPNGboUdAvB7VSbkjXwIIu40rPOMNj1rOBo6hHpCKXk9mrMQSRQLVw4VhOtZExUd-pC1waNAP3JmksMr5ekwm7VjlXy4OLnhsEvo-vWDLEszOMXI1OTIk3hAL0ZYvgT70-9o813op8jvWWBVmhuqWzbSZxKo0_Njgw2X2hukAKkgfTPSCsZLfEfb75Er9gdS8VrIZOdtmyN_Dselh78gPgT1hB7ZfPWqBCA7DBltKMK9TGlcwbpI8WjVOuy8RN4zOPC2Y91Dl3wFGa4JBnZozUZVrUWfxhoIbVAHavqJMm32N9LTB_DCbGEFaW-jQnNR_CBQVcaVQUIy2e6aM2994rfsz5JQ-NiPYncdm3h8o2Ivq6S0WczUY5GwW4DLgoxIPqUDjL5gMMS_i2V6_4UVZD-Jy_rgg0
+      - mZ-l62OaT1966dQLNtgHPDRO3sD_6fmJF7M6Iu1kRRmnf8prOAeSgWI9r4hXOdGzJYHL2Fc3Ehhy92g-en70QqCTn6bxi9WhaaXvaiU7hEwxnthXS_O1iv46X4Q28cnN-W7GefMWsJ64uL_4hpV570nR-PeovM3sEJ6LxZhDYD4DO2RePlf6U9xvk9-v6gODfOh3QnEMautjOmOt4A2QeLChKhe9Yc_gx_0ugtPEl448kKBl7uCa20sQ0_ZL-BVePlIPYs4LvjtFVsSBj7KvBW9hTVXl76ky8mJ-FKKhvYJ_kXlO9sNFI8L0p_8PamBt9BPLNCdonhID_9a3_TGIS1KArFezsiOMiFW5-D2hZtCD0Xuyi_0WmnsJVZQJEIvpFx6qjO3Wf3scbb98e2_DDPtN_xW2LHw2FU-ViMSh2RTcv2TYpisEEvwYCfOJGbSZXunXp-boT1bpu5uGzX6SC_1Yf2D2ElxZR4LIH42rFZCPRD2GjHc-DR49bWdTL2x18RAJsp3KKz07TEDsYVk43hHAlM9CqQrC9eBjruhy6LnSM3F4Gs3iX9-6xJWir5Bo2jaZSUuJjpdy8VThyUn5hSWCsYCi6flw6k-T5-NwWD1A5sMY58QBrx2zanEWIB4q0
       X-Accela-Agency:
-      - islandton
+      - nullisland
+      User-Agent:
+      - Faraday v2.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '850'
+      Date:
+      - Thu, 12 Jun 2025 23:45:53 GMT
       Content-Type:
       - application/json
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/7.5
-      - Microsoft-IIS/7.5
-      - unknow
-      X-Accela-Resp-Gateway-Version:
-      - 3.1.0.1
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      - ASP.NET
-      X-Accela-Traceid:
-      - 140916194938840-698cd63b
-      Date:
-      - Tue, 16 Sep 2014 19:49:41 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Undertow/1
+      X-Accela-Traceid:
+      - 250612234552007-e487b5b3
+      X-Azure-Ref:
+      - 20250612T234551Z-156d548487bbcnlthC1BOS668n000000030g000000006yb1
+      X-Cache:
+      - CONFIG_NOCACHE
     body:
-      encoding: UTF-8
-      string: '{"message":"EMSE operation failed.","result":{"id":"ISLANDTON-14CAP-00000-000FV","type":{"module":"AMS","type":"Facility","value":"AMS/Facility/Boiler/Preventative
-        Maintenance","category":"Preventative Maintenance","text":"Boiler Maintenance","group":"AMS","subType":"Boiler","id":"AMS-Facility-Boiler-Preventative.cMaintenance"},"status":{"value":"Pending","text":"Pending"},"initiatedProduct":"AV360","createdBy":"MDEVELOPER","serviceProviderCode":"ISLANDTON","statusDate":"2014-09-16
-        12:57:31","module":"AMS","customId":"WO-2014-00081","recordClass":"COMPLETE","trackingId":266856476,"actualProductionUnit":123.43,"value":"14CAP-00000-000FV","totalFee":0.0,"totalPay":0.0,"balance":0.0,"booking":false,"infraction":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"publicOwned":false},"status":200,"code":"emse_error"}'
-    http_version: 
-  recorded_at: Tue, 16 Sep 2014 19:49:42 GMT
-recorded_with: VCR 2.9.2
+      encoding: ASCII-8BIT
+      string: '{"message":"EMSE Script Framework Versions<BR>EVENT TRIGGERED: ApplicationSubmitAfter<BR>SCRIPT
+        EXECUTED: APPLICATIONSUBMITAFTERV3.0<BR>INCLUDE VERSION: 3.1.28<BR>SCRIPT
+        VERSION : 3<BR>GLOBAL VERSION : 3<BR>**WARNING: getting project parents:  Project
+        Parents Not Found: record ID: NULLISLAND-REC25-00000<BR>**WARNING: Could not
+        find parent license Cap for child CAP(REC25-00000-00059): <BR><B>EMSE Script
+        Results for REC25-00000-00059</B><BR>capId = class com.accela.aa.aamain.cap.CapIDModel<BR>cap
+        = class com.accela.aa.emse.dom.CapScriptModel<BR>currentUserID = DEVELOPER<BR>currentUserGroup
+        = BuildingAgencyAdmin<BR>systemUserObj = class com.accela.aa.aamain.people.SysUserModel<BR>appTypeString
+        = Building/Residential/Gas/gas<BR>capName = null<BR>capStatus = null<BR>fileDate
+        = 6/12/2025<BR>fileDateYYYYMMDD = 2025-06-12<BR>sysDate = class com.accela.aa.emse.util.ScriptDateTime<BR>parcelArea
+        = 0<BR>estValue = 0<BR>calcValue = 0<BR>feeFactor = CONT<BR>houseCount = 0<BR>feesInvoicedTotal
+        = 40<BR>balanceDue = 40<BR>lookup(EMSE_VARIABLE_BRANCH_PREFIX,ApplicationSubmitAfter)
+        = ASA<BR>Executing : PreExecuteForAfterEvents, Elapsed Time: 0.091 Seconds<BR>Finished:
+        PreExecuteForAfterEvents, Elapsed Time: 0.091 Seconds<BR>{Job Cost} = null<BR>{Location
+        of Pool} = null<BR>{Type of Pool} = null<BR>{Surface Area of Pool} = null<BR>{Maximum
+        Depth} = null<BR>{Fenced?} = null<BR>{Type of Fence} = null<BR>{Fence Height}
+        = null<BR>{Number of Pool Lights} = null<BR>{Pool Heater?} = null<BR>{Heater
+        Type} = null<BR>{Front Setback} = null<BR>{Rear Setback} = null<BR>{Side Setback1}
+        = null<BR>{Side Setback2} = null<BR>{Zoning 1} = null<BR>{Zoning 2} = null<BR>{Zoning
+        3} = null<BR>{Land Use 1} = null<BR>{Land Use 2} = null<BR>{Land Use 3} =
+        null<BR>{Planning Case Required} = null<BR>{Required Planning Case Type} =
+        null<BR>{Application Expiration Date} = null<BR>{Permit Issued Date} = null<BR>{Permit
+        Expiration Date} = null<BR>{Plan Submission} = 1<BR>{Building Review} = Y<BR>{Engineering
+        Review} = Y<BR>{Fire Review} = Y<BR>{Planning Review} = Y<BR>Executing : ApplicationSubmitAfter,
+        Elapsed Time: 0.091 Seconds<BR>Executing : EMSE:GlobalFlags, Elapsed Time:
+        0.091 Seconds<BR>Finished: EMSE:GlobalFlags, Elapsed Time: 0.091 Seconds<BR>Executing
+        : ASA:Building/*/*/*, Elapsed Time: 0.092 Seconds<BR>Executing : EMSE:SetContactRelationshipToContactType,
+        Elapsed Time: 0.092 Seconds<BR>Finished: EMSE:SetContactRelationshipToContactType,
+        Elapsed Time: 0.096 Seconds<BR>Finished: ASA:Building/*/*/*, Elapsed Time:
+        0.134 Seconds<BR>Executing : ASA:Building/Residential/*/*, Elapsed Time: 0.135
+        Seconds<BR>Finished: ASA:Building/Residential/*/*, Elapsed Time: 0.137 Seconds<BR>Executing
+        : ASA:Building/*/*/gas, Elapsed Time: 0.137 Seconds<BR>Finished: ASA:Building/*/*/gas,
+        Elapsed Time: 0.139 Seconds<BR>Executing : ASA:Building/Residential/Gas/*,
+        Elapsed Time: 0.139 Seconds<BR>Finished: ASA:Building/Residential/Gas/*, Elapsed
+        Time: 0.141 Seconds<BR>Executing : ASA:Building/Residential/*/gas, Elapsed
+        Time: 0.141 Seconds<BR>Finished: ASA:Building/Residential/*/gas, Elapsed Time:
+        0.143 Seconds<BR>Executing : ASA:Building/Residential/Gas/gas, Elapsed Time:
+        0.144 Seconds<BR>Finished: ASA:Building/Residential/Gas/gas, Elapsed Time:
+        0.146 Seconds<BR>currentUserID: DEVELOPER<BR>Finished: ApplicationSubmitAfter,
+        Elapsed Time: 0.146 Seconds<BR>","result":{"id":"NULLISLAND-REC25-00000-00059","type":{"module":"Building","value":"Building/Residential/Gas/gas","type":"Residential","text":"Building/Residential/Gas/Na","group":"Building","alias":"Building/Residential/Gas/Na","category":"gas","subType":"Gas","id":"Building-Residential-Gas-gas"},"module":"Building","createdBy":"DEVELOPER","statusDate":"2025-06-12
+        16:45:52","serviceProviderCode":"NULLISLAND","recordClass":"COMPLETE","initiatedProduct":"AV360","actualProductionUnit":123.43,"customId":"REC25-00000-00059","openedDate":"2025-06-12
+        00:00:00","trackingId":289845408,"jobValue":0.0,"value":"REC25-00000-00059","totalFee":0.0,"totalPay":0.0,"balance":40.0,"booking":false,"infraction":false,"misdemeanor":false,"offenseWitnessed":false,"defendantSignature":false,"publicOwned":false},"status":200}'
+  recorded_at: Thu, 12 Jun 2025 23:45:53 GMT
+recorded_with: VCR 6.3.1

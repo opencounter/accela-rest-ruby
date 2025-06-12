@@ -1,18 +1,18 @@
 module Accela
   class RecordAPI < APIGroup
     as_class_method :get_records, :get_all_records, :create_record,
-      :get_all_contacts_for_record, :create_record_fees,
-      :create_record_contacts, :update_record_custom_forms,
-      :update_record_custom_tables, :create_partial_record, :update_record,
-      :update_record_contact, :finalize_record, :create_record_addresses,
-      :update_record_address, :get_record_custom_tables, :get_record,
-      :search_records, :get_records_of_type, :create_record_documents,
-      :update_record_contact_custom_forms, :update_record_contact_custom_tables
+                    :get_all_contacts_for_record, :create_record_fees,
+                    :create_record_contacts, :update_record_custom_forms,
+                    :update_record_custom_tables, :create_partial_record, :update_record,
+                    :update_record_contact, :finalize_record, :create_record_addresses,
+                    :update_record_address, :get_record_custom_tables, :get_record,
+                    :search_records, :get_records_of_type, :create_record_documents,
+                    :update_record_contact_custom_forms, :update_record_contact_custom_tables
 
     def create_record(input)
       raw = input.is_a?(Hash) ? input : input.raw
       payload = RecordTranslator.ruby_to_json([raw])
-      record_hash  = Accela::V4::CreateRecord.new(config).result(payload.first)
+      record_hash = Accela::V4::CreateRecord.new(config).result(payload.first)
       input_hash = RecordTranslator.json_to_ruby([record_hash]).first
       Record.create(input_hash)
     end
@@ -20,7 +20,7 @@ module Accela
     def create_partial_record(input)
       raw = input.is_a?(Hash) ? input : input.raw
       payload = RecordTranslator.ruby_to_json([raw])
-      record_hash  = Accela::V4::CreatePartialRecord.new(config).result(payload.first)
+      record_hash = Accela::V4::CreatePartialRecord.new(config).result(payload.first)
       input_hash = RecordTranslator.json_to_ruby([record_hash]).first
       Record.create(input_hash)
     end
@@ -28,15 +28,15 @@ module Accela
     def update_record(id, input)
       raw = input.is_a?(Hash) ? input : input.raw
       payload = RecordTranslator.ruby_to_json([raw])
-      record_hash  = Accela::V4::UpdateRecord.new(config).result(id, payload.first)
+      record_hash = Accela::V4::UpdateRecord.new(config).result(id, payload.first)
       input_hash = RecordTranslator.json_to_ruby([record_hash]).first
       Record.create(input_hash)
     end
 
     def finalize_record(record_id, payload = :empty_object)
-      record_hash  = Accela::V4::FinalizeRecord.new(config).result(record_id, payload)
+      record_hash = Accela::V4::FinalizeRecord.new(config).result(record_id, payload)
       input_hash = RecordTranslator.json_to_ruby([record_hash]).first
-      Record.create(input_hash)      
+      Record.create(input_hash)
     end
 
     def get_records(*args)
@@ -46,7 +46,7 @@ module Accela
                  *args)
     end
 
-    def get_all_records(opts={})
+    def get_all_records(opts = {})
       fetch_many(Accela::V4::GetAllRecords,
                  RecordTranslator,
                  Record,
@@ -84,16 +84,16 @@ module Accela
     end
 
     def get_record_related(*args)
-      fetch_has_many(Accela::V4::GetRecordsRelated, 
-                      RecordIdTranslator, 
-                      RecordId, 
-                      *args)
+      fetch_has_many(Accela::V4::GetRecordsRelated,
+                     RecordIdTranslator,
+                     RecordId,
+                     *args)
     end
 
     def create_record_fees(record_id, input)
       raw = input.is_a?(Hash) ? input : input.raw
       payload = FeeTranslator.ruby_to_json([raw])
-      fee_hash  = Accela::V4::CreateRecordFees.new(config).result(record_id, payload.first)
+      fee_hash = Accela::V4::CreateRecordFees.new(config).result(record_id, payload.first)
       input_hash = FeeTranslator.json_to_ruby([fee_hash]).first
       Fee.create(input_hash)
     end
@@ -146,16 +146,16 @@ module Accela
       payload = {
         id: id
       }
-      params = { expand: "addresses,contacts,customForms,customTables" }
+      params = { expand: 'addresses,contacts,customForms,customTables' }
       Array(search_records(params, payload)).first
     end
 
     def get_records_of_type(type)
       payload = {
-        module: type.split("-", 2).first,
+        module: type.split('-', 2).first,
         type: { id: type }
       }
-      params = { expand: "addresses,contacts,customForms,customTables" }
+      params = { expand: 'addresses,contacts,customForms,customTables' }
       Array(search_records(params, payload))
     end
 
@@ -163,9 +163,9 @@ module Accela
       Accela::V4::SearchRecords.new(config).result(params, payload)
     end
 
-    def create_record_documents(record_id:, file:, filename:, content_type:, description: "")
+    def create_record_documents(record_id:, file:, filename:, content_type:, description: '')
       filename = "#{filename}.#{content_type.split('/').last}"
-      agency = config.agency == "CHARLOTTE_EC" ? "CHARLOTTE" : config.agency
+      agency = config.agency == 'CHARLOTTE_EC' ? 'CHARLOTTE' : config.agency
       payload = {
         uploadedFile: Faraday::UploadIO.new(file, content_type, filename),
         fileInfo: <<-JSON.strip_heredoc
