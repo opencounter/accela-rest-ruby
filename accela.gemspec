@@ -14,7 +14,6 @@ Gem::Specification.new do |s|
   s.license        = 'MIT'
 
   s.files          = Dir.glob ['README.md', 'LICENSE', 'lib/**/*.{rb}', 'spec/**/*', '*.gemspec']
-  s.has_rdoc       = false
 
   s.add_runtime_dependency   'activesupport'
   s.add_runtime_dependency   'faraday', '>= 2.0.1'
